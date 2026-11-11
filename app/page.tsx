@@ -8,17 +8,31 @@ export default function HomePage() {
           <img src="/assets/logo/kenekt-logo.svg" alt="Kenekt home" width={402} height={108} />
         </a>
         <nav id="site-menu">
-          <a href="#signal-story">Platform</a>
-          <a href="#signal-story">For advisers</a>
+          <a href="#signal-story" aria-current="page">For advisers</a>
           <Link href="/builders">For builders</Link>
+          <a href="https://insights.kenekt.app/">Insights</a>
         </nav>
         <div className="nav-actions">
-          <a href="#">Log in</a>
-          <a className="pill pill-dark" href="#">
+          <a href="https://portal.kenekt.com.au">Log in
+          <lord-icon
+            src="https://cdn.lordicon.com/covqnqfn.json"
+            trigger="hover"
+            state="hover-pinch"
+            colors="primary:#4be1ec,secondary:#cb5eee"
+            stroke="bold"
+            style={{ width: 24, height: 24 }}
+          ></lord-icon>
+          </a>
+          <a className="pill pill-dark" href="https://portal.kenekt.com.au/sign_up">
             Start sourcing
-            <svg viewBox="0 0 18 18" aria-hidden="true">
-              <path d="M3.5 9h11M10 4.5 14.5 9 10 13.5" />
-            </svg>
+            <lord-icon
+              src="https://cdn.lordicon.com/qkcnmrzg.json"
+              trigger="hover"
+              state="hover-pinch"
+              colors="primary:#4be1ec,secondary:#cb5eee"
+              stroke="bold"
+              style={{ width: 24, height: 24 }}
+            ></lord-icon>
           </a>
         </div>
         <button className="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
@@ -30,31 +44,35 @@ export default function HomePage() {
       <section className="signal-hero shell">
         <div className="hero-copy">
           <div className="eyebrow">
-            <span></span> Australia’s property connection layer
+            <span></span> Australia’s new property connection layer
           </div>
           <h1>
-            Every property.
-            <br /> <em>One clear</em> connection.
+            <em>Research</em> with Clarity. <em>Transact</em> with Confidence.
           </h1>
           <p>
-            Source verified house &amp; land opportunities, build buyer-ready shortlists and move deals forward — from one
+            Source verified wholesale house &amp; land opportunities, build buyer-ready marketing material and move deals forward, from one
             connected workspace.
           </p>
           <div className="hero-actions">
             <a className="pill pill-blue" href="#">
-              Explore Kenekt
-              <svg viewBox="0 0 18 18" aria-hidden="true">
-                <path d="M3.5 9h11M10 4.5 14.5 9 10 13.5" />
-              </svg>
+              Get free access
+              <lord-icon
+                src="https://cdn.lordicon.com/cyvvyiob.json"
+                trigger="hover"
+                state="hover-pinch"
+                colors="primary:#4be1ec,secondary:#cb5eee"
+                stroke="bold"
+                style={{ width: 24, height: 24 }}
+              ></lord-icon>
             </a>
-            <a className="text-link" href="#">
-              Watch the overview <span>02:14</span>
+            <a className="text-link" href="https://www.youtube.com/watch?v=_jUESOJnt58" target="_blank">
+              Watch the overview <span>01:14</span>
             </a>
           </div>
           <div className="pronunciation">
             <b>kenekt</b>
             <span>/kəˈnɛkt/</span>
-            <small>verb — to bring people, property and possibility together.</small>
+            <small>verb: to bring people and possibility together.</small>
           </div>
         </div>
 

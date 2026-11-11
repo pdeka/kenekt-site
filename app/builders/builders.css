@@ -1,7 +1,6 @@
 /* Kenekt for builders: hero with the package database layered over it */
 .sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-.site-nav nav a[aria-current='page'] { opacity: 1; font-weight: 600; box-shadow: inset 0 -2px var(--lime); }
 .pill-lime { color: var(--ink); background: var(--lime); }
 
 /* Hero */
