@@ -220,7 +220,8 @@ button {
 
 .concept-note {
   padding: clamp(56px, 8vw, 92px) 0 clamp(64px, 8vw, 100px);
-  border-top: 1px solid #d9d8d1;
+  /* border-top: 1px solid #d9d8d1; */
+  border-top: none;
   display: grid;
   grid-template-columns: 1.2fr .8fr;
   align-items: start;
@@ -829,7 +830,8 @@ button {
 /* Proof grid */
 .signal-proof {
   padding: clamp(56px, 7vw, 70px) 0 clamp(80px, 10vw, 120px);
-  border-top: 1px solid #d9d8d1;
+  /* border-top: 1px solid #d9d8d1; */
+  border-top: none;
 }
 
 .signal-proof>p {
