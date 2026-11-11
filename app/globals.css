@@ -333,14 +333,14 @@ button {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: var(--blue);
+  background: var(--lime);
   box-shadow: 0 0 0 4px rgba(48, 56, 255, .1);
 }
 
 .signal-hero h1 {
   font-size: clamp(56px, 5.2vw, 94px);
   font-weight: 500;
-  line-height: .92;
+  line-height: 1.04;
   letter-spacing: -.073em;
   margin: 35px 0 32px;
 }
@@ -829,7 +829,7 @@ button {
 
 /* Proof grid */
 .signal-proof {
-  padding: clamp(56px, 7vw, 70px) 0 clamp(80px, 10vw, 120px);
+  padding: clamp(56px, 7vw, 70px) 0;
   /* border-top: 1px solid #d9d8d1; */
   border-top: none;
 }

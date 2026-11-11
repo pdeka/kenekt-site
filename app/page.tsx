@@ -44,7 +44,7 @@ export default function HomePage() {
       <section className="signal-hero shell">
         <div className="hero-copy">
           <div className="eyebrow">
-            <span></span> Australia’s new property connection layer
+            <span></span> KENEKT: Australia’s new property connection layer
           </div>
           <h1>
             <em>Research</em> with Clarity. <em>Transact</em> with Confidence.
