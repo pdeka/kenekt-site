@@ -5,7 +5,7 @@ export default function HomePage() {
     <main className="concept concept-signal">
       <header className="site-nav shell">
         <a className="brand" href="#">
-          <img src="/assets/logo/kenekt-logo.svg" alt="Kenekt home" width={402} height={108} />
+          <img src="/assets/logo/kenekt-mark.svg" alt="Kenekt home" width={48} height={48} />
         </a>
         <nav id="site-menu">
           <a href="#signal-story" aria-current="page">For advisers</a>

@@ -119,7 +119,7 @@ export default function BuildersPage() {
             <Link href="/builders" aria-current="page">
               For builders
             </Link>
-            <Link href="https://insights.kenekt.app">Platform</Link>
+            <Link href="https://insights.kenekt.app">Insights</Link>
           </nav>
           <div className="nav-actions">
             <a href="#">Log in</a>
