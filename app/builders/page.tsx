@@ -495,31 +495,46 @@ export default function BuildersPage() {
         <section className="plans shell">
           <div className="plans-head">
             <span>Pricing for builders</span>
-            <h2>Simple, transparent pricing designed to help builders scale.</h2>
-            <p>Choose a plan that scales with your business.</p>
+            <h2>Two ways to work with Kenekt.</h2>
+            <p>
+              Every builder gets the Kenekt Stock Management system, a custom branded agent portal and a Kenekt team that
+              keeps your stock current. You choose how much of the wholesale sales process you want us to run.
+            </p>
             <a className="text-link" href="https://kenekt-stock-management--qtra44m.gamma.site/">
               Full product brochure
             </a>
           </div>
 
-          <div className="plans-grid">
+          <div className="plans-shared">
+            <strong>Included with both options</strong>
+            <ul className="plan-features">
+              <li><i>✓</i> <span><strong>Custom branded agent portal</strong>: your brand, your stock, your agents, in a controlled, agent-only environment.</span></li>
+              <li><i>✓</i> <span><strong>Kenekt Stock Management</strong>: manage packages, pricing and availability in real time, with standardised inclusions, disclaimers and documentation.</span></li>
+              <li><i>✓</i> <span><strong>Stock admin handled by Kenekt</strong>: send us land availability and price changes in our set format and we keep every package up to date.</span></li>
+              <li><i>✓</i> <span><strong>Push updates instantly</strong>: every authorised agent sees the latest stock the moment it changes.</span></li>
+              <li><i>✓</i> <span><strong>Full reporting</strong>: track enquiries, EOIs and deals, with deal progress in My Deals.</span></li>
+              <li><i>✓</i> <span><strong>Marketing tools</strong>: branded brochures, stocklists and email templates generated from your live stock.</span></li>
+            </ul>
+          </div>
+
+          <div className="plans-grid plans-grid-two">
             <div className="plan">
-              <span className="plan-tier">Lite: less than 20 agents</span>
-              <strong className="plan-price">On request</strong>
-              <span className="plan-note">20% discount if paid yearly</span>
-              <span className="plan-note">Includes a $1,500 + GST one-time setup cost</span>
+              <span className="plan-tier">Option A: Wholesale Partner</span>
+              <strong className="plan-price">Paid from commission</strong>
+              <span className="plan-note">No setup cost. No monthly fee.</span>
+              <p className="plan-lede">
+                Outsource your wholesale channel. Kenekt recruits and qualifies agents, handles every enquiry and delivers
+                signed EOIs with a holding deposit. Your team joins at contract.
+              </p>
               <ul className="plan-features">
-                <li><i>✓</i> <span><strong>Unlimited staff &amp; up to 20 agent accounts</strong>: grow without paying per user.</span></li>
-                <li><i>✓</i> <span>An <strong>unlimited number of estates and packages</strong>.</span></li>
-                <li><i>✓</i> <span><strong>Gain instant access to Kenekt’s extensive channel partner network</strong>: agents ready to present and sell your stock to their clients.</span></li>
-                <li><i>✓</i> <span><strong>Done-for-you onboarding</strong>: we set up your entire library (Floor Plans, Facades, Inclusions, Commission Rates).</span></li>
-                <li><i>✓</i> <span><strong>4 hours of expert training</strong>: your team becomes platform-ready on day one.</span></li>
-                <li><i>✓</i> <span><strong>Email &amp; phone support</strong> with a 5-day SLA.</span></li>
-                <li><i>✓</i> <span><strong>No lock-in contracts</strong>: stay because you love it, not because you’re tied in.</span></li>
-                <li><i>✓</i> <span>Default flyer templates included at no charge.</span></li>
+                <li><i>✓</i> <span><strong>A wholesale BDM and admin team</strong> without the salaries, recruitment or management overhead.</span></li>
+                <li><i>✓</i> <span><strong>Only qualified, committed buyers</strong> reach your sales team.</span></li>
+                <li><i>✓</i> <span><strong>Full visibility</strong>: every enquiry is emailed to you, plus reporting on every agent, enquiry and deal.</span></li>
+                <li><i>✓</i> <span><strong>Your agent relationships protected</strong>: our agreement includes a non-recruitment clause.</span></li>
               </ul>
-              <a className="pill pill-dark plan-cta" href="https://app.usemotion.com/meet/prabin-deka/agency-setup">
-                Book a demo
+              <p className="plan-fit">Best for builders who want to scale wholesale volume without growing an internal BDM team.</p>
+              <a className="pill pill-blue plan-cta" href="https://calendly.com/martin-kenekt/kenekt-agency-demo">
+                Book a 30 minute session
                 <lord-icon
                   src="https://cdn.lordicon.com/fimgbbfr.json"
                   trigger="hover"
@@ -532,36 +547,29 @@ export default function BuildersPage() {
             </div>
 
             <div className="plan">
-              <span className="plan-tier">Standard: unlimited agents</span>
-              <strong className="plan-price">On request</strong>
-              <span className="plan-note">20% discount if paid yearly</span>
-              <span className="plan-note">Includes a $1,500 + GST one-time setup cost</span>
+              <span className="plan-tier">Option B: Platform + Admin</span>
+              <strong className="plan-price">$999 per sale</strong>
+              <span className="plan-note">$1,500 one-time setup · all prices include GST</span>
+              <p className="plan-lede">
+                Your team runs sales. You get the full Kenekt platform and stock admin support, and keep control of agent
+                onboarding, qualification and enquiries.
+              </p>
+              <dl className="plan-pricing">
+                <div><dt>One-time setup</dt><dd>$1,500</dd></div>
+                <div><dt>Per sale from a portal enquiry</dt><dd>$999</dd></div>
+                <div><dt>Monthly minimum</dt><dd>$999</dd></div>
+                <div><dt>Monthly cap</dt><dd>$3,000</dd></div>
+              </dl>
               <ul className="plan-features">
-                <li><i>✓</i> <span><strong>Everything in Lite</strong>, plus an unlimited number of agents and referrers.</span></li>
+                <li><i>✓</i> <span><strong>Custom branded portal</strong> to onboard and manage your own agents.</span></li>
+                <li><i>✓</i> <span><strong>Kenekt Stock Management</strong> with all features.</span></li>
+                <li><i>✓</i> <span><strong>Stock admin handled by Kenekt</strong>.</span></li>
+                <li><i>✓</i> <span><strong>Your commission structure untouched</strong>.</span></li>
+                <li><i>✓</i> <span><strong>Deal tracking</strong> through My Deals.</span></li>
               </ul>
-              <a className="pill pill-blue plan-cta" href="https://app.usemotion.com/meet/prabin-deka/agency-setup">
-                Book a demo
-                <lord-icon
-                  src="https://cdn.lordicon.com/fimgbbfr.json"
-                  trigger="hover"
-                  state="hover-pinch"
-                  colors="primary:#4be1ec,secondary:#cb5eee"
-                  stroke="bold"
-                  style={{ width: 24, height: 24 }}
-                ></lord-icon>
-              </a>
-            </div>
-
-            <div className="plan">
-              <span className="plan-tier">Premium: admin-supported</span>
-              <strong className="plan-price">On request</strong>
-              <span className="plan-note">20% discount if paid yearly</span>
-              <span className="plan-note">Includes a $1,500 + GST one-time setup cost</span>
-              <ul className="plan-features">
-                <li><i>✓</i> <span><strong>Everything in Standard</strong>, plus an admin resource to assist with daily data updates.</span></li>
-              </ul>
-              <a className="pill pill-dark plan-cta" href="https://app.usemotion.com/meet/prabin-deka/agency-setup">
-                Book a demo
+              <p className="plan-fit">Best for builders with an established sales team who want accurate stock and a professional agent portal without the admin.</p>
+              <a className="pill pill-dark plan-cta" href="https://calendly.com/martin-kenekt/kenekt-agency-demo">
+                Book a 30 minute session
                 <lord-icon
                   src="https://cdn.lordicon.com/fimgbbfr.json"
                   trigger="hover"
@@ -575,9 +583,15 @@ export default function BuildersPage() {
           </div>
 
           <p className="plans-footnote">
-            <strong>Premium plan:</strong> &nbsp;
-            Land availability data must be provided by the builder’s internal team. Kenekt’s role under this plan is
-            strictly administrative.
+            <strong>Option A:</strong> &nbsp;
+            Available once Kenekt has completed due diligence confirming your stock suits the wholesale channel.
+            <br />
+            <strong>Option B:</strong> &nbsp;
+            You pay only when your portal delivers. The monthly minimum counts towards your per-sale fees, and your total
+            never exceeds $3,000 a month. A sale counts when it starts from an enquiry made through your portal, even if the
+            buyer ends up purchasing a different property.
+            <br />
+            Daily stock admin is included in both options at no extra cost.
           </p>
         </section>
 

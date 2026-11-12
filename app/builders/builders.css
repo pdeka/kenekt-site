@@ -871,3 +871,71 @@
 @keyframes rowIn { from { opacity: 0; transform: translateY(14px); } }
 
 @keyframes chipInCentered { from { opacity: 0; transform: translate(50%, 8px); } }
+
+/* Pricing: two options plus the shared inclusions */
+.plans-shared {
+  margin-top: clamp(40px, 6vw, 56px);
+  padding: clamp(24px, 3vw, 32px);
+  border-radius: 20px;
+  background: #f4f2ec;
+
+  > strong {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--blue);
+  }
+
+  .plan-features {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px 28px;
+    margin: 18px 0 0;
+
+    @media (max-width: 760px) {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+}
+
+.plans-shared + .plans-grid { margin-top: clamp(18px, 2.4vw, 28px); }
+
+.plans-grid-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  @media (max-width: 960px) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.plan-lede {
+  margin: 20px 0 0;
+  font-size: 14px;
+  line-height: 1.55;
+  color: #45463f;
+}
+
+.plan-pricing {
+  display: grid;
+  margin: 20px 0 0;
+  border-top: 1px solid #e3e1d9;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 9px 0;
+    border-bottom: 1px solid #e3e1d9;
+    font-size: 13px;
+  }
+
+  dt { color: #545650; }
+  dd { margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; }
+}
+
+.plan-fit {
+  margin: 0 0 24px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--muted);
+}
