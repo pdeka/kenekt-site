@@ -112,7 +112,7 @@ export default function BuildersPage() {
       <main className="concept concept-builders">
         <header className="site-nav shell">
           <Link className="brand" href="/">
-            <img src="/assets/logo/kenekt-logo.svg" alt="Kenekt home" width={402} height={108} />
+            <img src="/assets/logo/kenekt-mark.svg" alt="Kenekt home" width={402} height={108} />
           </Link>
           <nav id="site-menu">
             <Link href="/">For advisers</Link>
@@ -122,12 +122,26 @@ export default function BuildersPage() {
             <Link href="https://insights.kenekt.app">Insights</Link>
           </nav>
           <div className="nav-actions">
-            <a href="#">Log in</a>
+            <a href="https://app.kenekt.com.au">Stock Mgmt Log in
+            <lord-icon
+              src="https://cdn.lordicon.com/covqnqfn.json"
+              trigger="hover"
+              state="hover-pinch"
+              colors="primary:#4be1ec,secondary:#cb5eee"
+              stroke="bold"
+              style={{ width: 24, height: 24 }}
+            ></lord-icon>
+            </a>
             <a className="pill pill-dark" href="#">
               List your stock
-              <svg viewBox="0 0 18 18" aria-hidden="true">
-                <path d="M3.5 9h11M10 4.5 14.5 9 10 13.5" />
-              </svg>
+              <lord-icon
+                  src="https://cdn.lordicon.com/jmfpxsax.json"
+                  trigger="hover"
+                  state="hover-pointing"
+                  colors="primary:#4be1ec,secondary:#cb5eee"
+                  stroke="bold"
+                  style={{ width: 24, height: 24 }}
+              ></lord-icon>
             </a>
           </div>
           <button className="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
@@ -181,18 +195,22 @@ export default function BuildersPage() {
                   <br /> <em>Sell everywhere.</em>
                 </h1>
                 <p>
-                  Publish house &amp; land packages to Australia’s adviser network, control every allocation and see each
-                  enquiry the moment it happens — from one live workspace.
+                  Publish house &amp; land packages to Australia’s adviser network, control every allocation and opt to see each enquiry the moment it happens. One live workspace.
                 </p>
                 <div className="hero-actions">
                   <a className="pill pill-lime" href="#">
-                    List your stock
-                    <svg viewBox="0 0 18 18" aria-hidden="true">
-                      <path d="M3.5 9h11M10 4.5 14.5 9 10 13.5" />
-                    </svg>
+                    Get free access
+                    <lord-icon
+                        src="https://cdn.lordicon.com/ntodxrsy.json"
+                        trigger="hover"
+                        state="hover-pinch"
+                        colors="primary:#4be1ec,secondary:#cb5eee"
+                        stroke="bold"
+                        style={{ width: 24, height: 24 }}
+                    ></lord-icon>
                   </a>
                   <a className="text-link" href="#">
-                    Book a walkthrough <span>15 min</span>
+                    Book a walkthrough <span>30 min</span>
                   </a>
                 </div>
               </div>
@@ -202,12 +220,12 @@ export default function BuildersPage() {
                   <span>Live packages listed</span>
                 </li>
                 <li>
-                  <strong>1,240+</strong>
+                  <strong>617+</strong>
                   <span>Connected advisers</span>
                 </li>
                 <li>
-                  <strong>11 days</strong>
-                  <span>Average release to EOI</span>
+                  <strong>70+ suppliers</strong>
+                  <span>Linked to Kenekt</span>
                 </li>
               </ul>
             </div>
@@ -215,7 +233,7 @@ export default function BuildersPage() {
 
           <div className="b-db">
             <div className="verified-chip">
-              <span>✓</span> Synced with 1,240 advisers · 2 min ago
+              <span>✓</span> Synced with 53 of your advisers, plus 617 more across Kenekt · 2 min ago
             </div>
             <div className="db" role="region" aria-label="Example builder workspace showing five house and land packages (placeholder data)">
               <div className="db-top">
