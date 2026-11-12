@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import IconSprite from '@/components/IconSprite'
+import Footer from '@/components/Footer'
 
 const packages = [
   {
@@ -511,6 +512,8 @@ export default function BuildersPage() {
             database sits on top of it — every lot, its status and its allocation in one glance.
           </p>
         </section>
+
+        <Footer />
       </main>
     </>
   )
