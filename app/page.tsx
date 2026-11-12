@@ -67,7 +67,7 @@ export default function HomePage() {
                 style={{ width: 24, height: 24 }}
               ></lord-icon>
             </a>
-            <a className="text-link" href="https://www.youtube.com/watch?v=_jUESOJnt58" target="_blank">
+            <a className="text-link" href="https://www.youtube.com/watch?v=_jUESOJnt58">
               <span className="text-link-full">Watch the overview</span>
               <span className="text-link-short">Overview</span>
               <span className="text-link-time">01:14</span>
@@ -298,10 +298,8 @@ export default function HomePage() {
           <span>For agencies &amp; property advisers</span>
           <h2>Kenekt for agencies &amp; property advisers</h2>
           <p>Kenekt is free for agencies, property advisers, mortgage brokers &amp; accountants.</p>
-          <a
-            className="text-link"
-            href="https://gamma.app/docs/Kenekt-Product-Brochure-For-Agents-6k9j9vrlo4rs738"
-            target="_blank"
+          <a className="text-link"
+            href="https://adviser-brochure-5fufpe3.gamma.site/"
           >
             Full product brochure
           </a>

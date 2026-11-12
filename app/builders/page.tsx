@@ -113,7 +113,7 @@ export default function BuildersPage() {
               style={{ width: 24, height: 24 }}
             ></lord-icon>
             </a>
-            <a className="pill pill-dark" href="#">
+            <a className="pill pill-dark" href="https://calendly.com/martin-kenekt/kenekt-agency-demo">
               List your stock
               <lord-icon
                   src="https://cdn.lordicon.com/jmfpxsax.json"
@@ -178,7 +178,7 @@ export default function BuildersPage() {
                 Your competitive edge in wholesale house & land.
                 </p>
                 <div className="hero-actions">
-                  <a className="pill pill-lime" href="#">
+                  <a className="pill pill-lime" href="https://calendly.com/martin-kenekt/kenekt-agency-demo">
                     Get free access
                     <lord-icon
                         src="https://cdn.lordicon.com/ntodxrsy.json"
@@ -189,7 +189,7 @@ export default function BuildersPage() {
                         style={{ width: 24, height: 24 }}
                     ></lord-icon>
                   </a>
-                  <a className="text-link" href="#">
+                  <a className="text-link" href="https://calendly.com/martin-kenekt/kenekt-agency-demo">
                     Book a walkthrough <span>30 min</span>
                   </a>
                 </div>
@@ -441,7 +441,7 @@ export default function BuildersPage() {
         </section>
 
         <section className="signal-proof shell">
-          <p>Publish wholesale H&L packages to Australia’s adviser network, control every allocation and opt to see each enquiry.</p>
+          <p>Sell wholesale H&L through your own branded portal, with Kenekt’s team behind it.</p>
           <div className="proof-grid" data-connect="">
             <div className="proof-thread" aria-hidden="true">
               <span></span>
@@ -466,18 +466,18 @@ export default function BuildersPage() {
             </div>
             <article>
               <span>01</span>
-              <h3>List once</h3>
-              <p>Upload packages, pricing and inclusions a single time — every adviser’s view stays current automatically.</p>
+              <h3>We keep your stock current</h3>
+              <p>Send us land availability and price changes. We update every package, and every agent on your portal sees it straight away.</p>
             </article>
             <article>
               <span>02</span>
-              <h3>Allocate with control</h3>
-              <p>Choose who sees each lot, switch stock live or hidden, and track every allocation.</p>
+              <h3>Choose how much we run</h3>
+              <p>Control which agents see each lot. Let Kenekt onboard agents and qualify enquiries through to EOI, or run it with your own team.</p>
             </article>
             <article>
               <span>03</span>
               <h3>Sell with visibility</h3>
-              <p>See enquiries, holds and EOIs as they happen, so your sales team always moves first.</p>
+              <p>Every enquiry is emailed to you. Track holds, EOIs and deals as they happen, and step in when it’s time to issue the contract.</p>
             </article>
           </div>
         </section>
@@ -485,11 +485,99 @@ export default function BuildersPage() {
         <section className="concept-note shell">
           <div>
             <span>For builders</span>
-            <h2>Plug your stock into the network.</h2>
+            <h2>Grow wholesale without adding headcount</h2>
           </div>
           <p>
-            A builder-side workspace in the same Signal language: the hero sets the promise, and the live package
-            database sits on top of it — every lot, its status and its allocation in one glance.
+            Your own branded agent portal. Stock admin handled for you. And the option to hand Kenekt your entire top of funnel.
+          </p>
+        </section>
+
+        <section className="plans shell">
+          <div className="plans-head">
+            <span>Pricing for builders</span>
+            <h2>Simple, transparent pricing designed to help builders scale.</h2>
+            <p>Choose a plan that scales with your business.</p>
+            <a className="text-link" href="https://kenekt-stock-management--qtra44m.gamma.site/">
+              Full product brochure
+            </a>
+          </div>
+
+          <div className="plans-grid">
+            <div className="plan">
+              <span className="plan-tier">Lite: less than 20 agents</span>
+              <strong className="plan-price">On request</strong>
+              <span className="plan-note">20% discount if paid yearly</span>
+              <span className="plan-note">Includes a $1,500 + GST one-time setup cost</span>
+              <ul className="plan-features">
+                <li><i>✓</i> <span><strong>Unlimited staff &amp; up to 20 agent accounts</strong>: grow without paying per user.</span></li>
+                <li><i>✓</i> <span>An <strong>unlimited number of estates and packages</strong>.</span></li>
+                <li><i>✓</i> <span><strong>Gain instant access to Kenekt’s extensive channel partner network</strong>: agents ready to present and sell your stock to their clients.</span></li>
+                <li><i>✓</i> <span><strong>Done-for-you onboarding</strong>: we set up your entire library (Floor Plans, Facades, Inclusions, Commission Rates).</span></li>
+                <li><i>✓</i> <span><strong>4 hours of expert training</strong>: your team becomes platform-ready on day one.</span></li>
+                <li><i>✓</i> <span><strong>Email &amp; phone support</strong> with a 5-day SLA.</span></li>
+                <li><i>✓</i> <span><strong>No lock-in contracts</strong>: stay because you love it, not because you’re tied in.</span></li>
+                <li><i>✓</i> <span>Default flyer templates included at no charge.</span></li>
+              </ul>
+              <a className="pill pill-dark plan-cta" href="https://app.usemotion.com/meet/prabin-deka/agency-setup">
+                Book a demo
+                <lord-icon
+                  src="https://cdn.lordicon.com/fimgbbfr.json"
+                  trigger="hover"
+                  state="hover-pinch"
+                  colors="primary:#4be1ec,secondary:#cb5eee"
+                  stroke="bold"
+                  style={{ width: 24, height: 24 }}
+                ></lord-icon>
+              </a>
+            </div>
+
+            <div className="plan">
+              <span className="plan-tier">Standard: unlimited agents</span>
+              <strong className="plan-price">On request</strong>
+              <span className="plan-note">20% discount if paid yearly</span>
+              <span className="plan-note">Includes a $1,500 + GST one-time setup cost</span>
+              <ul className="plan-features">
+                <li><i>✓</i> <span><strong>Everything in Lite</strong>, plus an unlimited number of agents and referrers.</span></li>
+              </ul>
+              <a className="pill pill-blue plan-cta" href="https://app.usemotion.com/meet/prabin-deka/agency-setup">
+                Book a demo
+                <lord-icon
+                  src="https://cdn.lordicon.com/fimgbbfr.json"
+                  trigger="hover"
+                  state="hover-pinch"
+                  colors="primary:#4be1ec,secondary:#cb5eee"
+                  stroke="bold"
+                  style={{ width: 24, height: 24 }}
+                ></lord-icon>
+              </a>
+            </div>
+
+            <div className="plan">
+              <span className="plan-tier">Premium: admin-supported</span>
+              <strong className="plan-price">On request</strong>
+              <span className="plan-note">20% discount if paid yearly</span>
+              <span className="plan-note">Includes a $1,500 + GST one-time setup cost</span>
+              <ul className="plan-features">
+                <li><i>✓</i> <span><strong>Everything in Standard</strong>, plus an admin resource to assist with daily data updates.</span></li>
+              </ul>
+              <a className="pill pill-dark plan-cta" href="https://app.usemotion.com/meet/prabin-deka/agency-setup">
+                Book a demo
+                <lord-icon
+                  src="https://cdn.lordicon.com/fimgbbfr.json"
+                  trigger="hover"
+                  state="hover-pinch"
+                  colors="primary:#4be1ec,secondary:#cb5eee"
+                  stroke="bold"
+                  style={{ width: 24, height: 24 }}
+                ></lord-icon>
+              </a>
+            </div>
+          </div>
+
+          <p className="plans-footnote">
+            <strong>Premium plan:</strong> &nbsp;
+            Land availability data must be provided by the builder’s internal team. Kenekt’s role under this plan is
+            strictly administrative.
           </p>
         </section>
 
