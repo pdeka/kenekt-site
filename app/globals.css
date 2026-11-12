@@ -369,6 +369,14 @@ button {
 .plans-head {
   max-width: 640px;
 
+  span {
+    font-size: 10px;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: var(--blue);
+    font-weight: 600;
+  }
+
   h2 {
     font-size: clamp(30px, 3.4vw, 40px);
     letter-spacing: -.05em;
@@ -1426,6 +1434,7 @@ button {
   border-top: 1px solid #e3e1d9;
   display: grid;
   grid-template-columns: minmax(0, 1.4fr) minmax(0, .8fr) minmax(0, .8fr);
+  align-items: start;
   gap: clamp(32px, 6vw, 64px);
 
   @media (max-width: 760px) {
@@ -1437,6 +1446,7 @@ button {
 .site-footer-brand {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 20px;
 }
 
@@ -1447,15 +1457,19 @@ button {
 
 .site-footer-social {
   display: flex;
-  gap: 10px;
+  gap: 12px;
 
   a {
     display: inline-grid;
     place-items: center;
-    width: 34px;
-    height: 34px;
+    width: 44px;
+    height: 44px;
     color: var(--muted);
     transition: color .2s ease;
+
+    lord-icon {
+      display: block;
+    }
 
     @media (hover: hover) and (pointer: fine) {
       &:hover {
@@ -1463,10 +1477,6 @@ button {
       }
     }
   }
-}
-
-.site-footer-phone {
-  align-self: flex-start;
 }
 
 .site-footer-col {

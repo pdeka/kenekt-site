@@ -295,10 +295,7 @@ export default function HomePage() {
 
       <section className="plans shell">
         <div className="plans-head">
-          <div className="eyebrow">
-            <span></span>
-            For agencies &amp; property advisers
-          </div>
+          <span>For agencies &amp; property advisers</span>
           <h2>Kenekt for agencies &amp; property advisers</h2>
           <p>Kenekt is free for agencies, property advisers, mortgage brokers &amp; accountants.</p>
           <a

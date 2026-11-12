@@ -10,7 +10,7 @@ export default function Footer() {
               trigger="none"
               colors="primary:#4be1ec,secondary:#cb5eee"
               stroke="bold"
-              style={{ width: 24, height: 24 }}
+              style={{ width: 28, height: 28 }}
           ></lord-icon>
           </a>
           <a href="https://www.instagram.com/kenekt.app/" target="_blank" rel="noopener" aria-label="Instagram">
@@ -19,7 +19,7 @@ export default function Footer() {
               trigger="none"
               colors="primary:#4be1ec,secondary:#cb5eee"
               stroke="bold"
-              style={{ width: 24, height: 24 }}
+              style={{ width: 28, height: 28 }}
           ></lord-icon>
           </a>
           <a href="https://www.linkedin.com/company/kenektgroup/" target="_blank" rel="noopener" aria-label="LinkedIn">
@@ -28,7 +28,7 @@ export default function Footer() {
               trigger="none"
               colors="primary:#4be1ec,secondary:#cb5eee"
               stroke="bold"
-              style={{ width: 24, height: 24 }}
+              style={{ width: 28, height: 28 }}
           ></lord-icon>
           </a>
           <a href="https://help.kenekt.app" target="_blank" rel="noopener" aria-label="Help centre">
@@ -37,11 +37,20 @@ export default function Footer() {
               trigger="none"
               colors="primary:#4be1ec,secondary:#cb5eee"
               stroke="bold"
-              style={{ width: 24, height: 24 }}
+              style={{ width: 28, height: 28 }}
           ></lord-icon>
           </a>
         </div>
-        <a className="pill pill-dark site-footer-phone" href="tel:1300536358">1 300 KENEKT</a>
+        <a className="pill pill-dark site-footer-phone" href="tel:1300536358">1 300 KENEKT
+        <lord-icon
+          src="https://cdn.lordicon.com/mkpuxlnz.json"
+          trigger="hover"
+          state="hover-pinch"
+          colors="primary:#4be1ec,secondary:#cb5eee"
+          stroke="bold"
+          style={{ width: 24, height: 24 }}
+        ></lord-icon>
+        </a>
       </div>
 
       <nav className="site-footer-col" aria-label="Product">
