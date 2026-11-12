@@ -516,7 +516,7 @@ export default function BuildersPage() {
                   state="hover-pinch"
                   colors="primary:#4be1ec,secondary:#cb5eee"
                   stroke="bold"
-                  style={{ width: 24, height: 24 }}
+                  style={{ width: 28, height: 28 }}
               ></lord-icon>
               </span>
               <strong className="plan-price">Kenekt as a channel partner</strong>
@@ -541,7 +541,7 @@ export default function BuildersPage() {
                   state="hover-pinch"
                   colors="primary:#4be1ec,secondary:#cb5eee"
                   stroke="bold"
-                  style={{ width: 24, height: 24 }}
+                  style={{ width: 28, height: 28 }}
                 ></lord-icon>
               </a>
             </div>
@@ -555,7 +555,7 @@ export default function BuildersPage() {
                     state="hover-pinch"
                     colors="primary:#4be1ec,secondary:#cb5eee"
                     stroke="bold"
-                    style={{ width: 24, height: 24 }}
+                    style={{ width: 28, height: 28 }}
                 ></lord-icon>
               </span>
               <strong className="plan-price">Paid from commission</strong>
@@ -583,7 +583,7 @@ export default function BuildersPage() {
                   state="hover-pinch"
                   colors="primary:#4be1ec,secondary:#cb5eee"
                   stroke="bold"
-                  style={{ width: 24, height: 24 }}
+                  style={{ width: 28, height: 28 }}
                 ></lord-icon>
               </a>
             </div>
@@ -597,7 +597,7 @@ export default function BuildersPage() {
                   state="hover-angle"
                   colors="primary:#4be1ec,secondary:#cb5eee"
                   stroke="bold"
-                  style={{ width: 24, height: 24 }}
+                  style={{ width: 28, height: 28 }}
               ></lord-icon>
               </span>
               <strong className="plan-price">$999 per sale</strong>
@@ -630,7 +630,7 @@ export default function BuildersPage() {
                   state="hover-pinch"
                   colors="primary:#4be1ec,secondary:#cb5eee"
                   stroke="bold"
-                  style={{ width: 24, height: 24 }}
+                  style={{ width: 28, height: 28 }}
                 ></lord-icon>
               </a>
             </div>

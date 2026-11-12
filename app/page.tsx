@@ -315,7 +315,7 @@ export default function HomePage() {
               state="hover-pinch"
               colors="primary:#4be1ec,secondary:#cb5eee"
               stroke="bold"
-              style={{ width: 24, height: 24 }}
+              style={{ width: 28, height: 28 }}
             ></lord-icon>
             </span>
             <strong className="plan-price">
@@ -338,7 +338,7 @@ export default function HomePage() {
                 state="hover-pinch"
                 colors="primary:#4be1ec,secondary:#cb5eee"
                 stroke="bold"
-                style={{ width: 24, height: 24 }}
+                style={{ width: 28, height: 28 }}
               ></lord-icon>
             </a>
           </div>
@@ -352,7 +352,7 @@ export default function HomePage() {
                 state="hover-pinch"
                 colors="primary:#4be1ec,secondary:#cb5eee"
                 stroke="bold"
-                style={{ width: 24, height: 24 }}
+                style={{ width: 28, height: 28 }}
               ></lord-icon>
             </span>
             <strong className="plan-price">Free when you work with Kenekt*</strong>
@@ -375,7 +375,7 @@ export default function HomePage() {
                 state="hover-pinch"
                 colors="primary:#4be1ec,secondary:#cb5eee"
                 stroke="bold"
-                style={{ width: 24, height: 24 }}
+                style={{ width: 28, height: 28 }}
               ></lord-icon>
             </a>
           </div>
@@ -389,7 +389,7 @@ export default function HomePage() {
                   state="hover-pinch"
                   colors="primary:#4be1ec,secondary:#cb5eee"
                   stroke="regular"
-                  style={{ width: 24, height: 24 }}
+                  style={{ width: 28, height: 28 }}
               ></lord-icon>
             </span>
             <strong className="plan-price">Free when you work with Kenekt*</strong>
@@ -410,7 +410,7 @@ export default function HomePage() {
                 state="hover-pinch"
                 colors="primary:#4be1ec,secondary:#cb5eee"
                 stroke="bold"
-                style={{ width: 24, height: 24 }}
+                style={{ width: 28, height: 28 }}
               ></lord-icon>
             </a>
           </div>
