@@ -44,7 +44,7 @@ export default function HomePage() {
       <section className="signal-hero shell">
         <div className="hero-copy">
           <div className="eyebrow">
-            <span></span> 
+            <span></span>
             Get Australia’s new property connection layer
           </div>
           <h1>
@@ -54,7 +54,7 @@ export default function HomePage() {
             Source verified wholesale off-market house & land opportunities, create custom branded marketing brochures and move deals forward, all from one connected workspace.
           </p>
           <div className="hero-actions">
-            <a className="pill pill-blue" href="#">
+            <a className="pill pill-blue" href="https://portal.kenekt.com.au/sign_up">
               Get free access
               <lord-icon
                 src="https://cdn.lordicon.com/cyvvyiob.json"
