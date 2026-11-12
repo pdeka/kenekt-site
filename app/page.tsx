@@ -307,8 +307,20 @@ export default function HomePage() {
 
         <div className="plans-grid">
           <div className="plan">
-            <span className="plan-tier">Single Agent Account</span>
-            <strong className="plan-price">Free when you work with Kenekt</strong>
+            <span className="plan-tier">
+            Single Agent Account
+            <lord-icon
+              src="https://cdn.lordicon.com/rzsnbiaw.json"
+              trigger="hover"
+              state="hover-pinch"
+              colors="primary:#4be1ec,secondary:#cb5eee"
+              stroke="bold"
+              style={{ width: 24, height: 24 }}
+            ></lord-icon>
+            </span>
+            <strong className="plan-price">
+              Free when you work with Kenekt
+            </strong>
             <ul className="plan-features">
               <li><i>✓</i> Access nationwide stock and compare house &amp; land opportunities.</li>
               <li><i>✓</i> Utilise property research tools to present options to clients effectively.</li>
@@ -332,7 +344,17 @@ export default function HomePage() {
           </div>
 
           <div className="plan">
-            <span className="plan-tier">Agency Account</span>
+            <span className="plan-tier">
+              Agency Account
+              <lord-icon
+                src="https://cdn.lordicon.com/kbsnckkc.json"
+                trigger="hover"
+                state="hover-pinch"
+                colors="primary:#4be1ec,secondary:#cb5eee"
+                stroke="bold"
+                style={{ width: 24, height: 24 }}
+              ></lord-icon>
+            </span>
             <strong className="plan-price">Free when you work with Kenekt*</strong>
             <ul className="plan-features">
               <li><i>✓</i> Includes all features of the Single Agent Account.</li>
@@ -359,7 +381,17 @@ export default function HomePage() {
           </div>
 
           <div className="plan">
-            <span className="plan-tier">Pro Agency Account</span>
+            <span className="plan-tier">
+              Pro Agency Account
+              <lord-icon
+                  src="https://cdn.lordicon.com/hcbxnuro.json"
+                  trigger="hover"
+                  state="hover-pinch"
+                  colors="primary:#4be1ec,secondary:#cb5eee"
+                  stroke="regular"
+                  style={{ width: 24, height: 24 }}
+              ></lord-icon>
+            </span>
             <strong className="plan-price">Free when you work with Kenekt*</strong>
             <ul className="plan-features">
               <li><i>✓</i> Includes all features of the Agency Account.</li>
