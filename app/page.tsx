@@ -72,7 +72,7 @@ export default function HomePage() {
           <div className="pronunciation">
             <b>kenekt</b>
             <span>/kəˈnɛkt/</span>
-            <small>verb: to bring people and possibility together.</small>
+            <small>verb: to bring people and possibilities together.</small>
           </div>
         </div>
 
