@@ -363,7 +363,6 @@ export default function HomePage() {
           <div className="plan">
             <span className="plan-tier">Pro Agency Account</span>
             <strong className="plan-price">Free when you work with Kenekt*</strong>
-            <span className="plan-note">Alternatively, retain access for $990 per month including GST.</span>
             <ul className="plan-features">
               <li><i>✓</i> Includes all features of the Agency Account.</li>
               <li><i>✓</i> Seamless integration to display selected Kenekt packages on your existing website.</li>
