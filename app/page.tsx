@@ -44,13 +44,14 @@ export default function HomePage() {
       <section className="signal-hero shell">
         <div className="hero-copy">
           <div className="eyebrow">
-            <span></span> KENEKT: Australia’s new property connection layer
+            <span></span> 
+            Get Australia’s new property connection layer
           </div>
           <h1>
             <em>Research</em> with clarity. <em>Transact</em> with confidence
           </h1>
           <p>
-            Source verified wholesale off-market house & land opportunities, create custom branded marketing brochures and move deals forward, all from one connected workspace.          
+            Source verified wholesale off-market house & land opportunities, create custom branded marketing brochures and move deals forward, all from one connected workspace.
           </p>
           <div className="hero-actions">
             <a className="pill pill-blue" href="#">
@@ -65,7 +66,9 @@ export default function HomePage() {
               ></lord-icon>
             </a>
             <a className="text-link" href="https://www.youtube.com/watch?v=_jUESOJnt58" target="_blank">
-              Watch the overview <span>01:14</span>
+              <span className="text-link-full">Watch the overview</span>
+              <span className="text-link-short">Overview</span>
+              <span className="text-link-time">01:14</span>
             </a>
           </div>
           <div className="pronunciation">

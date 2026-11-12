@@ -225,7 +225,11 @@ button {
   padding: 10px 0 7px;
 }
 
-.text-link span {
+.text-link-short {
+  display: none;
+}
+
+.text-link-time {
   font-size: 9px;
   opacity: .45;
   margin-left: 10px;
@@ -1185,6 +1189,14 @@ button {
 
   .signal-hero .hero-copy>p {
     font-size: 16px;
+  }
+
+  .text-link-full {
+    display: none;
+  }
+
+  .text-link-short {
+    display: inline;
   }
 
   .signal-hero .hero-actions {
