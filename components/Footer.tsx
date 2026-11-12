@@ -35,6 +35,16 @@ export default function Footer() {
               style={{ width: 42, height: 42 }}
           ></lord-icon>
           </a>
+          <a href="https://www.youtube.com/@kenekt" target="_blank" rel="noopener" aria-label="YouTube">
+          <lord-icon
+              src="https://cdn.lordicon.com/rpswgzgb.json"
+              trigger="hover"
+              state="hover-pinch"
+              colors="primary:#4be1ec,secondary:#cb5eee"
+              stroke="bold"
+              style={{ width: 42, height: 42 }}
+          ></lord-icon>
+          </a>
           <a href="https://help.kenekt.app" target="_blank" rel="noopener" aria-label="Help centre">
           <lord-icon
               src="https://cdn.lordicon.com/wczruhnt.json"
