@@ -1,7 +1,7 @@
 /* Kenekt for builders: hero with the package database layered over it */
 .sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-.pill-lime { color: var(--ink); background: var(--lime); }
+.pill-lime { color: var(--ink); background: var(--orange); }
 
 /* Hero */
 .b-intro { position: relative; padding-bottom: clamp(56px, 7vw, 88px); }
@@ -35,7 +35,7 @@
       width: 7px;
       height: 7px;
       border-radius: 50%;
-      background: var(--lime);
+      background: var(--orange);
       box-shadow: 0 0 0 4px rgba(255, 189, 63, .16);
     }
   }
@@ -49,7 +49,7 @@
 
     em {
       font-style: normal;
-      color: var(--lime);
+      color: var(--orange);
     }
 
     @media (max-width: 600px) {
@@ -80,7 +80,7 @@
 .b-map-edges { stroke-width: 18; opacity: .05; }
 
 .b-ping {
-  fill: var(--lime);
+  fill: var(--orange);
   stroke: rgba(255, 189, 63, .5);
   stroke-width: 0;
   transform-box: fill-box;
@@ -311,7 +311,7 @@
     min-width: 15px;
     height: 15px;
     border-radius: 8px;
-    background: var(--lime);
+    background: var(--orange);
     color: var(--ink);
     font-size: 9px;
   }
@@ -698,7 +698,7 @@
 
 .pkg-scene { display: block; width: 100%; height: 100%; stroke: none; transform-origin: 50% 100%; transition: transform .5s cubic-bezier(.2, .8, .2, 1); }
 
-.pkg-tag { position: absolute; left: 7px; top: 7px; padding: 3px 7px; border-radius: 6px; background: var(--lime); color: var(--ink); font-size: 9px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+.pkg-tag { position: absolute; left: 7px; top: 7px; padding: 3px 7px; border-radius: 6px; background: var(--orange); color: var(--ink); font-size: 9px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
 
 .scene-b { --sky: #fdeed6; --sun: #ffc35a; --hill: #f1dcc0; --wall: #f2ede4; --accent: #7d8a99; --trim: #3a3a38; }
 .scene-c { --sky: #dfeaf6; --sun: #fff1c4; --hill: #c9dbec; --wall: #ebe7f3; --accent: #b98a5e; --trim: #3b3355; --lawn: #9ccaa6; }
