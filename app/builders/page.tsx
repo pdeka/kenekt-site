@@ -508,7 +508,17 @@ export default function BuildersPage() {
 
           <div className="plans-grid">
             <div className="plan">
-              <span className="plan-tier">Option A: Marketplace Channel</span>
+              <span className="plan-tier">
+              Option A: Marketplace Channel
+              <lord-icon
+                  src="https://cdn.lordicon.com/pldgwxrz.json"
+                  trigger="hover"
+                  state="hover-pinch"
+                  colors="primary:#4be1ec,secondary:#cb5eee"
+                  stroke="bold"
+                  style={{ width: 24, height: 24 }}
+              ></lord-icon>
+              </span>
               <strong className="plan-price">Kenekt as a channel partner</strong>
               <span className="plan-note">No setup cost and no software fees. Most builders start here.</span>
               <p className="plan-lede">
@@ -537,7 +547,17 @@ export default function BuildersPage() {
             </div>
 
             <div className="plan">
-              <span className="plan-tier">Option B: Wholesale Partner</span>
+              <span className="plan-tier">
+                Option B: Wholesale Partner
+                <lord-icon
+                    src="https://cdn.lordicon.com/oknahgcf.json"
+                    trigger="hover"
+                    state="hover-pinch"
+                    colors="primary:#4be1ec,secondary:#cb5eee"
+                    stroke="bold"
+                    style={{ width: 24, height: 24 }}
+                ></lord-icon>
+              </span>
               <strong className="plan-price">Paid from commission</strong>
               <span className="plan-note">No setup cost. No monthly fee.</span>
               <p className="plan-lede">
@@ -569,7 +589,17 @@ export default function BuildersPage() {
             </div>
 
             <div className="plan">
-              <span className="plan-tier">Option C: Platform + Admin</span>
+              <span className="plan-tier">
+              Option C: Platform + Admin
+              <lord-icon
+                  src="https://cdn.lordicon.com/zcpmxjfa.json"
+                  trigger="hover"
+                  state="hover-angle"
+                  colors="primary:#4be1ec,secondary:#cb5eee"
+                  stroke="bold"
+                  style={{ width: 24, height: 24 }}
+              ></lord-icon>
+              </span>
               <strong className="plan-price">$999 per sale</strong>
               <span className="plan-note">$1,500 one-time setup · all prices include GST</span>
               <p className="plan-lede">
