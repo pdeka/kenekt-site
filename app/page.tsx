@@ -50,8 +50,7 @@ export default function HomePage() {
             <em>Research</em> with clarity. <em>Transact</em> with confidence
           </h1>
           <p>
-            Source verified wholesale house &amp; land opportunities, build buyer-ready marketing material and move deals forward, from one
-            connected workspace.
+            Source verified wholesale off-market house & land opportunities, create custom branded marketing brochures and move deals forward, all from one connected workspace.          
           </p>
           <div className="hero-actions">
             <a className="pill pill-blue" href="#">
@@ -271,7 +270,7 @@ export default function HomePage() {
             <span>03</span>
             <h3>Close with confidence</h3>
             <p>
-            Move from enquiry to settlement with expert support at every step, so you can focus on your buyer.            
+            Move from enquiry to settlement with expert support at every step, so you can focus on your buyer.
             </p>
           </article>
         </div>
