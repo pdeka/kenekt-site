@@ -488,7 +488,7 @@ export default function BuildersPage() {
             <h2>Wholesale growth, minus the overhead.</h2>
           </div>
           <p>
-            Your own branded agent portal. Stock admin handled for you. And the option to hand Kenekt your entire top of funnel.
+            From marketplace listing to a full wholesale sales desk. Choose how much Kenekt does, and grow volume without adding headcount.
           </p>
         </section>
 
@@ -549,8 +549,12 @@ export default function BuildersPage() {
                 <li><i>✓</i> <span><strong>Only qualified, committed buyers</strong> reach your sales team.</span></li>
                 <li><i>✓</i> <span><strong>Full visibility</strong>: every enquiry is emailed to you, plus reporting on every agent, enquiry and deal.</span></li>
                 <li><i>✓</i> <span><strong>Your agent relationships protected</strong>: our agreement includes a non-recruitment clause.</span></li>
+                <li><i>✓</i> <span><strong>Custom branded portal</strong> to onboard and manage your own agents.</span></li>
+                <li><i>✓</i> <span><strong>Kenekt Stock Management</strong> with all features.</span></li>
+                <li><i>✓</i> <span><strong>Stock admin handled by Kenekt</strong>.</span></li>
+                <li><i>✓</i> <span><strong>Deal tracking</strong> through My Deals.</span></li>
               </ul>
-              <p className="plan-fit">Best for builders who want to scale wholesale volume without growing an internal BDM team.</p>
+              <p className="plan-fit">Best for builders who want to scale wholesale volume without growing an internal BDM team. Available once Kenekt has completed due diligence confirming your stock suits the wholesale channel.</p>
               <a className="pill pill-dark plan-cta" href="https://calendly.com/martin-kenekt/kenekt-agency-demo">
                 Book a 30 minute session
                 <lord-icon
@@ -585,7 +589,9 @@ export default function BuildersPage() {
                 <li><i>✓</i> <span><strong>Your commission structure untouched</strong>.</span></li>
                 <li><i>✓</i> <span><strong>Deal tracking</strong> through My Deals.</span></li>
               </ul>
-              <p className="plan-fit">Best for builders with an established sales team who want accurate stock and a professional agent portal without the admin.</p>
+              <p className="plan-fit">Best for builders with an established sales team who want accurate stock and a professional agent portal with the admin support.
+              You pay only when your portal delivers. The monthly minimum counts towards your per-sale fees, and your total never exceeds $3K a month.
+              </p>
               <a className="pill pill-dark plan-cta" href="https://calendly.com/martin-kenekt/kenekt-agency-demo">
                 Book a 30 minute session
                 <lord-icon
@@ -613,20 +619,6 @@ export default function BuildersPage() {
             </ul>
           </div>
 
-          <p className="plans-footnote">
-            <strong>Option A:</strong> &nbsp;
-            Kenekt works like any other channel partner, under a standard Marketing and Distribution Agreement.
-            <br />
-            <strong>Option B:</strong> &nbsp;
-            Available once Kenekt has completed due diligence confirming your stock suits the wholesale channel.
-            <br />
-            <strong>Option C:</strong> &nbsp;
-            You pay only when your portal delivers. The monthly minimum counts towards your per-sale fees, and your total
-            never exceeds $3,000 a month. A sale counts when it starts from an enquiry made through your portal, even if the
-            buyer ends up purchasing a different property.
-            <br />
-            Daily stock admin is included in Options B and C at no extra cost.
-          </p>
         </section>
 
         <Footer />
