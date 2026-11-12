@@ -283,7 +283,7 @@ export default function HomePage() {
 
       <section className="concept-note shell">
         <div>
-          <span>Off-market H&L, Duals, Duplexes, Rooming, Townhouses & apartments</span>
+          <span>Off-market Full-turnkey H&L, Duals, Duplexes, Rooming, Townhouses & apartments</span>
           <h2>Your Competitive Edge in the New Property Market.</h2>
         </div>
         <p>
