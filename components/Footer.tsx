@@ -2,6 +2,7 @@ export default function Footer() {
   return (
     <footer className="site-footer shell">
       <div className="site-footer-brand">
+        <div className="site-footer-top">
         <img className="site-footer-mark" src="/assets/logo/kenekt-mark.svg" alt="Kenekt" width={36} height={36} />
         <div className="site-footer-social">
           <a href="https://www.facebook.com/KenektApp/" target="_blank" rel="noopener" aria-label="Facebook">
@@ -10,7 +11,7 @@ export default function Footer() {
               trigger="none"
               colors="primary:#4be1ec,secondary:#cb5eee"
               stroke="bold"
-              style={{ width: 28, height: 28 }}
+              style={{ width: 42, height: 42 }}
           ></lord-icon>
           </a>
           <a href="https://www.instagram.com/kenekt.app/" target="_blank" rel="noopener" aria-label="Instagram">
@@ -19,7 +20,7 @@ export default function Footer() {
               trigger="none"
               colors="primary:#4be1ec,secondary:#cb5eee"
               stroke="bold"
-              style={{ width: 28, height: 28 }}
+              style={{ width: 42, height: 42 }}
           ></lord-icon>
           </a>
           <a href="https://www.linkedin.com/company/kenektgroup/" target="_blank" rel="noopener" aria-label="LinkedIn">
@@ -28,7 +29,7 @@ export default function Footer() {
               trigger="none"
               colors="primary:#4be1ec,secondary:#cb5eee"
               stroke="bold"
-              style={{ width: 28, height: 28 }}
+              style={{ width: 42, height: 42 }}
           ></lord-icon>
           </a>
           <a href="https://help.kenekt.app" target="_blank" rel="noopener" aria-label="Help centre">
@@ -37,9 +38,10 @@ export default function Footer() {
               trigger="none"
               colors="primary:#4be1ec,secondary:#cb5eee"
               stroke="bold"
-              style={{ width: 28, height: 28 }}
+              style={{ width: 42, height: 42 }}
           ></lord-icon>
           </a>
+        </div>
         </div>
         <a className="pill pill-dark site-footer-phone" href="tel:1300536358">1 300 KENEKT
         <lord-icon

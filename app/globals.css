@@ -1450,6 +1450,12 @@ button {
   gap: 20px;
 }
 
+.site-footer-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .site-footer-mark {
   width: 36px;
   height: 36px;
