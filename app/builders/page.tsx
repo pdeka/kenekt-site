@@ -83,26 +83,6 @@ const packages = [
     switchOn: false,
     lotLabel: 'Lot 12',
   },
-  {
-    sceneClass: 'scene-e',
-    tag: '',
-    lot: 'Lot 13/168 Heath Road',
-    title: 'Oleander House Type 2',
-    beds: 5,
-    baths: 3,
-    cars: 2,
-    expTitle: 'Unknown',
-    lotId: 'LT-3673415',
-    packageId: 'BP-5891158',
-    houseSize: '248m²',
-    landSize: '425.6m²',
-    statusClass: 'st',
-    statusText: 'Available',
-    price: '$1,049,000',
-    allocated: 'Allocated 02-06',
-    switchOn: true,
-    lotLabel: 'Lot 13',
-  },
 ]
 
 export default function BuildersPage() {

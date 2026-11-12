@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 
 /**
  * Client-side behaviour ported from the original main.js:
@@ -9,6 +10,8 @@ import { useEffect } from 'react'
  * - builder package live/hidden switch toggles
  */
 export default function SiteScripts() {
+  const pathname = usePathname()
+
   useEffect(() => {
     const clamp = (value: number) => Math.min(1, Math.max(0, value))
     let frame = 0
@@ -81,7 +84,7 @@ export default function SiteScripts() {
       navLinks.forEach((link) => link.removeEventListener('click', onLinkClick))
       switchHandlers.forEach(({ control, handler }) => control.removeEventListener('click', handler))
     }
-  }, [])
+  }, [pathname])
 
   return null
 }
