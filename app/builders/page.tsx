@@ -485,7 +485,7 @@ export default function BuildersPage() {
         <section className="concept-note shell">
           <div>
             <span>For builders</span>
-            <h2>Grow wholesale without adding headcount</h2>
+            <h2>Wholesale growth, minus the overhead.</h2>
           </div>
           <p>
             Your own branded agent portal. Stock admin handled for you. And the option to hand Kenekt your entire top of funnel.
