@@ -191,11 +191,10 @@ export default function BuildersPage() {
                   <span></span> Kenekt for builders
                 </div>
                 <h1>
-                  List once.
-                  <br /> <em>Sell everywhere.</em>
+                  Accelerate <em>wholesale revenue</em> without adding headcount
                 </h1>
                 <p>
-                  Publish house &amp; land packages to Australia’s adviser network, control every allocation and opt to see each enquiry the moment it happens. One live workspace.
+                Your competitive edge in wholesale house & land.
                 </p>
                 <div className="hero-actions">
                   <a className="pill pill-lime" href="#">
@@ -461,7 +460,7 @@ export default function BuildersPage() {
         </section>
 
         <section className="signal-proof shell">
-          <p>From release to settlement, every lot stays in sync.</p>
+          <p>Publish wholesale H&L packages to Australia’s adviser network, control every allocation and opt to see each enquiry.</p>
           <div className="proof-grid" data-connect="">
             <div className="proof-thread" aria-hidden="true">
               <span></span>
