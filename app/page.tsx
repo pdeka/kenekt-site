@@ -47,7 +47,7 @@ export default function HomePage() {
             <span></span> KENEKT: Australia’s new property connection layer
           </div>
           <h1>
-            <em>Research</em> with Clarity. <em>Transact</em> with Confidence.
+            <em>Research</em> with clarity. <em>Transact</em> with confidence
           </h1>
           <p>
             Source verified wholesale house &amp; land opportunities, build buyer-ready marketing material and move deals forward, from one

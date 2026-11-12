@@ -17,10 +17,10 @@
 .b-hero-grid { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, .7fr); gap: 48px; align-items: end; }
 .b-hero .eyebrow { color: rgba(255, 255, 255, .72); }
 .b-hero .eyebrow span { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--lime); box-shadow: 0 0 0 4px rgba(255, 189, 63, .16); }
-.b-hero h1 { margin: 30px 0 26px; font-size: clamp(46px, 5.6vw, 90px); font-weight: 500; line-height: .94; letter-spacing: -.068em; }
+.b-hero h1 { margin: 20px 0 24px; font-size: clamp(46px, 5.6vw, 90px); font-weight: 500; line-height: 1.04; letter-spacing: -.04em; }
 .b-hero h1 em { font-style: normal; color: var(--lime); }
 .b-hero-copy > p { max-width: 520px; margin: 0; font-size: 17px; line-height: 1.65; color: rgba(255, 255, 255, .7); }
-.b-hero .hero-actions { margin-top: 38px; }
+.b-hero .hero-actions { margin-top: 28px; }
 .b-hero .text-link { border-color: rgba(255, 255, 255, .4); }
 .b-stats { list-style: none; margin: 0; padding: 0; border-top: 1px solid rgba(255, 255, 255, .16); }
 .b-stats li { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 16px 0; border-bottom: 1px solid rgba(255, 255, 255, .16); }
@@ -171,8 +171,9 @@
 
 @media (max-width: 600px) {
   .b-hero { padding-bottom: 180px; }
-  .b-hero h1 { font-size: clamp(36px, 11vw, 58px); }
+  .b-hero h1 { font-size: clamp(36px, 11vw, 58px); margin: 18px 0 20px; }
   .b-hero-copy > p { font-size: 16px; }
+  .b-hero .hero-actions { margin-top: 22px; }
   .b-stats { gap: 12px; }
   .b-stats strong { font-size: 22px; }
   .b-stats span { font-size: 11px; }
