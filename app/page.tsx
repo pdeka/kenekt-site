@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import SenjaWidget from '@/components/SenjaWidget'
 
 export default function HomePage() {
   return (
@@ -340,7 +341,8 @@ export default function HomePage() {
             <ul className="plan-features">
               <li><i>✓</i> Includes all features of the Single Agent Account.</li>
               <li><i>✓</i> Your own white-labelled portal, offering Kenekt&apos;s tools under your brand.</li>
-              <li><i>✓</i> Custom portal address, e.g. portal.mydomain.com.au.</li>
+              <li><i>✓</i> Custom portal address, e.g. port
+              al.mydomain.com.au.</li>
               <li><i>✓</i> All enquiries from your portal are directed exclusively to your agency.</li>
               <li><i>✓</i> Create accounts for clients and referral partners within your branded environment.</li>
               <li><i>✓</i> White-labelled URLs for a seamless client experience.</li>
@@ -350,7 +352,7 @@ export default function HomePage() {
             <a className="pill pill-dark plan-cta" href="https://app.usemotion.com/meet/prabin-deka/agency-setup">
               Book a demo
               <lord-icon
-                src="https://cdn.lordicon.com/cyvvyiob.json"
+                src="https://cdn.lordicon.com/fimgbbfr.json"
                 trigger="hover"
                 state="hover-pinch"
                 colors="primary:#4be1ec,secondary:#cb5eee"
@@ -376,7 +378,7 @@ export default function HomePage() {
             <a className="pill pill-dark plan-cta" href="https://app.usemotion.com/meet/prabin-deka/agency-setup">
               Book a demo
               <lord-icon
-                src="https://cdn.lordicon.com/cyvvyiob.json"
+                src="https://cdn.lordicon.com/fimgbbfr.json"
                 trigger="hover"
                 state="hover-pinch"
                 colors="primary:#4be1ec,secondary:#cb5eee"
@@ -399,6 +401,27 @@ export default function HomePage() {
           Pro Agency Account. Website integration begins after your first unconditional deal. Kenekt operates as an online property
           aggregator across all account tiers.
         </p>
+      </section>
+
+      <section className="testimonials shell">
+        <div className="testimonials-head">
+          <div className="eyebrow">
+            <span></span>
+            Testimonials
+          </div>
+          <h2>Wall of love</h2>
+        </div>
+        <SenjaWidget />
+        <div className="testimonials-frame">
+          <iframe
+            id="wall-of-love-video-testimonials"
+            src="https://senja.io/p/kenekt/video-testimonials?hideNavigation=true&embed=true"
+            title="Wall of Love"
+            frameBorder="0"
+            scrolling="no"
+            width="100%"
+          ></iframe>
+        </div>
       </section>
     </main>
   )
