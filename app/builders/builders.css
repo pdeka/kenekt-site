@@ -872,7 +872,7 @@
 
 @keyframes chipInCentered { from { opacity: 0; transform: translate(50%, 8px); } }
 
-/* Pricing: two options plus the shared inclusions */
+/* Pricing: three options plus the inclusions shared by B and C */
 .plans-shared {
   margin-top: clamp(40px, 6vw, 56px);
   padding: clamp(24px, 3vw, 32px);
@@ -898,15 +898,7 @@
   }
 }
 
-.plans-shared + .plans-grid { margin-top: clamp(18px, 2.4vw, 28px); }
-
-.plans-grid-two {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-
-  @media (max-width: 960px) {
-    grid-template-columns: minmax(0, 1fr);
-  }
-}
+.plans-grid + .plans-shared { margin-top: clamp(18px, 2.4vw, 28px); }
 
 .plan-lede {
   margin: 20px 0 0;

@@ -495,9 +495,10 @@ export default function BuildersPage() {
         <section className="plans shell">
           <div className="plans-head">
             <span>Pricing for builders</span>
-            <h2>Two ways to work with Kenekt.</h2>
+            <h2>Three ways to work with Kenekt.</h2>
             <p>
-              Every builder gets the Kenekt Stock Management system, a custom branded agent portal and a Kenekt team that
+              Every builder works differently. Some have their own stock systems. Others want a platform,
+              or a full wholesale partner. All builders can get the Kenekt Stock Management system, a custom branded agent portal and a Kenekt team that
               keeps your stock current. You choose how much of the wholesale sales process you want us to run.
             </p>
             <a className="text-link" href="https://kenekt-stock-management--qtra44m.gamma.site/">
@@ -505,34 +506,23 @@ export default function BuildersPage() {
             </a>
           </div>
 
-          <div className="plans-shared">
-            <strong>Included with both options</strong>
-            <ul className="plan-features">
-              <li><i>✓</i> <span><strong>Custom branded agent portal</strong>: your brand, your stock, your agents, in a controlled, agent-only environment.</span></li>
-              <li><i>✓</i> <span><strong>Kenekt Stock Management</strong>: manage packages, pricing and availability in real time, with standardised inclusions, disclaimers and documentation.</span></li>
-              <li><i>✓</i> <span><strong>Stock admin handled by Kenekt</strong>: send us land availability and price changes in our set format and we keep every package up to date.</span></li>
-              <li><i>✓</i> <span><strong>Push updates instantly</strong>: every authorised agent sees the latest stock the moment it changes.</span></li>
-              <li><i>✓</i> <span><strong>Full reporting</strong>: track enquiries, EOIs and deals, with deal progress in My Deals.</span></li>
-              <li><i>✓</i> <span><strong>Marketing tools</strong>: branded brochures, stocklists and email templates generated from your live stock.</span></li>
-            </ul>
-          </div>
-
-          <div className="plans-grid plans-grid-two">
+          <div className="plans-grid">
             <div className="plan">
-              <span className="plan-tier">Option A: Wholesale Partner</span>
-              <strong className="plan-price">Paid from commission</strong>
-              <span className="plan-note">No setup cost. No monthly fee.</span>
+              <span className="plan-tier">Option A: Marketplace Channel</span>
+              <strong className="plan-price">Kenekt as a channel partner</strong>
+              <span className="plan-note">No setup cost and no software fees. Most builders start here.</span>
               <p className="plan-lede">
-                Outsource your wholesale channel. Kenekt recruits and qualifies agents, handles every enquiry and delivers
-                signed EOIs with a holding deposit. Your team joins at contract.
+                Keep your systems. Kenekt connects to what you already use, brings your stock into the Kenekt Marketplace
+                and presents it to our qualified adviser network, as another channel partner for your business.
               </p>
               <ul className="plan-features">
-                <li><i>✓</i> <span><strong>A wholesale BDM and admin team</strong> without the salaries, recruitment or management overhead.</span></li>
-                <li><i>✓</i> <span><strong>Only qualified, committed buyers</strong> reach your sales team.</span></li>
-                <li><i>✓</i> <span><strong>Full visibility</strong>: every enquiry is emailed to you, plus reporting on every agent, enquiry and deal.</span></li>
-                <li><i>✓</i> <span><strong>Your agent relationships protected</strong>: our agreement includes a non-recruitment clause.</span></li>
+                <li><i>✓</i> <span><strong>Instant access</strong> to a curated, onboarded network of buyers’ agents, mortgage brokers and wealth advisors.</span></li>
+                <li><i>✓</i> <span><strong>No change</strong> to your internal systems or processes.</span></li>
+                <li><i>✓</i> <span><strong>Kenekt’s team supporting each sale</strong> from enquiry to EOI.</span></li>
+                <li><i>✓</i> <span><strong>Your stock presented accurately</strong>, alongside Australia’s leading wholesale builders.</span></li>
+                <li><i>✓</i> <span><strong>Flexible connection</strong>: portal access, API integration (Salesforce and other enterprise systems) or file-based supply.</span></li>
               </ul>
-              <p className="plan-fit">Best for builders who want to scale wholesale volume without growing an internal BDM team.</p>
+              <p className="plan-fit">Best for builders with their own stock systems who want more wholesale distribution with no change to how they work.</p>
               <a className="pill pill-blue plan-cta" href="https://calendly.com/martin-kenekt/kenekt-agency-demo">
                 Book a 30 minute session
                 <lord-icon
@@ -547,12 +537,40 @@ export default function BuildersPage() {
             </div>
 
             <div className="plan">
-              <span className="plan-tier">Option B: Platform + Admin</span>
+              <span className="plan-tier">Option B: Wholesale Partner</span>
+              <strong className="plan-price">Paid from commission</strong>
+              <span className="plan-note">No setup cost. No monthly fee.</span>
+              <p className="plan-lede">
+                Outsource your wholesale channel. On your own branded portal, Kenekt recruits and qualifies agents, handles
+                every enquiry and delivers signed EOIs with a holding deposit. Your team joins at contract.
+              </p>
+              <ul className="plan-features">
+                <li><i>✓</i> <span><strong>A wholesale BDM and admin team</strong> without the salaries, recruitment or management overhead.</span></li>
+                <li><i>✓</i> <span><strong>Only qualified, committed buyers</strong> reach your sales team.</span></li>
+                <li><i>✓</i> <span><strong>Full visibility</strong>: every enquiry is emailed to you, plus reporting on every agent, enquiry and deal.</span></li>
+                <li><i>✓</i> <span><strong>Your agent relationships protected</strong>: our agreement includes a non-recruitment clause.</span></li>
+              </ul>
+              <p className="plan-fit">Best for builders who want to scale wholesale volume without growing an internal BDM team.</p>
+              <a className="pill pill-dark plan-cta" href="https://calendly.com/martin-kenekt/kenekt-agency-demo">
+                Book a 30 minute session
+                <lord-icon
+                  src="https://cdn.lordicon.com/fimgbbfr.json"
+                  trigger="hover"
+                  state="hover-pinch"
+                  colors="primary:#4be1ec,secondary:#cb5eee"
+                  stroke="bold"
+                  style={{ width: 24, height: 24 }}
+                ></lord-icon>
+              </a>
+            </div>
+
+            <div className="plan">
+              <span className="plan-tier">Option C: Platform + Admin</span>
               <strong className="plan-price">$999 per sale</strong>
               <span className="plan-note">$1,500 one-time setup · all prices include GST</span>
               <p className="plan-lede">
-                Your team runs sales. You get the full Kenekt platform and stock admin support, and keep control of agent
-                onboarding, qualification and enquiries.
+                Your team runs sales on your own branded portal and keeps control of agent onboarding, qualification and
+                enquiries. Kenekt keeps your stock accurate and current.
               </p>
               <dl className="plan-pricing">
                 <div><dt>One-time setup</dt><dd>$1,500</dd></div>
@@ -582,16 +600,32 @@ export default function BuildersPage() {
             </div>
           </div>
 
+          <div className="plans-shared">
+            <strong>Included with Options B and C</strong>
+            <ul className="plan-features">
+              <li><i>✓</i> <span><strong>Custom branded agent portal</strong>: your brand, your stock, your agents, in a controlled, agent-only environment.</span></li>
+              <li><i>✓</i> <span><strong>Kenekt Stock Management</strong>: manage packages, pricing and availability in real time, with standardised inclusions, disclaimers and documentation.</span></li>
+              <li><i>✓</i> <span><strong>Stock admin handled by Kenekt</strong>: send us land availability and price changes in our set format and we keep every package up to date.</span></li>
+              <li><i>✓</i> <span><strong>Push updates instantly</strong>: every authorised agent sees the latest stock the moment it changes.</span></li>
+              <li><i>✓</i> <span><strong>Full reporting</strong>: track enquiries, EOIs and deals, with deal progress in My Deals.</span></li>
+              <li><i>✓</i> <span><strong>Marketing tools</strong>: branded brochures, stocklists and email templates generated from your live stock.</span></li>
+              <li><i>✓</i> <span><strong>Publish to the Kenekt Marketplace</strong>: share the same stock with our wider adviser network in one click.</span></li>
+            </ul>
+          </div>
+
           <p className="plans-footnote">
             <strong>Option A:</strong> &nbsp;
-            Available once Kenekt has completed due diligence confirming your stock suits the wholesale channel.
+            Kenekt works like any other channel partner, under a standard Marketing and Distribution Agreement.
             <br />
             <strong>Option B:</strong> &nbsp;
+            Available once Kenekt has completed due diligence confirming your stock suits the wholesale channel.
+            <br />
+            <strong>Option C:</strong> &nbsp;
             You pay only when your portal delivers. The monthly minimum counts towards your per-sale fees, and your total
             never exceeds $3,000 a month. A sale counts when it starts from an enquiry made through your portal, even if the
             buyer ends up purchasing a different property.
             <br />
-            Daily stock admin is included in both options at no extra cost.
+            Daily stock admin is included in Options B and C at no extra cost.
           </p>
         </section>
 
