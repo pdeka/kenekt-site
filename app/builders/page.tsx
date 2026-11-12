@@ -561,7 +561,7 @@ export default function BuildersPage() {
               <strong className="plan-price">Paid from commission</strong>
               <span className="plan-note">No setup cost. No monthly fee.</span>
               <p className="plan-lede">
-                Outsource parts of your wholesale channel. On your own branded portal, Kenekt recruits and qualifies agents, handles
+                Outsource some parts of your wholesale channel. On your own branded portal, Kenekt recruits and qualifies agents, handles
                 every enquiry and delivers signed EOIs with a holding deposit. Your team joins at contract.
               </p>
               <ul className="plan-features">
