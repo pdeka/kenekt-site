@@ -8,7 +8,8 @@ export default function Footer() {
           <a href="https://www.facebook.com/KenektApp/" target="_blank" rel="noopener" aria-label="Facebook">
           <lord-icon
               src="https://cdn.lordicon.com/jxcoxfau.json"
-              trigger="none"
+              trigger="hover"
+              state="hover-pinch"
               colors="primary:#4be1ec,secondary:#cb5eee"
               stroke="bold"
               style={{ width: 42, height: 42 }}
@@ -17,7 +18,8 @@ export default function Footer() {
           <a href="https://www.instagram.com/kenekt.app/" target="_blank" rel="noopener" aria-label="Instagram">
           <lord-icon
               src="https://cdn.lordicon.com/lljlideu.json"
-              trigger="none"
+              trigger="hover"
+              state="hover-pinch"
               colors="primary:#4be1ec,secondary:#cb5eee"
               stroke="bold"
               style={{ width: 42, height: 42 }}
@@ -26,7 +28,8 @@ export default function Footer() {
           <a href="https://www.linkedin.com/company/kenektgroup/" target="_blank" rel="noopener" aria-label="LinkedIn">
           <lord-icon
               src="https://cdn.lordicon.com/rqdhcgcm.json"
-              trigger="none"
+              trigger="hover"
+              state="hover-pinch"
               colors="primary:#4be1ec,secondary:#cb5eee"
               stroke="bold"
               style={{ width: 42, height: 42 }}
@@ -35,7 +38,8 @@ export default function Footer() {
           <a href="https://help.kenekt.app" target="_blank" rel="noopener" aria-label="Help centre">
           <lord-icon
               src="https://cdn.lordicon.com/wczruhnt.json"
-              trigger="none"
+              trigger="hover"
+              state="hover-pinch"
               colors="primary:#4be1ec,secondary:#cb5eee"
               stroke="bold"
               style={{ width: 42, height: 42 }}
@@ -43,16 +47,28 @@ export default function Footer() {
           </a>
         </div>
         </div>
-        <a className="pill pill-dark site-footer-phone" href="tel:1300536358">1 300 KENEKT
-        <lord-icon
-          src="https://cdn.lordicon.com/mkpuxlnz.json"
-          trigger="hover"
-          state="hover-pinch"
-          colors="primary:#4be1ec,secondary:#cb5eee"
-          stroke="bold"
-          style={{ width: 24, height: 24 }}
-        ></lord-icon>
-        </a>
+        <div className="site-footer-contact">
+          <a className="pill pill-dark site-footer-phone" href="tel:1300536358">1 300 KENEKT
+          <lord-icon
+            src="https://cdn.lordicon.com/mkpuxlnz.json"
+            trigger="hover"
+            state="hover-pinch"
+            colors="primary:#4be1ec,secondary:#cb5eee"
+            stroke="bold"
+            style={{ width: 24, height: 24 }}
+          ></lord-icon>
+          </a>
+          <a className="pill pill-dark site-footer-email" href="mailto:info@kenekt.com.au">EMAIL US
+          <lord-icon
+            src="https://cdn.lordicon.com/icuxkywm.json"
+            trigger="hover"
+            state="hover-pinch"
+            colors="primary:#4be1ec,secondary:#cb5eee"
+            stroke="bold"
+            style={{ width: 24, height: 24 }}
+          ></lord-icon>
+          </a>
+        </div>
       </div>
 
       <nav className="site-footer-col" aria-label="Product">

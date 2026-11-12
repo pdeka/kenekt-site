@@ -1464,6 +1464,12 @@ button {
   gap: 20px;
 }
 
+.site-footer-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
 .site-footer-mark {
   width: 36px;
   height: 36px;
