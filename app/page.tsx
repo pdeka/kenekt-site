@@ -281,12 +281,13 @@ export default function HomePage() {
 
       <section className="concept-note shell">
         <div>
-          <span>Signal</span>
-          <h2>Kenekt as connective infrastructure.</h2>
+          <span>Off-market H&L, Duals, Duplexes, Rooming, Townhouses & apartments</span>
+          <h2>Your Competitive Edge in the New Property Market.</h2>
         </div>
         <p>
-          An editorial, brand-led direction that turns the product name into a memorable visual system. A single cable
-          plugs the platform in, then threads through each step — while the product itself stays front and centre.
+        As of Nov 26, Kenekt aggregates 75+ suppliers, providing a broad national
+        footprint with approximately 2,621+ off-market new property packages in VIC, QLD, NSW,
+        ACT, SA, TAS and WA. We aim to continue expanding our supplier network as we scale nationally throughout FY27.
         </p>
       </section>
     </main>
