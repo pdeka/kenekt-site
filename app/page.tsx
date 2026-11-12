@@ -403,10 +403,7 @@ export default function HomePage() {
 
       <section className="testimonials shell">
         <div className="testimonials-head">
-          <div className="eyebrow">
-            <span></span>
-            Testimonials
-          </div>
+          <span>Testimonials</span>
           <h2>Wall of love</h2>
         </div>
         <SenjaWidget />

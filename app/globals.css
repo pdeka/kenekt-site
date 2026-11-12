@@ -506,6 +506,14 @@ button {
 .testimonials-head {
   max-width: 640px;
 
+  span {
+    font-size: 10px;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: var(--blue);
+    font-weight: 600;
+  }
+
   h2 {
     font-size: clamp(30px, 3.4vw, 40px);
     letter-spacing: -.05em;
