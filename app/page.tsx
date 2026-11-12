@@ -258,17 +258,21 @@ export default function HomePage() {
           <article>
             <span>01</span>
             <h3>Search nationwide</h3>
-            <p>Live house and land opportunities from trusted builders and developers.</p>
+            <p>Explore our latest stocklist with 2,000+ opportunities from verified builders. We do the homework and due diligence so you can focus on buyers and their needs.</p>
           </article>
           <article>
             <span>02</span>
-            <h3>Compare with clarity</h3>
-            <p>Research, shortlist and present every option in your own brand.</p>
+            <h3>Compare and present with clarity</h3>
+            <p>
+            Research, shortlist and present property opportunities with marketing brochures under your own brand.
+            </p>
           </article>
           <article>
             <span>03</span>
             <h3>Close with confidence</h3>
-            <p>Move from enquiry to EOI with the detail — and the compliance — handled.</p>
+            <p>
+            Move from enquiry to settlement with expert support at every step, so you can focus on your buyer.            
+            </p>
           </article>
         </div>
       </section>
