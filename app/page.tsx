@@ -416,24 +416,39 @@ export default function HomePage() {
           </div>
         </div>
 
-        <p className="plans-footnote">
-          <strong>* How soon can I set up an Agency Account?</strong> &nbsp;
-          Single Agent and Agency accounts are free.
-          To set up an Agency account, we ask that you first submit one qualifying Expression of Interest (EOI) through Kenekt to
-          demonstrate your commitment. A qualifying EOI must be for a genuine client transaction (including a holding deposit).
-          General enquiries and EOIs without a deposit may not qualify. To retain full access, you need to commit to work with kenekt
-          and do transactions through Kenekt. Otherwise, access restrictions apply until you submit a qualifying EOI.
-          <br/>
-          Don’t have a website? Kenekt can build a complete website for your business using one of our templates as part of the
-          Pro Agency Account. Website integration begins after your first unconditional deal. Kenekt operates as an online property
-          aggregator across all account tiers.
-        </p>
+        <div className="plans-notes">
+          <div className="plans-note">
+            <h3><span aria-hidden="true">*</span> How soon can I set up an Agency Account?</h3>
+            <p>
+              Single Agent and Agency accounts are free. To set up an Agency account, we ask that you first submit one
+              qualifying Expression of Interest (EOI) through Kenekt to demonstrate your commitment.
+            </p>
+            <ul>
+              <li>A qualifying EOI must be for a genuine client transaction, including a holding deposit.</li>
+              <li>General enquiries and EOIs without a deposit may not qualify.</li>
+              <li>
+                To retain full access, you need to commit to working with Kenekt and doing transactions through Kenekt.
+                Otherwise, access restrictions apply until you submit a qualifying EOI.
+              </li>
+            </ul>
+          </div>
+
+          <div className="plans-note">
+            <h3>Don’t have a website?</h3>
+            <p>
+              Kenekt can build a complete website for your business using one of our templates as part of the Pro Agency
+              Account. Website integration begins after your first unconditional deal.
+            </p>
+          </div>
+
+          <p className="plans-notes-foot">Kenekt operates as an online property aggregator across all account tiers.</p>
+        </div>
       </section>
 
       <section className="testimonials shell">
         <div className="testimonials-head">
           <span>Testimonials</span>
-          <h2>Wall of love</h2>
+          <h2>Wall of love.</h2>
         </div>
         <SenjaWidget />
         <div className="testimonials-frame">
