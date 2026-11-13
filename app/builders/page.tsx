@@ -576,7 +576,7 @@ export default function BuildersPage() {
                 <li><i>✓</i> <span><strong>Flexible connection</strong>: portal access, API integration (Salesforce and other enterprise systems) or file-based supply.</span></li>
               </ul>
               <p className="plan-fit">Best for builders with their own stock systems who want more wholesale distribution with no change to how they work.</p>
-              <a className="pill pill-lime plan-cta" href="https://calendly.com/martin-kenekt/kenekt-agency-demo">
+              <a className="pill pill-dark plan-cta" href="https://calendly.com/martin-kenekt/kenekt-agency-demo">
                 Book a 30 minute session
                 <lord-icon
                   src="https://cdn.lordicon.com/fimgbbfr.json"
@@ -618,7 +618,7 @@ export default function BuildersPage() {
                 <li><i>✓</i> <span><strong>Deal tracking</strong> through My Deals.</span></li>
               </ul>
               <p className="plan-fit">Best for builders who want to scale wholesale volume without growing an internal BDM team. Available once Kenekt has completed due diligence confirming your stock suits the wholesale channel.</p>
-              <a className="pill pill-dark plan-cta" href="https://calendly.com/martin-kenekt/kenekt-agency-demo">
+              <a className="pill pill-lime plan-cta" href="https://calendly.com/martin-kenekt/kenekt-agency-demo">
                 Book a 30 minute session
                 <lord-icon
                   src="https://cdn.lordicon.com/fimgbbfr.json"
