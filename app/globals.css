@@ -165,12 +165,86 @@ button {
     grid-template-columns: 1fr auto auto;
     gap: 14px;
   }
+
+  /* Narrow desktops: give the actions the width they need and centre the nav in what remains */
+  @media (min-width: 961px) and (max-width: 1180px) {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    column-gap: 24px;
+
+    nav {
+      justify-self: center;
+      gap: 24px;
+    }
+
+    .nav-actions {
+      gap: 20px;
+    }
+  }
 }
 
 .site-nav nav a,
 .nav-actions>a:first-child {
   font-size: 13px;
   font-weight: 500;
+}
+
+/* Two-sided marketplace: the audience links read as one switch, each side in its own colour (desktop) */
+.audience-switch {
+  @media (min-width: 961px) {
+    display: flex;
+    gap: 2px;
+    padding: 4px;
+    border-radius: 999px;
+    background: #f4f2ec;
+  }
+
+  /* In the mobile menu the wrapper disappears and the links stay plain rows */
+  @media (max-width: 960px) {
+    display: contents;
+  }
+}
+
+.site-nav .audience-switch a {
+  @media (min-width: 961px) {
+    padding: 9px 18px;
+    border-radius: 999px;
+    font-size: 14px;
+    color: var(--ink);
+    opacity: 1;
+    transition: background-color .2s ease, color .2s ease;
+
+    &:not([aria-current='page']):hover {
+      @media (hover: hover) and (pointer: fine) {
+        background: rgba(17, 18, 15, .06);
+      }
+    }
+
+    &[aria-current='page'] {
+      box-shadow: none;
+    }
+
+    &[aria-current='page'][data-audience='advisers'] {
+      color: #fff;
+      background: var(--blue);
+    }
+
+    &[aria-current='page'][data-audience='builders'] {
+      color: var(--ink);
+      background: var(--orange);
+    }
+  }
+}
+
+/* Insights sits beside the switch, so it reads at full ink rather than the dimmed nav style */
+.site-nav nav > a {
+  color: var(--ink);
+  opacity: 1;
+}
+
+.site-nav .audience-switch + a {
+  @media (max-width: 960px) {
+    border-top: 1px solid #eeede7;
+  }
 }
 
 .nav-actions {
@@ -183,6 +257,7 @@ button {
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    white-space: nowrap;
 
     @media (max-width: 600px) {
       display: none;
@@ -190,8 +265,11 @@ button {
   }
 
   .pill {
+    /* Same height as the audience switch beside it; page CTAs stay at 52px */
+    height: 44px;
+    padding: 0 20px;
+
     @media (max-width: 600px) {
-      height: 44px;
       padding: 0 16px;
       gap: 10px;
       font-size: 12px;

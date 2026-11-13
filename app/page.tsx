@@ -16,8 +16,10 @@ export default function HomePage() {
           <img src="/assets/logo/kenekt-mark.svg" alt="Kenekt home" width={48} height={48} />
         </a>
         <nav id="site-menu">
-          <a href="#signal-story" aria-current="page">For advisers</a>
-          <Link href="/builders">For builders</Link>
+          <div className="audience-switch">
+            <a href="#signal-story" data-audience="advisers" aria-current="page">For advisers</a>
+            <Link href="/builders" data-audience="builders">For builders</Link>
+          </div>
           <a href="https://insights.kenekt.app/">Insights</a>
         </nav>
         <div className="nav-actions">

@@ -145,10 +145,12 @@ export default function BuildersPage() {
             <img src="/assets/logo/kenekt-mark.svg" alt="Kenekt home" width={402} height={108} />
           </Link>
           <nav id="site-menu">
-            <Link href="/">For advisers</Link>
-            <Link href="/builders" aria-current="page">
-              For builders
-            </Link>
+            <div className="audience-switch">
+              <Link href="/" data-audience="advisers">For advisers</Link>
+              <Link href="/builders" data-audience="builders" aria-current="page">
+                For builders
+              </Link>
+            </div>
             <Link href="https://insights.kenekt.app">Insights</Link>
           </nav>
           <div className="nav-actions">
