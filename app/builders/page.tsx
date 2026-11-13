@@ -471,6 +471,19 @@ export default function BuildersPage() {
           </div>
         </section>
 
+        <figure className="photo-divider">
+          <img
+            src="/assets/photos/estate-dusk-1280.webp"
+            srcSet="/assets/photos/estate-dusk-1280.webp 1280w, /assets/photos/estate-dusk-2400.webp 2400w"
+            sizes="100vw"
+            alt="Aerial view of a new house and land estate at dusk"
+            width={2400}
+            height={1350}
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
+
         <section className="concept-note shell">
           <div>
             <span>For builders</span>

@@ -445,6 +445,19 @@ export default function HomePage() {
         </div>
       </section>
 
+      <figure className="photo-divider" style={{ '--photo-y': '68%' } as React.CSSProperties}>
+        <img
+          src="/assets/photos/estate-aerial-1280.webp"
+          srcSet="/assets/photos/estate-aerial-1280.webp 1280w, /assets/photos/estate-aerial-2400.webp 2400w"
+          sizes="100vw"
+          alt="Aerial view of a growing house and land community"
+          width={2400}
+          height={1350}
+          loading="lazy"
+          decoding="async"
+        />
+      </figure>
+
       <section className="testimonials shell">
         <div className="testimonials-head">
           <span>Testimonials</span>
