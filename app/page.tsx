@@ -50,7 +50,7 @@ export default function HomePage() {
             Get Australia’s new property connection layer
           </div>
           <h1>
-            <em>Research</em> with clarity. <em>Transact</em> with confidence
+            <em>Research</em> with Clarity. <em>Transact</em> with Confidence
           </h1>
           <p>
             Source verified wholesale off-market house & land opportunities, create custom branded marketing brochures and move deals forward, all from one connected workspace.
@@ -284,7 +284,7 @@ export default function HomePage() {
       <section className="concept-note shell">
         <div>
           <span>Off-market Full-turnkey H&L, Duals, Duplexes, Rooming, Townhouses & apartments</span>
-          <h2>Your Competitive Edge in the New Property Market.</h2>
+          <h2>Your competitive edge in the new property market.</h2>
         </div>
         <p>
         As of Nov 26, Kenekt aggregates 75+ suppliers, providing a broad national
@@ -296,7 +296,7 @@ export default function HomePage() {
       <section className="plans shell">
         <div className="plans-head">
           <span>For agencies &amp; property advisers</span>
-          <h2>Kenekt for agencies &amp; property advisers</h2>
+          <h2>Kenekt for agencies &amp; property advisers.</h2>
           <p>Kenekt is free for agencies, property advisers, mortgage brokers &amp; accountants.</p>
           <a className="text-link"
             href="https://adviser-brochure-5fufpe3.gamma.site/"

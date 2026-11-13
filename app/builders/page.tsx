@@ -446,18 +446,26 @@ export default function BuildersPage() {
             </div>
             <article>
               <span>01</span>
-              <h3>We keep your stock current</h3>
-              <p>Send us land availability and price changes. We update every package, and every agent on your portal sees it straight away.</p>
+              <h3>Reach more buyers, instantly</h3>
+              <p>
+                Put your stock in front of 617+ qualified advisers across Australia, plus the ones you already have.
+                You can use your own systems or a branded portal we provide, with no change to how your team works.
+              </p>
             </article>
             <article>
               <span>02</span>
-              <h3>Choose how much we run</h3>
-              <p>Control which agents see each lot. Let Kenekt onboard agents and qualify enquiries through to EOI, or run it with your own team.</p>
+              <h3>We do the heavy lifting</h3>
+              <p>
+                Kenekt keeps your stock current and can qualify enquiries all the way to a signed EOI with a holding deposit.
+                Your team joins at contract.
+              </p>
             </article>
             <article>
               <span>03</span>
-              <h3>Sell with visibility</h3>
-              <p>Every enquiry is emailed to you. Track holds, EOIs and deals as they happen, and step in when it’s time to issue the contract.</p>
+              <h3>Pay only when it sells</h3>
+              <p>
+                There are no software subscriptions. List on the marketplace at no cost, pay from commission, or pay per sale with a capped monthly fee. You choose the model that fits.
+              </p>
             </article>
           </div>
         </section>
