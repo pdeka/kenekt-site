@@ -295,6 +295,7 @@ button {
 }
 
 .text-link {
+  display: inline-block;
   font-size: 12px;
   font-weight: 600;
   border-bottom: 1px solid #9d9e98;
@@ -572,7 +573,7 @@ button {
 
 /* Full-bleed photo break between sections */
 .photo-divider {
-  margin: clamp(16px, 3vw, 32px) 0 0;
+  margin: 0;
   height: clamp(160px, 22vw, 340px);
   overflow: hidden;
   -webkit-mask-image: linear-gradient(to bottom, transparent, #000 22%, #000 78%, transparent);
@@ -614,7 +615,6 @@ button {
 .testimonials-frame {
   margin-top: clamp(32px, 5vw, 48px);
   overflow: hidden;
-  border: 1px solid #e3e1d9;
   border-radius: 20px;
   background: var(--paper);
 
