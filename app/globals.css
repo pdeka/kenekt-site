@@ -280,10 +280,6 @@ button {
 .pill-blue {
   color: #fff;
   background: var(--blue);
-
-  @media (max-width: 380px) {
-    width: 100%;
-  }
 }
 
 .eyebrow {
