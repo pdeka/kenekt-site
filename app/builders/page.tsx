@@ -566,7 +566,7 @@ export default function BuildersPage() {
                 <li><i>✓</i> <span><strong>Flexible connection</strong>: portal access, API integration (Salesforce and other enterprise systems) or file-based supply.</span></li>
               </ul>
               <p className="plan-fit">Best for builders with their own stock systems who want more wholesale distribution with no change to how they work.</p>
-              <a className="pill pill-blue plan-cta" href="https://calendly.com/martin-kenekt/kenekt-agency-demo">
+              <a className="pill pill-lime plan-cta" href="https://calendly.com/martin-kenekt/kenekt-agency-demo">
                 Book a 30 minute session
                 <lord-icon
                   src="https://cdn.lordicon.com/fimgbbfr.json"
