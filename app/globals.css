@@ -729,6 +729,9 @@ button {
     line-height: 1.04;
     letter-spacing: -.04em;
     margin: 20px 0 24px;
+    /* Pin DM Sans to its display cut: browsers that pick a smaller optical size set it wider, which breaks the lines */
+    font-variation-settings: 'opsz' 40;
+    text-wrap: balance;
 
     em {
       font-style: normal;
