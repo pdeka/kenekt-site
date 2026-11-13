@@ -1,6 +1,12 @@
 import Link from 'next/link'
 import SenjaWidget from '@/components/SenjaWidget'
+import type { Metadata } from 'next'
 import Footer from '@/components/Footer'
+
+// The old site's /home 301s here, so / is the canonical home page
+export const metadata: Metadata = {
+  alternates: { canonical: '/' },
+}
 
 export default function HomePage() {
   return (
