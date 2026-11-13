@@ -17,6 +17,13 @@
   status = 301
   force = true
 
+# Old site's sign-up page; sign-up now lives on the portal domain
+[[redirects]]
+  from = "/contacts/sign_up"
+  to = "https://portal.kenekt.com.au/sign_up"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/*"
   to = "/404.html"
