@@ -5,7 +5,7 @@ import { SHARE_IMAGE, SITE_URL } from './site'
 import './globals.css'
 
 // Home page search/share text, reused for og: and twitter:
-const title = 'Kenekt — Off-market house & land for property advisers'
+const title = 'Kenekt | Off-market house & land for property advisers'
 const description =
   'Source verified wholesale house & land packages from 75+ builders, create branded client brochures and move deals forward. Free for property advisers.'
 
