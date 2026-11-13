@@ -50,7 +50,7 @@ export default function HomePage() {
             Get Australia’s new property connection layer
           </div>
           <h1>
-            <em>Research</em> with Clarity. <em>Transact</em> with Confidence
+            <em>Research</em> with clarity. <em>Transact</em> with confidence
           </h1>
           <p>
             Source verified wholesale off-market house & land opportunities, create custom branded marketing brochures and move deals forward, all from one connected workspace.
