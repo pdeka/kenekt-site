@@ -152,7 +152,7 @@ export default function BuildersPage() {
                   <span></span> Kenekt for builders
                 </div>
                 <h1>
-                  Accelerate <em>wholesale revenue</em> without adding headcount
+                  Accelerate <em>wholesale revenue</em> without adding headcount<span className="hang-stop">.</span>
                 </h1>
                 <p>
                 Your competitive edge in wholesale house & land.

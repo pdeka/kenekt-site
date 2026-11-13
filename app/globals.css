@@ -565,6 +565,11 @@ button {
   color: var(--muted);
 }
 
+/* Final full stop on a headline hangs past the text edge so it never forces a line break */
+.hang-stop {
+  margin-right: -.26em;
+}
+
 /* Full-bleed photo break between sections */
 .photo-divider {
   margin: clamp(16px, 3vw, 32px) 0 0;
