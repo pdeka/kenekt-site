@@ -457,7 +457,8 @@ export default function BuildersPage() {
               <h3>We do the heavy lifting</h3>
               <p>
                 Kenekt keeps your stock current and can qualify enquiries all the way to a signed EOI with a holding deposit.
-                Your team joins at contract.
+                Your team joins at contract. Once signed, our team tracks the build progress through to handover on behalf of the adviser,
+                keeping them & buyers informed.
               </p>
             </article>
             <article>
