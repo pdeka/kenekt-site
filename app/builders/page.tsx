@@ -65,6 +65,75 @@ const packages = [
   },
 ]
 
+function EstateMap({ id, className, fit }: { id: string; className: string; fit: string }) {
+  const roads = [1, 2, 3, 4].map((n) => `${id}-${n}`)
+  return (
+    <svg className={className} viewBox="0 0 1400 700" preserveAspectRatio={fit} aria-hidden="true">
+      <defs>
+        <path id={roads[0]} d="M640 -20C700 200 880 270 1080 250s300-40 360 40" />
+        <path id={roads[1]} d="M560 720C640 520 840 430 1060 440s320 70 380 30" />
+        <path id={roads[2]} d="M1020 -20c-30 160 40 310 0 470s-60 200-20 270" />
+        <path id={roads[3]} d="M-40 660c240-90 460-40 680-100" />
+        <mask id={`${id}-gaps`}>
+          <rect width="1400" height="700" fill="#fff" />
+          <g fill="none" stroke="#000" strokeWidth="16">
+            {roads.map((r) => <use key={r} href={`#${r}`} />)}
+          </g>
+        </mask>
+      </defs>
+      <g className="b-map-lots" mask={`url(#${id}-gaps)`}>
+        {roads.map((r) => <use key={r} href={`#${r}`} />)}
+      </g>
+      <g className="b-map-edges">
+        {roads.map((r) => <use key={r} href={`#${r}`} />)}
+      </g>
+      <circle className="b-ping" cx="1104" cy="214" r="5" />
+      <circle className="b-ping" cx="930" cy="476" r="5" />
+      <circle className="b-ping" cx="1236" cy="472" r="5" />
+    </svg>
+  )
+}
+
+const bandRoads = [
+  'M-40 70C300 10 520 140 820 95C1120 50 1300 40 1640 115',
+  'M-40 205C260 235 560 150 900 178C1240 206 1380 235 1640 165',
+  'M1170 -20C1140 70 1230 150 1195 260',
+  'M330 -20C360 80 300 160 340 260',
+]
+
+// Each ping sits on a single lot, between the lot lines of its road
+const bandPings = [
+  [657.5, 127.2],
+  [1455.6, 57],
+  [521.2, 159.7],
+  [1019.2, 165.3],
+  [165.8, 187.3],
+]
+
+function MapBand() {
+  const roads = bandRoads.map((_, i) => `band-road-${i}`)
+  return (
+    <svg className="b-map" viewBox="0 0 1600 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <defs>
+        {bandRoads.map((d, i) => <path key={i} id={roads[i]} d={d} />)}
+        <mask id="band-road-gaps">
+          <rect width="1600" height="240" fill="#fff" />
+          <g fill="none" stroke="#000" strokeWidth="16">
+            {roads.map((r) => <use key={r} href={`#${r}`} />)}
+          </g>
+        </mask>
+      </defs>
+      <g className="b-map-lots" mask="url(#band-road-gaps)">
+        {roads.map((r) => <use key={r} href={`#${r}`} />)}
+      </g>
+      <g className="b-map-edges">
+        {roads.map((r) => <use key={r} href={`#${r}`} />)}
+      </g>
+      {bandPings.map(([cx, cy]) => <circle key={cx} className="b-ping" cx={cx} cy={cy} r="5" />)}
+    </svg>
+  )
+}
+
 export default function BuildersPage() {
   return (
     <>
@@ -113,38 +182,7 @@ export default function BuildersPage() {
 
         <section className="b-intro shell">
           <div className="b-hero">
-            <svg className="b-map" viewBox="0 0 1400 700" preserveAspectRatio="xMaxYMin slice" aria-hidden="true">
-              <defs>
-                <path id="road-1" d="M640 -20C700 200 880 270 1080 250s300-40 360 40" />
-                <path id="road-2" d="M560 720C640 520 840 430 1060 440s320 70 380 30" />
-                <path id="road-3" d="M1020 -20c-30 160 40 310 0 470s-60 200-20 270" />
-                <path id="road-4" d="M-40 660c240-90 460-40 680-100" />
-                <mask id="road-gaps">
-                  <rect width="1400" height="700" fill="#fff" />
-                  <g fill="none" stroke="#000" strokeWidth="16">
-                    <use href="#road-1" />
-                    <use href="#road-2" />
-                    <use href="#road-3" />
-                    <use href="#road-4" />
-                  </g>
-                </mask>
-              </defs>
-              <g className="b-map-lots" mask="url(#road-gaps)">
-                <use href="#road-1" />
-                <use href="#road-2" />
-                <use href="#road-3" />
-                <use href="#road-4" />
-              </g>
-              <g className="b-map-edges">
-                <use href="#road-1" />
-                <use href="#road-2" />
-                <use href="#road-3" />
-                <use href="#road-4" />
-              </g>
-              <circle className="b-ping" cx="1104" cy="214" r="5" />
-              <circle className="b-ping" cx="930" cy="476" r="5" />
-              <circle className="b-ping" cx="1236" cy="472" r="5" />
-            </svg>
+            <EstateMap id="road" className="b-map" fit="xMaxYMin slice" />
 
             <div className="b-hero-grid">
               <div className="b-hero-copy">
@@ -471,18 +509,9 @@ export default function BuildersPage() {
           </div>
         </section>
 
-        <figure className="photo-divider">
-          <img
-            src="/assets/photos/estate-dusk-1280.webp"
-            srcSet="/assets/photos/estate-dusk-1280.webp 1280w, /assets/photos/estate-dusk-2400.webp 2400w"
-            sizes="100vw"
-            alt="Aerial view of a new house and land estate at dusk"
-            width={2400}
-            height={1350}
-            loading="lazy"
-            decoding="async"
-          />
-        </figure>
+        <div className="b-map-divider">
+          <MapBand />
+        </div>
 
         <section className="concept-note shell">
           <div>

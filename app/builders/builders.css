@@ -94,6 +94,14 @@
   &:nth-of-type(3) {
     animation-delay: 1.8s;
   }
+
+  &:nth-of-type(4) {
+    animation-delay: .45s;
+  }
+
+  &:nth-of-type(5) {
+    animation-delay: 1.35s;
+  }
 }
 
 .b-hero-grid {
@@ -930,4 +938,16 @@
   font-size: 16px;
   line-height: 1.6;
   color: var(--muted);
+}
+
+/* Estate map divider: a wide road-map band with pinging lots, faded into the page */
+.b-map-divider {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  margin-top: clamp(16px, 3vw, 32px);
+  height: clamp(120px, 15vw, 240px);
+  background: radial-gradient(60% 140% at 100% 0%, rgba(107, 67, 200, .8), transparent 62%), radial-gradient(45% 120% at 0% 100%, rgba(255, 189, 63, .14), transparent 70%), #1a1230;
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 22%, #000 78%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, #000 22%, #000 78%, transparent);
 }
