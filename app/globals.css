@@ -492,6 +492,7 @@ button {
 
   @media (max-width: 960px) {
     grid-template-columns: minmax(0, 1fr);
+    max-width: 640px;
   }
 }
 
@@ -599,6 +600,10 @@ button {
   padding: clamp(28px, 4vw, 44px);
   border-radius: 20px;
   background: #f4f2ec;
+
+  @media (max-width: 960px) {
+    max-width: 640px;
+  }
 
   @media (max-width: 820px) {
     grid-template-columns: minmax(0, 1fr);
@@ -821,7 +826,7 @@ button {
   }
 
   h1 {
-    font-size: clamp(56px, 5.2vw, 94px);
+    font-size: clamp(56px, 5.2vw, 84px);
     font-weight: 500;
     line-height: 1.04;
     letter-spacing: -.04em;
@@ -1698,6 +1703,14 @@ button {
   flex-direction: column;
   gap: 14px;
 
+  @media (max-width: 760px), (pointer: coarse) {
+    gap: 0;
+
+    > span {
+      margin-bottom: 4px;
+    }
+  }
+
   > span {
     font-size: 11px;
     font-weight: 700;
@@ -1712,6 +1725,11 @@ button {
     color: var(--ink);
     opacity: .72;
     transition: opacity .2s;
+
+    /* Taller tap targets on phones and touch tablets; the gap moves into the padding */
+    @media (max-width: 760px), (pointer: coarse) {
+      padding: 10px 0;
+    }
 
     @media (hover: hover) and (pointer: fine) {
       &:hover {
