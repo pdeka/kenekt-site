@@ -448,7 +448,7 @@ export default function BuildersPage() {
               <span>01</span>
               <h3>Reach more buyers, instantly</h3>
               <p>
-                Put your stock in front of 617+ qualified advisers across Australia, plus the ones you already have.
+                Put your stock in front of 617+ advisers across Australia, plus the ones you already have.
                 You can use your own systems or a branded portal we provide, with no change to how your team works.
               </p>
             </article>
@@ -511,7 +511,7 @@ export default function BuildersPage() {
               <span className="plan-note">No setup cost and no software fees. Most builders start here.</span>
               <p className="plan-lede">
                 Keep your systems. Kenekt connects to what you already use, brings your stock into the Kenekt Marketplace
-                and presents it to our qualified adviser network, as another channel partner for your business.
+                and presents it to our adviser network, as another channel partner for your business.
               </p>
               <ul className="plan-features">
                 <li><i>✓</i> <span><strong>Instant access</strong> to a curated, onboarded network of buyers’ agents, mortgage brokers and wealth advisors.</span></li>
@@ -588,7 +588,7 @@ export default function BuildersPage() {
                   style={{ width: 28, height: 28 }}
               ></lord-icon>
               </span>
-              <strong className="plan-price">$999 per sale</strong>
+              <strong className="plan-price">$999 per deal</strong>
               <span className="plan-note">$1,500 one-time setup · all prices include GST</span>
               <p className="plan-lede">
                 Your team runs sales on your own branded portal and keeps control of agent onboarding, qualification and
@@ -596,7 +596,7 @@ export default function BuildersPage() {
               </p>
               <dl className="plan-pricing">
                 <div><dt>One-time setup</dt><dd>$1,500</dd></div>
-                <div><dt>Per sale from a portal enquiry</dt><dd>$999</dd></div>
+                <div><dt>Per deal from a portal enquiry</dt><dd>$999</dd></div>
                 <div><dt>Monthly minimum</dt><dd>$999</dd></div>
                 <div><dt>Monthly cap</dt><dd>$3,000</dd></div>
               </dl>
