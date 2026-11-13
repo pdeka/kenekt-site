@@ -2,9 +2,14 @@ import type { Metadata } from 'next'
 import { SHARE_IMAGE } from '../site'
 import './builders.css'
 
+// Builders search/share text, reused for og: and twitter:
+const title = 'Kenekt for builders — Grow wholesale, not headcount'
+const description =
+  'Put your house & land stock in front of 617+ property advisers. List free on the Kenekt Marketplace, outsource your wholesale channel or run a branded portal.'
+
 export const metadata: Metadata = {
-  title: 'Kenekt for builders — List once. Sell everywhere.',
-  description: 'Kenekt for builders — list house & land packages once, control every allocation and see each enquiry live.',
+  title,
+  description,
   alternates: { canonical: '/builders' },
   // Child segments replace (not merge) openGraph/twitter, so these are restated in full
   openGraph: {
@@ -12,14 +17,14 @@ export const metadata: Metadata = {
     siteName: 'Kenekt',
     locale: 'en_AU',
     url: '/builders',
-    title: 'Kenekt for builders — List once. Sell everywhere.',
-    description: 'Kenekt for builders — list house & land packages once, control every allocation and see each enquiry live.',
+    title,
+    description,
     images: [SHARE_IMAGE],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Kenekt for builders — List once. Sell everywhere.',
-    description: 'Kenekt for builders — list house & land packages once, control every allocation and see each enquiry live.',
+    title,
+    description,
     images: [SHARE_IMAGE],
   },
 }
