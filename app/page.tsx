@@ -359,8 +359,7 @@ export default function HomePage() {
             <ul className="plan-features">
               <li><i>✓</i> Includes all features of the Single Agent Account.</li>
               <li><i>✓</i> Your own white-labelled portal, offering Kenekt&apos;s tools under your brand.</li>
-              <li><i>✓</i> Custom portal address, e.g. port
-              al.mydomain.com.au.</li>
+              <li><i>✓</i> Custom portal address, e.g. portal.mydomain.com.au.</li>
               <li><i>✓</i> All enquiries from your portal are directed exclusively to your agency.</li>
               <li><i>✓</i> Create accounts for clients and referral partners within your branded environment.</li>
               <li><i>✓</i> White-labelled URLs for a seamless client experience.</li>

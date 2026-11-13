@@ -222,8 +222,8 @@ export default function BuildersPage() {
                   <span>Connected advisers</span>
                 </li>
                 <li>
-                  <strong>70+ suppliers</strong>
-                  <span>Linked to Kenekt</span>
+                  <strong>70+</strong>
+                  <span>Suppliers linked to Kenekt</span>
                 </li>
               </ul>
             </div>

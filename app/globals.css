@@ -261,6 +261,10 @@ button {
   svg {
     width: 17px;
   }
+
+  lord-icon {
+    flex: none;
+  }
 }
 
 .pill-dark {
@@ -492,6 +496,16 @@ button {
 .plan-cta {
   margin-top: auto;
   width: 100%;
+  /* Long labels wrap rather than clip on the narrowest phones */
+  white-space: normal;
+  text-align: center;
+  line-height: 1.2;
+
+  @media (max-width: 420px) {
+    padding: 0 18px;
+    gap: 12px;
+    font-size: 12px;
+  }
 }
 
 .plans-notes {
