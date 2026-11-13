@@ -2,6 +2,14 @@
   command = "npm run build"
   publish = "out"
 
+# The old site served its home page at /home; keep its search ranking and backlinks by redirecting permanently.
+# Must sit above the 404 catch-all, since Netlify uses the first matching rule.
+[[redirects]]
+  from = "/home"
+  to = "/"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/*"
   to = "/404.html"
