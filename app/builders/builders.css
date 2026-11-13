@@ -46,6 +46,7 @@
     font-weight: 500;
     line-height: 1.04;
     letter-spacing: -.04em;
+    font-variation-settings: 'opsz' 40;
 
     em {
       font-style: normal;
@@ -53,7 +54,7 @@
     }
 
     @media (max-width: 600px) {
-      font-size: clamp(36px, 11vw, 58px);
+      font-size: clamp(32px, 9.4vw, 58px);
       margin: 18px 0 20px;
     }
   }

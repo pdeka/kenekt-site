@@ -37,6 +37,11 @@ a {
   text-decoration: none;
 }
 
+/* Even out heading lines so narrow screens never strand a single word (product mock-ups excluded) */
+:is(h1, h2, h3, .eyebrow, .signal-proof > p):not(.tablet *, .db *) {
+  text-wrap: balance;
+}
+
 img {
   display: block;
   width: 100%;
