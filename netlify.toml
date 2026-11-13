@@ -10,6 +10,13 @@
   status = 301
   force = true
 
+# Old site's login page; the adviser portal login now lives on the portal domain
+[[redirects]]
+  from = "/contacts/sign_in"
+  to = "https://portal.kenekt.com.au/login"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/*"
   to = "/404.html"
