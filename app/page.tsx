@@ -20,7 +20,17 @@ export default function HomePage() {
             <a href="#signal-story" data-audience="advisers" aria-current="page">For advisers</a>
             <Link href="/builders" data-audience="builders">For builders</Link>
           </div>
-          <a href="https://insights.kenekt.app/">Insights</a>
+          <a href="https://insights.kenekt.app/">
+            Insights
+            <lord-icon
+              src="https://cdn.lordicon.com/ibfxqfzr.json"
+              trigger="hover"
+              state="hover-pinch"
+              colors="primary:#4be1ec,secondary:#cb5eee"
+              stroke="bold"
+              style={{ width: 24, height: 24 }}
+            ></lord-icon>
+          </a>
         </nav>
         <div className="nav-actions">
           <a href="https://portal.kenekt.com.au">Log in

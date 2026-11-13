@@ -151,7 +151,17 @@ export default function BuildersPage() {
                 For builders
               </Link>
             </div>
-            <Link href="https://insights.kenekt.app">Insights</Link>
+            <Link href="https://insights.kenekt.app">
+              Insights
+              <lord-icon
+                src="https://cdn.lordicon.com/ibfxqfzr.json"
+                trigger="hover"
+                state="hover-pinch"
+                colors="primary:#4be1ec,secondary:#cb5eee"
+                stroke="bold"
+                style={{ width: 24, height: 24 }}
+              ></lord-icon>
+            </Link>
           </nav>
           <div className="nav-actions">
             <a href="https://app.kenekt.com.au">Stock Mgmt Log in

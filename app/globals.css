@@ -235,8 +235,12 @@ button {
   }
 }
 
-/* Insights sits beside the switch, so it reads at full ink rather than the dimmed nav style */
+/* Insights sits beside the switch, so it reads at full ink rather than the dimmed nav style.
+   Its icon is centred on the text the same way as "Log in". */
 .site-nav nav > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   color: var(--ink);
   opacity: 1;
 }
