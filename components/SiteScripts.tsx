@@ -43,25 +43,6 @@ export default function SiteScripts() {
     window.addEventListener('load', requestUpdate)
     update()
 
-    const nav = document.querySelector<HTMLElement>('.site-nav')
-    const toggle = nav?.querySelector<HTMLButtonElement>('.nav-toggle')
-    const setOpen = (open: boolean) => {
-      if (!nav || !toggle) return
-      nav.classList.toggle('is-open', open)
-      toggle.setAttribute('aria-expanded', String(open))
-      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu')
-    }
-    const onToggleClick = () => nav && setOpen(!nav.classList.contains('is-open'))
-    const onResize = () => {
-      if (window.innerWidth > 960) setOpen(false)
-    }
-    const navLinks = nav ? Array.from(nav.querySelectorAll<HTMLAnchorElement>('nav a')) : []
-    const onLinkClick = () => setOpen(false)
-
-    toggle?.addEventListener('click', onToggleClick)
-    navLinks.forEach((link) => link.addEventListener('click', onLinkClick))
-    window.addEventListener('resize', onResize)
-
     const switches = Array.from(document.querySelectorAll<HTMLButtonElement>('.switch[role="switch"]'))
     const onSwitchClick = (control: HTMLButtonElement) => () => {
       const on = control.getAttribute('aria-checked') !== 'true'
@@ -79,9 +60,6 @@ export default function SiteScripts() {
       window.removeEventListener('scroll', requestUpdate)
       window.removeEventListener('resize', requestUpdate)
       window.removeEventListener('load', requestUpdate)
-      window.removeEventListener('resize', onResize)
-      toggle?.removeEventListener('click', onToggleClick)
-      navLinks.forEach((link) => link.removeEventListener('click', onLinkClick))
       switchHandlers.forEach(({ control, handler }) => control.removeEventListener('click', handler))
     }
   }, [pathname])

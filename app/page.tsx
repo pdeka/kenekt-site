@@ -15,7 +15,7 @@ export default function HomePage() {
         <a className="brand" href="#">
           <img src="/assets/logo/kenekt-mark.svg" alt="Kenekt home" width={48} height={48} />
         </a>
-        <nav id="site-menu">
+        <nav aria-label="Main">
           <div className="audience-switch">
             <a href="#signal-story" data-audience="advisers" aria-current="page">For advisers</a>
             <Link href="/builders" data-audience="builders">For builders</Link>
@@ -55,10 +55,6 @@ export default function HomePage() {
             ></lord-icon>
           </a>
         </div>
-        <button className="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
-          <span></span>
-          <span></span>
-        </button>
       </header>
 
       <section className="signal-hero shell">

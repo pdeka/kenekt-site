@@ -144,7 +144,7 @@ export default function BuildersPage() {
           <Link className="brand" href="/">
             <img src="/assets/logo/kenekt-mark.svg" alt="Kenekt home" width={402} height={108} />
           </Link>
-          <nav id="site-menu">
+          <nav aria-label="Main">
             <div className="audience-switch">
               <Link href="/" data-audience="advisers">For advisers</Link>
               <Link href="/builders" data-audience="builders" aria-current="page">
@@ -186,10 +186,6 @@ export default function BuildersPage() {
               ></lord-icon>
             </a>
           </div>
-          <button className="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
-            <span></span>
-            <span></span>
-          </button>
         </header>
 
         <section className="b-intro shell">
