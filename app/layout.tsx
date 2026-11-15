@@ -1,8 +1,12 @@
 import type { Metadata, Viewport } from 'next'
+import Script from 'next/script'
 import LordIcon from '@/components/LordIcon'
 import SiteScripts from '@/components/SiteScripts'
 import { SHARE_IMAGE, SITE_URL } from './site'
 import './globals.css'
+
+// Google Analytics 4 measurement ID
+const GA_ID = 'G-Z1PXYWX18Y'
 
 // Home page search/share text, reused for og: and twitter:
 const title = 'Kenekt | Off-market house & land for property advisers'
@@ -104,6 +108,13 @@ export default function RootLayout({
         {children}
         <LordIcon />
         <SiteScripts />
+        <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${GA_ID}');`}
+        </Script>
       </body>
     </html>
   )
