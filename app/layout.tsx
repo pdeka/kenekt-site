@@ -8,6 +8,9 @@ import './globals.css'
 // Google Analytics 4 measurement ID
 const GA_ID = 'G-Z1PXYWX18Y'
 
+// LinkedIn Insight Tag partner ID
+const LINKEDIN_PARTNER_ID = '3455692'
+
 // Home page search/share text, reused for og: and twitter:
 const title = 'Kenekt | Off-market house & land for property advisers'
 const description =
@@ -115,6 +118,16 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', '${GA_ID}');`}
         </Script>
+        <Script id="linkedin-insight" strategy="afterInteractive">
+          {`window._linkedin_partner_id = '${LINKEDIN_PARTNER_ID}';
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(window._linkedin_partner_id);
+if (!window.lintrk) { window.lintrk = function(a, b) { window.lintrk.q.push([a, b]) }; window.lintrk.q = [] }`}
+        </Script>
+        <Script src="https://snap.licdn.com/li.lms-analytics/insight.min.js" strategy="afterInteractive" />
+        <noscript>
+          <img height="1" width="1" style={{ display: 'none' }} alt="" src={`https://px.ads.linkedin.com/collect/?pid=${LINKEDIN_PARTNER_ID}&fmt=gif`} />
+        </noscript>
       </body>
     </html>
   )
