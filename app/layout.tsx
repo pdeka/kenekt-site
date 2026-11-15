@@ -77,6 +77,10 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title,
   description,
+  // Meta Business domain verification
+  verification: {
+    other: { 'facebook-domain-verification': 't1qgdwurre4ptux4zume94vs95sv3l' },
+  },
   icons: {
     icon: '/assets/logo/kenekt-mark.svg',
   },
