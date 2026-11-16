@@ -1,0 +1,38 @@
+# Kenekt
+
+> Kenekt is an Australian property technology platform and online property aggregator. It connects property advisers (buyers' agents, mortgage brokers, accountants and wealth advisers) with verified off-market, wholesale new property packages from 75+ builders and land suppliers. Advisers use it free; builders use it to grow wholesale sales without adding headcount.
+
+Kenekt Co Pty Ltd, 20/1 Maitland Place, Norwest NSW 2153, Australia. Phone 1300 536 358 (1300 KENEKT). Email info@kenekt.com.au.
+
+Key facts:
+
+- Around 2,600+ off-market new property packages across VIC, QLD, NSW, ACT, SA, TAS and WA, with pricing and availability kept current.
+- Stock includes full-turnkey house & land, dual occupancy, duplexes, rooming houses, co-living, NDIS, townhouses and apartments.
+- 617+ property advisers are connected to the platform.
+- Advisers access many suppliers through a single Kenekt referral agreement.
+
+## For property advisers and agencies
+
+- [Kenekt for advisers](https://www.kenekt.app/): Overview of the adviser platform and account tiers.
+- Single Agent Account (free): search nationwide stock, compare packages, research tools, branded client brochures, stocklist exports.
+- Agency Account (free when you work with Kenekt): everything in Single Agent, plus a white-labelled portal on your own domain, enquiries routed only to your agency, and unlimited staff and referrer access. Unlocked after one qualifying Expression of Interest (EOI) with a holding deposit.
+- Pro Agency Account (free when you work with Kenekt): everything in Agency, plus Kenekt stock published live on your existing website with lead capture, or a templated website built by Kenekt (after your first unconditional deal).
+- [Sign up free](https://portal.kenekt.com.au/sign_up): Create an adviser account.
+- [Adviser brochure](https://adviser-brochure-5fufpe3.gamma.site/): Full product brochure for advisers.
+- [Product overview video](https://www.youtube.com/watch?v=_jUESOJnt58): 74-second walkthrough.
+
+## For builders and land suppliers
+
+- [Kenekt for builders](https://www.kenekt.app/builders): How builders sell wholesale house & land through Kenekt.
+- Option A, Marketplace Channel: no setup cost and no software fees. Kenekt connects to the builder's existing systems (portal, API such as Salesforce, or file supply) and presents stock to its adviser network.
+- Option B, Wholesale Partner: paid from commission, no setup or monthly fee. Kenekt recruits and qualifies agents on the builder's branded portal and delivers signed EOIs with a holding deposit; the builder's team joins at contract.
+- Option C, Platform + Admin: $1,500 one-time setup, $999 per deal from a portal enquiry, $999 monthly minimum, $3,000 monthly cap (all including GST). The builder runs sales; Kenekt keeps stock accurate.
+- [Stock Management brochure](https://kenekt-stock-management--qtra44m.gamma.site/): Kenekt Stock Management for builders.
+
+## Optional
+
+- [Insights](https://insights.kenekt.app/): Articles and market commentary.
+- [Help centre](https://help.kenekt.app): Product help.
+- [Terms of use](https://portal.kenekt.com.au/policies/terms)
+- [Privacy policy](https://portal.kenekt.com.au/policies/privacy)
+- [LinkedIn](https://www.linkedin.com/company/kenektgroup/)
