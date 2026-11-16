@@ -551,7 +551,7 @@ export default function BuildersPage() {
               or a full wholesale partner. All builders can get the Kenekt Stock Management system, a custom branded agent portal and a Kenekt team that
               keeps your stock current. You choose how much of the wholesale sales process you want us to run.
             </p>
-            <a className="text-link" href="https://kenekt-stock-management--qtra44m.gamma.site/">
+            <a className="text-link" href="https://kenekt-for-builders-qtra44m.gamma.site/">
               Full product brochure
             </a>
           </div>

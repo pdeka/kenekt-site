@@ -27,7 +27,7 @@ Key facts:
 - Option A, Marketplace Channel: no setup cost and no software fees. Kenekt connects to the builder's existing systems (portal, API such as Salesforce, or file supply) and presents stock to its adviser network.
 - Option B, Wholesale Partner: paid from commission, no setup or monthly fee. Kenekt recruits and qualifies agents on the builder's branded portal and delivers signed EOIs with a holding deposit; the builder's team joins at contract.
 - Option C, Platform + Admin: $1,500 one-time setup, $999 per deal from a portal enquiry, $999 monthly minimum, $3,000 monthly cap (all including GST). The builder runs sales; Kenekt keeps stock accurate.
-- [Stock Management brochure](https://kenekt-stock-management--qtra44m.gamma.site/): Kenekt Stock Management for builders.
+- [Builder brochure](https://kenekt-for-builders-qtra44m.gamma.site/): Kenekt for builders and land suppliers.
 
 ## Knowledge base
 
