@@ -29,10 +29,20 @@ Key facts:
 - Option C, Platform + Admin: $1,500 one-time setup, $999 per deal from a portal enquiry, $999 monthly minimum, $3,000 monthly cap (all including GST). The builder runs sales; Kenekt keeps stock accurate.
 - [Stock Management brochure](https://kenekt-stock-management--qtra44m.gamma.site/): Kenekt Stock Management for builders.
 
+## Knowledge base
+
+Kenekt's help site at help.kenekt.app has its own index for language models: [help.kenekt.app/llms.txt](https://help.kenekt.app/llms.txt) (page list) and [help.kenekt.app/llms-full.txt](https://help.kenekt.app/llms-full.txt) (full text).
+
+- [House & land guide](https://help.kenekt.app/house-land-guide/02-house-land-basics): Plain-English explanations of buying and investing in new house & land in Australia, including single contract vs 2-part contracts, build stages, holding deposits, site costs, fixed-price turnkey, gross yield and capital gains.
+- [Land and titles](https://help.kenekt.app/house-land-guide/03-land): Lot types, zero lot line, title types, disclosure plans, deposited plans and 88B instruments, DA timelines, estate stages, registration dates and buying before registration.
+- [Build types and SDA categories](https://help.kenekt.app/house-land-guide/01-build-types): Co-living vs rooming houses, dual key (dual occupancy) homes and other build types, plus Specialist Disability Accommodation design categories.
+- [NDIS and SDA investment](https://help.kenekt.app/house-land-guide/04-ndis): What NDIS and SDA are, SDA funding, securing tenants, gross yield, exit strategy and pricing reviews.
+- [Kenekt help guide](https://help.kenekt.app/help-guide/01-welcome): How to use Kenekt, covering agency setup, stock management, team permissions, the construction library, brochures and deals.
+
 ## Optional
 
 - [Insights](https://insights.kenekt.app/): Articles and market commentary.
-- [Help centre](https://help.kenekt.app): Product help.
+- [API reference](https://help.kenekt.app/api-reference/agency/get-the-agency): Kenekt API documentation for agencies and integrations.
 - [Terms of use](https://portal.kenekt.com.au/policies/terms)
 - [Privacy policy](https://portal.kenekt.com.au/policies/privacy)
 - [LinkedIn](https://www.linkedin.com/company/kenektgroup/)
