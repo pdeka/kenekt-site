@@ -18,7 +18,7 @@ Key facts:
 - Agency Account (free when you work with Kenekt): everything in Single Agent, plus a white-labelled portal on your own domain, enquiries routed only to your agency, and unlimited staff and referrer access. Unlocked after one qualifying Expression of Interest (EOI) with a holding deposit.
 - Pro Agency Account (free when you work with Kenekt): everything in Agency, plus Kenekt stock published live on your existing website with lead capture, or a templated website built by Kenekt (after your first unconditional deal).
 - [Sign up free](https://portal.kenekt.com.au/sign_up): Create an adviser account.
-- [Adviser brochure](https://adviser-brochure-5fufpe3.gamma.site/): Full product brochure for advisers.
+- [Adviser brochure](https://adviser-brochure.kenekt.app/): Full product brochure for advisers.
 - [Product overview video](https://www.youtube.com/watch?v=_jUESOJnt58): 74-second walkthrough.
 
 ## For builders and land suppliers
@@ -27,7 +27,7 @@ Key facts:
 - Option A, Marketplace Channel: no setup cost and no software fees. Kenekt connects to the builder's existing systems (portal, API such as Salesforce, or file supply) and presents stock to its adviser network.
 - Option B, Wholesale Partner: paid from commission, no setup or monthly fee. Kenekt recruits and qualifies agents on the builder's branded portal and delivers signed EOIs with a holding deposit; the builder's team joins at contract.
 - Option C, Platform + Admin: $1,500 one-time setup, $999 per deal from a portal enquiry, $999 monthly minimum, $3,000 monthly cap (all including GST). The builder runs sales; Kenekt keeps stock accurate.
-- [Builder brochure](https://kenekt-for-builders-qtra44m.gamma.site/): Kenekt for builders and land suppliers.
+- [Builder brochure](https://builder-brochure.kenekt.app/): Kenekt for builders and land suppliers.
 
 ## Knowledge base
 

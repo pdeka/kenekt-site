@@ -324,7 +324,7 @@ export default function HomePage() {
           <h2>Kenekt for agencies &amp; property advisers.</h2>
           <p>Kenekt is free for agencies, property advisers, mortgage brokers &amp; accountants.</p>
           <a className="text-link"
-            href="https://adviser-brochure-5fufpe3.gamma.site/"
+            href="https://adviser-brochure.kenekt.app/"
           >
             Full product brochure
           </a>
