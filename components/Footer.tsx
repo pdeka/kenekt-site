@@ -45,16 +45,6 @@ export default function Footer() {
               style={{ width: 42, height: 42 }}
           ></lord-icon>
           </a>
-          <a href="https://help.kenekt.app" target="_blank" rel="noopener" aria-label="Help centre">
-          <lord-icon
-              src="https://cdn.lordicon.com/wczruhnt.json"
-              trigger="hover"
-              state="hover-pinch"
-              colors="primary:#4be1ec,secondary:#cb5eee"
-              stroke="bold"
-              style={{ width: 42, height: 42 }}
-          ></lord-icon>
-          </a>
         </div>
         </div>
         <div className="site-footer-contact">
@@ -90,6 +80,9 @@ export default function Footer() {
       <nav className="site-footer-col" aria-label="Resources">
         <span>Resources</span>
         <a href="https://help.kenekt.app/" target="_blank" rel="noopener">Help</a>
+        <a href="https://help.kenekt.app/house-land-guide/01-build-types" target="_blank" rel="noopener">House &amp; Land Guides</a>
+        <a href="https://help.kenekt.app/api-reference/stock/list-agency-packages" target="_blank" rel="noopener">Data Integration API</a>
+        <a href="https://help.kenekt.app/api-reference/team-members/list-members" target="_blank" rel="noopener">Data Mgmt API</a>
         <a href="https://insights.kenekt.app/" target="_blank" rel="noopener">Blog</a>
       </nav>
 
