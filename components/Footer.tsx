@@ -81,6 +81,8 @@ export default function Footer() {
         <span>Resources</span>
         <a href="https://help.kenekt.app/" target="_blank" rel="noopener">Help</a>
         <a href="https://help.kenekt.app/house-land-guide/01-build-types" target="_blank" rel="noopener">House &amp; Land Guides</a>
+        <a href="https://adviser-brochure-5fufpe3.gamma.site/" target="_blank" rel="noopener">Adviser Brochure</a>
+        <a href="https://kenekt-stock-management--qtra44m.gamma.site/" target="_blank" rel="noopener">Builder/Supplier Brochure</a>
         <a href="https://help.kenekt.app/api-reference/stock/list-agency-packages" target="_blank" rel="noopener">Data Integration API</a>
         <a href="https://help.kenekt.app/api-reference/team-members/list-members" target="_blank" rel="noopener">Data Mgmt API</a>
         <a href="https://insights.kenekt.app/" target="_blank" rel="noopener">Blog</a>
