@@ -162,6 +162,17 @@ export default function BuildersPage() {
                 style={{ width: 24, height: 24 }}
               ></lord-icon>
             </Link>
+            <a href="https://help.kenekt.app/">
+              Guides
+              <lord-icon
+                src="https://cdn.lordicon.com/blfocsew.json"
+                trigger="hover"
+                state="hover-pinch"
+                colors="primary:#4be1ec,secondary:#cb5eee"
+                stroke="bold"
+                style={{ width: 24, height: 24 }}
+              ></lord-icon>
+            </a>
           </nav>
           <div className="nav-actions">
             <a href="https://app.kenekt.com.au">Stock Mgmt Log in

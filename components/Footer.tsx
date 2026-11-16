@@ -87,6 +87,12 @@ export default function Footer() {
         <a href="https://app.kenekt.com.au" target="_blank" rel="noopener">Stock Management</a>
       </nav>
 
+      <nav className="site-footer-col" aria-label="Resources">
+        <span>Resources</span>
+        <a href="https://help.kenekt.app/" target="_blank" rel="noopener">Help</a>
+        <a href="https://insights.kenekt.app/" target="_blank" rel="noopener">Blog</a>
+      </nav>
+
       <nav className="site-footer-col" aria-label="Legal">
         <span>Legal</span>
         <a href="https://portal.kenekt.com.au/docs/kenekt_referral_agreement_03_2025.pdf" target="_blank" rel="noopener">Marketing Terms</a>

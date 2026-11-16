@@ -31,6 +31,17 @@ export default function HomePage() {
               style={{ width: 24, height: 24 }}
             ></lord-icon>
           </a>
+          <a href="https://help.kenekt.app/">
+            Guides
+            <lord-icon
+              src="https://cdn.lordicon.com/blfocsew.json"
+              trigger="hover"
+              state="hover-pinch"
+              colors="primary:#4be1ec,secondary:#cb5eee"
+              stroke="bold"
+              style={{ width: 24, height: 24 }}
+            ></lord-icon>
+          </a>
         </nav>
         <div className="nav-actions">
           <a href="https://portal.kenekt.com.au">Log in

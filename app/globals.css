@@ -199,8 +199,8 @@ button {
   }
 }
 
-/* Insights sits beside the switch, so it reads at full ink rather than the dimmed nav style.
-   Its icon is centred on the text the same way as "Log in". */
+/* Insights and Guides sit beside the switch, so they read at full ink rather than the dimmed nav style.
+   Their icons are centred on the text the same way as "Log in". */
 .site-nav nav > a {
   display: inline-flex;
   align-items: center;
@@ -1551,7 +1551,8 @@ button {
   padding: clamp(48px, 6vw, 64px) 0 clamp(40px, 5vw, 56px);
   border-top: 1px solid #e3e1d9;
   display: grid;
-  grid-template-columns: minmax(0, .8fr) minmax(0, .8fr) minmax(0, 1.4fr);
+  /* The brand column never shrinks below its icon row and contact pills */
+  grid-template-columns: repeat(3, minmax(0, .8fr)) minmax(max-content, 1.4fr);
   align-items: start;
   gap: clamp(32px, 6vw, 64px);
 
