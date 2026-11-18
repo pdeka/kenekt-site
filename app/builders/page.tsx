@@ -651,7 +651,7 @@ export default function BuildersPage() {
               ></lord-icon>
               </span>
               <strong className="plan-price">$999 per deal</strong>
-              <span className="plan-note">$1,500 one-time setup · all prices include GST</span>
+              <span className="plan-note">$1,500 one-time setup · no monthly minimum · all prices include GST</span>
               <p className="plan-lede">
                 Your team runs sales on your own branded portal and keeps control of agent onboarding, qualification and
                 enquiries. Kenekt keeps your stock accurate and current.
@@ -659,7 +659,6 @@ export default function BuildersPage() {
               <dl className="plan-pricing">
                 <div><dt>One-time setup</dt><dd>$1,500</dd></div>
                 <div><dt>Per deal from a portal enquiry</dt><dd>$999</dd></div>
-                <div><dt>Monthly minimum</dt><dd>$999</dd></div>
                 <div><dt>Monthly cap</dt><dd>$3,000</dd></div>
               </dl>
               <ul className="plan-features">
@@ -670,7 +669,7 @@ export default function BuildersPage() {
                 <li><i>✓</i> <span><strong>Deal tracking</strong> through My Deals.</span></li>
               </ul>
               <p className="plan-fit">Best for builders with an established sales team who want accurate stock and a professional agent portal with the admin support.
-              You pay only when your portal delivers. The monthly minimum counts towards your per-sale fees, and your total never exceeds $3K a month.
+              You pay only when your portal delivers. There is no monthly minimum, and your total never exceeds $3K a month.
               </p>
               <a className="pill pill-dark plan-cta" href="https://calendly.com/martin-kenekt/kenekt-agency-demo">
                 Book a 30 minute session
