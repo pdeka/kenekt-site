@@ -27,5 +27,19 @@ collections:
       - { name: author, label: Author, widget: string, required: false }
       - { name: image, label: Cover image, widget: image, required: false }
       - { name: imageAlt, label: Cover image description (for screen readers), widget: string, required: false }
+      - name: button
+        label: Button at the end of the article
+        hint: Optional. Leave both empty for no button.
+        widget: object
+        required: false
+        collapsed: true
+        fields:
+          - { name: label, label: Button text, widget: string, required: false, hint: 'e.g. Book a call' }
+          - name: link
+            label: Link
+            widget: string
+            required: false
+            hint: 'A full web address (https://...), a page on this site (/builders), or a mailto: or tel: link'
+            pattern: ['^(https?://|/|mailto:|tel:)', 'Start with https://, /, mailto: or tel:']
       - { name: draft, label: Draft (untick to publish), widget: boolean, default: true }
       - { name: body, label: Post, widget: markdown }

@@ -251,3 +251,15 @@
     border-top: 1px solid #e3e1d9;
   }
 }
+
+/* Optional button after the article body, set per post in the CMS */
+.insights-cta {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+
+  .pill {
+    white-space: normal;
+    text-align: center;
+  }
+}

@@ -70,6 +70,25 @@ export default async function InsightsPost({ params }) {
         </header>
         {post.image && <img className="insights-post-cover" src={post.image} alt={post.imageAlt} />}
         <div className="insights-body" dangerouslySetInnerHTML={{ __html: post.html }} />
+        {post.button && (
+          <div className="insights-cta">
+            <a
+              className="pill pill-dark"
+              href={post.button.link}
+              {...(/^https?:\/\//.test(post.button.link) && { target: '_blank', rel: 'noopener' })}
+            >
+              {post.button.label}
+              <lord-icon
+                src="https://cdn.lordicon.com/zlriqolf.json"
+                trigger="hover"
+                state="hover-pointing"
+                colors="primary:#4be1ec,secondary:#cb5eee"
+                stroke="bold"
+                style={{ width: 24, height: 24 }}
+              ></lord-icon>
+            </a>
+          </div>
+        )}
       </article>
 
       <Footer />
