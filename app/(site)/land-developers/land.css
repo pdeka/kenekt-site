@@ -1,0 +1,361 @@
+/* Kenekt for land developers: reuses the builders hero, workspace card and plan styles, plus the sections below */
+
+/* Lot plan in place of the house scene in each workspace row */
+.lot-media { --sky: #f1eee6; }
+
+.lot-plan {
+  display: block;
+  width: 100%;
+  height: 100%;
+  stroke: none;
+  transform-origin: 50% 100%;
+  transition: transform .5s cubic-bezier(.2, .8, .2, 1);
+}
+
+.pkg:hover .lot-plan { transform: scale(1.05); }
+
+.lot-plan-road { fill: #dcd8cd; }
+.lot-plan-nb { fill: #fff; opacity: .6; }
+.lot-plan-lot { fill: #e6dcf7; stroke: var(--blue); stroke-width: 2; }
+.lot-plan-dim { fill: var(--blue-dark); font-size: 11px; font-weight: 700; }
+
+/* What the builders in the network have in common */
+.land-builders {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(14px, 2vw, 22px);
+  margin: clamp(40px, 6vw, 56px) 0 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: clamp(22px, 2.4vw, 28px);
+    border: 1px solid #e3e1d9;
+    border-radius: 20px;
+  }
+
+  lord-icon {
+    margin-bottom: 14px;
+  }
+
+  strong {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -.02em;
+  }
+
+  span {
+    font-size: 15px;
+    line-height: 1.55;
+    color: #545650;
+  }
+
+  @media (max-width: 1080px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 760px;
+  }
+
+  @media (max-width: 560px) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.land-builders + .plans-shared { margin-top: clamp(18px, 2.4vw, 28px); }
+
+/* Seven-step process, with the call to action filling the eighth cell */
+.land-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(14px, 2vw, 22px);
+  margin: clamp(40px, 6vw, 56px) 0 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    min-height: 240px;
+    padding: clamp(22px, 2.4vw, 28px);
+    border: 1px solid #e3e1d9;
+    border-radius: 20px;
+    background: var(--paper);
+    transition: border-color .25s ease, box-shadow .25s ease, transform .25s ease;
+
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        border-color: #cfccc1;
+        box-shadow: 0 20px 40px -24px rgba(20, 23, 35, .18);
+        transform: translateY(-2px);
+      }
+    }
+
+    @media (max-width: 560px) {
+      min-height: 0;
+    }
+  }
+
+  li > span {
+    display: inline-grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #f1ecfb;
+    color: var(--blue);
+    font-size: 11px;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+
+  h3 {
+    margin: 28px 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -.02em;
+    line-height: 1.25;
+  }
+
+  p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #545650;
+  }
+
+  @media (max-width: 1080px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 760px;
+  }
+
+  @media (max-width: 560px) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.land-steps .land-steps-cta {
+  border-color: transparent;
+  color: #fff;
+  background: radial-gradient(90% 120% at 100% 0%, rgba(107, 67, 200, .8), transparent 62%), #1a1230;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  p {
+    margin-bottom: 24px;
+    color: rgba(255, 255, 255, .72);
+  }
+
+  .pill {
+    align-self: flex-start;
+    margin-top: auto;
+    white-space: normal;
+    text-align: center;
+  }
+}
+
+/* Market signals on a full-width band */
+.land-market {
+  margin-top: clamp(32px, 4vw, 48px);
+  padding: clamp(56px, 7vw, 88px) 0;
+  background: #f4f2ec;
+}
+
+.land-market-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(14px, 2vw, 22px);
+  margin: clamp(40px, 6vw, 56px) 0 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding: clamp(22px, 2.4vw, 28px);
+    border-radius: 20px;
+    background: var(--paper);
+  }
+
+  strong {
+    display: block;
+    font-size: clamp(34px, 3.4vw, 46px);
+    font-weight: 500;
+    letter-spacing: -.05em;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+    color: var(--blue);
+  }
+
+  small {
+    display: block;
+    margin-top: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h3 {
+    margin: 26px 0 8px;
+    padding-top: 18px;
+    border-top: 1px solid #ecebe4;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -.02em;
+  }
+
+  p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #545650;
+  }
+
+  @media (max-width: 1080px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 760px;
+  }
+
+  @media (max-width: 560px) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.land-corridors {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 20px clamp(24px, 4vw, 56px);
+  margin-top: clamp(18px, 2.4vw, 28px);
+  padding: clamp(22px, 2.4vw, 28px);
+  border-radius: 20px;
+  color: #fff;
+  background: radial-gradient(70% 140% at 100% 0%, rgba(107, 67, 200, .8), transparent 62%), #1a1230;
+
+  p {
+    max-width: 520px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, .8);
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, .08);
+    font-size: 13px;
+    color: rgba(255, 255, 255, .85);
+  }
+
+  b {
+    color: var(--orange);
+    font-weight: 700;
+  }
+
+  @media (max-width: 1080px) {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 760px;
+  }
+}
+
+.land-sources {
+  margin: 18px 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+/* Team */
+.land-team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(14px, 2vw, 22px);
+  margin: clamp(40px, 6vw, 56px) 0 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: clamp(20px, 2.4vw, 26px);
+    border: 1px solid #e3e1d9;
+    border-radius: 20px;
+  }
+
+  strong {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -.02em;
+  }
+
+  small {
+    display: block;
+    margin-top: 4px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--blue);
+  }
+
+  a {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #c9c8c1;
+  }
+
+  @media (max-width: 960px) {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 640px;
+  }
+}
+
+.land-avatar {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #e7e0f6;
+  color: var(--blue-dark);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.land-contact {
+  align-items: center;
+
+  .plans-note p a {
+    color: var(--blue);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .plans-note:has(.pill) {
+    justify-self: end;
+
+    @media (max-width: 820px) {
+      justify-self: start;
+    }
+  }
+}
