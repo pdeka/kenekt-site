@@ -123,7 +123,7 @@ export default function BuildersPage() {
                 For builders
               </Link>
             </div>
-            <Link href="/insights">
+            <Link href="https://insights.kenekt.app">
               Insights
               <lord-icon
                 src="https://cdn.lordicon.com/ibfxqfzr.json"

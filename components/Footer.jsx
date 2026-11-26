@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 export default function Footer() {
   return (
     <footer className="site-footer shell">
@@ -87,7 +85,7 @@ export default function Footer() {
         <a href="https://builder-brochure.kenekt.app/" target="_blank" rel="noopener">Builder/Supplier Brochure</a>
         <a href="https://help.kenekt.app/api-reference/stock/list-agency-packages" target="_blank" rel="noopener">Data Integration API</a>
         <a href="https://help.kenekt.app/api-reference/team-members/list-members" target="_blank" rel="noopener">Data Mgmt API</a>
-        <Link href="/insights">Insights</Link>
+        <a href="https://insights.kenekt.app/" target="_blank" rel="noopener">Insights</a>
       </nav>
 
       <nav className="site-footer-col" aria-label="Legal">
