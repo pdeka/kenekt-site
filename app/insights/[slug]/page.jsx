@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import BlogNav from '@/components/BlogNav'
+import InsightsNav from '@/components/InsightsNav'
 import Footer from '@/components/Footer'
-import { getPosts, getPost, formatDate } from '@/lib/blog'
+import { getPosts, getPost, formatDate } from '@/lib/insights'
 import { SHARE_IMAGE } from '../../site'
-import '../blog.css'
+import '../insights.css'
 
 // Static export: only the posts that exist at build time get a page
 export const dynamicParams = false
@@ -25,12 +25,12 @@ export async function generateMetadata({ params }) {
   return {
     title: `${post.title} | Kenekt`,
     description: post.summary,
-    alternates: { canonical: `/blog/${post.slug}` },
+    alternates: { canonical: `/insights/${post.slug}` },
     openGraph: {
       type: 'article',
       siteName: 'Kenekt',
       locale: 'en_AU',
-      url: `/blog/${post.slug}`,
+      url: `/insights/${post.slug}`,
       title: post.title,
       description: post.summary,
       publishedTime: post.date,
@@ -45,16 +45,16 @@ export async function generateMetadata({ params }) {
   }
 }
 
-export default async function BlogPost({ params }) {
+export default async function InsightsPost({ params }) {
   const post = getPost((await params).slug)
   if (!post) notFound()
 
   return (
-    <main className="concept blog">
-      <BlogNav />
+    <main className="concept insights">
+      <InsightsNav />
 
-      <article className="blog-post shell">
-        <Link className="text-link" href="/blog">All posts</Link>
+      <article className="insights-post shell">
+        <Link className="text-link" href="/insights">All posts</Link>
         <header>
           <time dateTime={post.date}>
             {formatDate(post.date)}
@@ -64,8 +64,8 @@ export default async function BlogPost({ params }) {
           <h1>{post.title}</h1>
           {post.summary && <p>{post.summary}</p>}
         </header>
-        {post.image && <img className="blog-post-cover" src={post.image} alt={post.imageAlt} />}
-        <div className="blog-body" dangerouslySetInnerHTML={{ __html: post.html }} />
+        {post.image && <img className="insights-post-cover" src={post.image} alt={post.imageAlt} />}
+        <div className="insights-body" dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>
 
       <Footer />

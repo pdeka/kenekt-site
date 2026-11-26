@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
-/** The home page header, pointed back at the main site, for the blog pages. */
-export default function BlogNav() {
+/** The home page header, pointed back at the main site, for the Insights pages. */
+export default function InsightsNav() {
   return (
     <header className="site-nav shell">
       <Link className="brand" href="/">
@@ -12,7 +12,7 @@ export default function BlogNav() {
           <Link href="/" data-audience="advisers">For advisers</Link>
           <Link href="/builders" data-audience="builders">For builders</Link>
         </div>
-        <Link href="/blog" aria-current="page">Blog</Link>
+        <Link href="/insights" aria-current="page">Insights</Link>
         <a href="https://help.kenekt.app/">Guides</a>
       </nav>
       <div className="nav-actions">

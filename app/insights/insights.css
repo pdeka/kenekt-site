@@ -1,6 +1,6 @@
-/* Blog index and post pages */
+/* Insights index and article pages */
 
-.blog-head {
+.insights-head {
   padding: clamp(40px, 6vw, 72px) 0 0;
   max-width: 760px;
 
@@ -21,7 +21,7 @@
   }
 }
 
-.blog-list {
+.insights-list {
   padding: clamp(40px, 6vw, 64px) 0 clamp(64px, 8vw, 96px);
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -36,11 +36,11 @@
   }
 }
 
-.blog-empty {
+.insights-empty {
   color: var(--muted);
 }
 
-.blog-card a {
+.insights-card a {
   display: block;
 
   img {
@@ -82,7 +82,7 @@
   }
 }
 
-.blog-post {
+.insights-post {
   max-width: 720px;
   padding: clamp(32px, 5vw, 56px) 0 clamp(64px, 8vw, 96px);
 
@@ -111,13 +111,13 @@
   }
 }
 
-.blog-post-cover {
+.insights-post-cover {
   margin-top: 36px;
   border-radius: 22px;
 }
 
 /* Markdown output from the CMS */
-.blog-body {
+.insights-body {
   margin-top: 40px;
   font-size: 17px;
   line-height: 1.75;
