@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import SenjaWidget from '@/components/SenjaWidget'
 import Footer from '@/components/Footer'
+// Editable in the CMS at /admin
+import adviserPlans from '@/content/adviser-plans.json'
 
 // The old site's /home 301s here, so / is the canonical home page
 /** @type {import('next').Metadata} */
@@ -320,124 +322,47 @@ export default function HomePage() {
 
       <section className="plans shell">
         <div className="plans-head">
-          <span>For agencies &amp; property advisers</span>
-          <h2>Kenekt for agencies &amp; property advisers.</h2>
-          <p>Kenekt is free for agencies, property advisers, mortgage brokers &amp; accountants.</p>
-          <a className="text-link"
-            href="https://adviser-brochure.kenekt.app/"
-          >
-            Full product brochure
+          <span>{adviserPlans.eyebrow}</span>
+          <h2>{adviserPlans.heading}</h2>
+          <p>{adviserPlans.intro}</p>
+          <a className="text-link" href={adviserPlans.brochure.href}>
+            {adviserPlans.brochure.label}
           </a>
         </div>
 
         <div className="plans-grid">
-          <div className="plan">
-            <span className="plan-tier">
-            Single Agent Account
-            <lord-icon
-              src="https://cdn.lordicon.com/rzsnbiaw.json"
-              trigger="hover"
-              state="hover-pinch"
-              colors="primary:#4be1ec,secondary:#cb5eee"
-              stroke="bold"
-              style={{ width: 28, height: 28 }}
-            ></lord-icon>
-            </span>
-            <strong className="plan-price">
-              Free when you work with Kenekt
-            </strong>
-            <ul className="plan-features">
-              <li><i>✓</i> Access nationwide stock and compare house &amp; land opportunities.</li>
-              <li><i>✓</i> Utilise property research tools to present options to clients effectively.</li>
-              <li><i>✓</i> Apply your branding to generate brochures and client materials.</li>
-              <li><i>✓</i> Access continuously updated pricing and availability data.</li>
-              <li><i>✓</i> Work with Kenekt&apos;s validated network of builders and suppliers.</li>
-              <li><i>✓</i> Streamlined access to multiple suppliers via a single Kenekt referral agreement.</li>
-              <li><i>✓</i> Export stocklists for in-depth research or distribution.</li>
-            </ul>
-            <a className="pill pill-blue plan-cta" href="https://portal.kenekt.com.au/sign_up">
-              Sign up free for property advisers
-              <lord-icon
-                src="https://cdn.lordicon.com/cyvvyiob.json"
-                trigger="hover"
-                state="hover-pinch"
-                colors="primary:#4be1ec,secondary:#cb5eee"
-                stroke="bold"
-                style={{ width: 28, height: 28 }}
-              ></lord-icon>
-            </a>
-          </div>
-
-          <div className="plan">
-            <span className="plan-tier">
-              Agency Account
-              <lord-icon
-                src="https://cdn.lordicon.com/kbsnckkc.json"
-                trigger="hover"
-                state="hover-pinch"
-                colors="primary:#4be1ec,secondary:#cb5eee"
-                stroke="bold"
-                style={{ width: 28, height: 28 }}
-              ></lord-icon>
-            </span>
-            <strong className="plan-price">Free when you work with Kenekt*</strong>
-            <ul className="plan-features">
-              <li><i>✓</i> Includes all features of the Single Agent Account.</li>
-              <li><i>✓</i> Your own white-labelled portal, offering Kenekt&apos;s tools under your brand.</li>
-              <li><i>✓</i> Custom portal address, e.g. portal.mydomain.com.au.</li>
-              <li><i>✓</i> All enquiries from your portal are directed exclusively to your agency.</li>
-              <li><i>✓</i> Create accounts for clients and referral partners within your branded environment.</li>
-              <li><i>✓</i> White-labelled URLs for a seamless client experience.</li>
-              <li><i>✓</i> Apply your agency&apos;s logo, colours and contact details across the portal and documents.</li>
-              <li><i>✓</i> Unlimited access for your agency staff, property advisers and approved referrers.</li>
-            </ul>
-            <a className="pill pill-dark plan-cta" href="https://app.usemotion.com/meet/prabin-deka/agency-setup">
-              Book a demo
-              <lord-icon
-                src="https://cdn.lordicon.com/fimgbbfr.json"
-                trigger="hover"
-                state="hover-pinch"
-                colors="primary:#4be1ec,secondary:#cb5eee"
-                stroke="bold"
-                style={{ width: 28, height: 28 }}
-              ></lord-icon>
-            </a>
-          </div>
-
-          <div className="plan">
-            <span className="plan-tier">
-              Pro Agency Account
-              <lord-icon
-                  src="https://cdn.lordicon.com/hcbxnuro.json"
+          {adviserPlans.plans.map((plan) => (
+            <div className="plan" key={plan.name}>
+              <span className="plan-tier">
+                {plan.name}
+                <lord-icon
+                  src={plan.icon}
                   trigger="hover"
                   state="hover-pinch"
                   colors="primary:#4be1ec,secondary:#cb5eee"
-                  stroke="regular"
+                  stroke={plan.iconStroke}
                   style={{ width: 28, height: 28 }}
-              ></lord-icon>
-            </span>
-            <strong className="plan-price">Free when you work with Kenekt*</strong>
-            <ul className="plan-features">
-              <li><i>✓</i> Includes all features of the Agency Account.</li>
-              <li><i>✓</i> Seamless integration to display selected Kenekt packages on your existing website.</li>
-              <li><i>✓</i> Option for a professional, templated website by Kenekt if you don&apos;t have one.</li>
-              <li><i>✓</i> Publish integrated Kenekt stock directly to your website with live updates.</li>
-              <li><i>✓</i> Offer branded property search functionality directly on your site.</li>
-              <li><i>✓</i> Capture leads directly through your website for immediate follow-up.</li>
-              <li><i>✓</i> Managed implementation and ongoing data synchronisation by Kenekt.</li>
-            </ul>
-            <a className="pill pill-dark plan-cta" href="https://app.usemotion.com/meet/prabin-deka/agency-setup">
-              Book a demo
-              <lord-icon
-                src="https://cdn.lordicon.com/fimgbbfr.json"
-                trigger="hover"
-                state="hover-pinch"
-                colors="primary:#4be1ec,secondary:#cb5eee"
-                stroke="bold"
-                style={{ width: 28, height: 28 }}
-              ></lord-icon>
-            </a>
-          </div>
+                ></lord-icon>
+              </span>
+              <strong className="plan-price">{plan.price}</strong>
+              <ul className="plan-features">
+                {plan.features.map((feature) => (
+                  <li key={feature}><i>✓</i> {feature}</li>
+                ))}
+              </ul>
+              <a className={`pill pill-${plan.ctaStyle} plan-cta`} href={plan.ctaHref}>
+                {plan.ctaLabel}
+                <lord-icon
+                  src={plan.ctaIcon}
+                  trigger="hover"
+                  state="hover-pinch"
+                  colors="primary:#4be1ec,secondary:#cb5eee"
+                  stroke="bold"
+                  style={{ width: 28, height: 28 }}
+                ></lord-icon>
+              </a>
+            </div>
+          ))}
         </div>
 
         <div className="plans-notes">

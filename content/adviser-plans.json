@@ -1,0 +1,69 @@
+{
+  "eyebrow": "For agencies & property advisers",
+  "heading": "Kenekt for agencies & property advisers.",
+  "intro": "Kenekt is free for agencies, property advisers, mortgage brokers & accountants.",
+  "brochure": {
+    "label": "Full product brochure",
+    "href": "https://adviser-brochure.kenekt.app/"
+  },
+  "plans": [
+    {
+      "name": "Single Agent Account",
+      "price": "Free when you work with Kenekt",
+      "features": [
+        "Access nationwide stock and compare house & land opportunities.",
+        "Utilise property research tools to present options to clients effectively.",
+        "Apply your branding to generate brochures and client materials.",
+        "Access continuously updated pricing and availability data.",
+        "Work with Kenekt's validated network of builders and suppliers.",
+        "Streamlined access to multiple suppliers via a single Kenekt referral agreement.",
+        "Export stocklists for in-depth research or distribution."
+      ],
+      "ctaLabel": "Sign up free for property advisers",
+      "ctaHref": "https://portal.kenekt.com.au/sign_up",
+      "ctaStyle": "blue",
+      "icon": "https://cdn.lordicon.com/rzsnbiaw.json",
+      "iconStroke": "bold",
+      "ctaIcon": "https://cdn.lordicon.com/cyvvyiob.json"
+    },
+    {
+      "name": "Agency Account",
+      "price": "Free when you work with Kenekt*",
+      "features": [
+        "Includes all features of the Single Agent Account.",
+        "Your own white-labelled portal, offering Kenekt's tools under your brand.",
+        "Custom portal address, e.g. portal.mydomain.com.au.",
+        "All enquiries from your portal are directed exclusively to your agency.",
+        "Create accounts for clients and referral partners within your branded environment.",
+        "White-labelled URLs for a seamless client experience.",
+        "Apply your agency's logo, colours and contact details across the portal and documents.",
+        "Unlimited access for your agency staff, property advisers and approved referrers."
+      ],
+      "ctaLabel": "Book a demo",
+      "ctaHref": "https://app.usemotion.com/meet/prabin-deka/agency-setup",
+      "ctaStyle": "dark",
+      "icon": "https://cdn.lordicon.com/kbsnckkc.json",
+      "iconStroke": "bold",
+      "ctaIcon": "https://cdn.lordicon.com/fimgbbfr.json"
+    },
+    {
+      "name": "Pro Agency Account",
+      "price": "Free when you work with Kenekt*",
+      "features": [
+        "Includes all features of the Agency Account.",
+        "Seamless integration to display selected Kenekt packages on your existing website.",
+        "Option for a professional, templated website by Kenekt if you don't have one.",
+        "Publish integrated Kenekt stock directly to your website with live updates.",
+        "Offer branded property search functionality directly on your site.",
+        "Capture leads directly through your website for immediate follow-up.",
+        "Managed implementation and ongoing data synchronisation by Kenekt."
+      ],
+      "ctaLabel": "Book a demo",
+      "ctaHref": "https://app.usemotion.com/meet/prabin-deka/agency-setup",
+      "ctaStyle": "dark",
+      "icon": "https://cdn.lordicon.com/hcbxnuro.json",
+      "iconStroke": "regular",
+      "ctaIcon": "https://cdn.lordicon.com/fimgbbfr.json"
+    }
+  ]
+}
