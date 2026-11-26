@@ -41,7 +41,7 @@ Kenekt's help site at help.kenekt.app has its own index for language models: [he
 
 ## Optional
 
-- [Insights](https://insights.kenekt.app/): Articles and market commentary.
+- [Insights](https://www.kenekt.app/insights): Articles and market commentary.
 - [API reference](https://help.kenekt.app/api-reference/agency/get-the-agency): Kenekt API documentation for agencies and integrations.
 - [Terms of use](https://portal.kenekt.com.au/policies/terms)
 - [Privacy policy](https://portal.kenekt.com.au/policies/privacy)
