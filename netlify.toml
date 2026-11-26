@@ -24,6 +24,12 @@
   status = 301
   force = true
 
+# The Keystatic editor is a single exported page that routes in the browser
+[[redirects]]
+  from = "/keystatic/*"
+  to = "/keystatic.html"
+  status = 200
+
 [[redirects]]
   from = "/*"
   to = "/404.html"

@@ -6,7 +6,8 @@ export default function nextConfig(phase: string): NextConfig {
   const dev = phase === PHASE_DEVELOPMENT_SERVER
 
   return {
-    // The Keystatic editor needs a server, so it only exists under `next dev`; production stays a static export
+    // Keystatic's local mode needs its API route (route.keystatic.ts), so that only exists under `next dev`.
+    // The live editor uses Keystatic Cloud from the browser, so production stays a static export.
     ...(dev ? {} : { output: 'export' }),
     pageExtensions: dev ? ['tsx', 'ts', 'keystatic.tsx', 'keystatic.ts'] : ['tsx', 'ts'],
     experimental: {

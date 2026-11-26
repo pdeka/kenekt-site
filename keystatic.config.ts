@@ -1,9 +1,11 @@
 import { config, collection, fields } from '@keystatic/core'
 
-// Local mode: the editor at /keystatic (npm run dev only) writes straight into content/ and public/,
-// and changes go live by committing them. The public site stays a static export.
+// Under `npm run dev` the editor at /keystatic writes straight into content/ and public/.
+// On the live site it uses Keystatic Cloud, which commits edits to GitHub and so triggers a Netlify rebuild.
+// The Cloud project ("team/project") is set in Netlify as NEXT_PUBLIC_KEYSTATIC_CLOUD_PROJECT.
 export default config({
-  storage: { kind: 'local' },
+  storage: process.env.NODE_ENV === 'development' ? { kind: 'local' } : { kind: 'cloud' },
+  cloud: { project: process.env.NEXT_PUBLIC_KEYSTATIC_CLOUD_PROJECT ?? '' },
   ui: {
     brand: { name: 'Kenekt' },
   },
