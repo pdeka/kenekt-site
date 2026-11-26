@@ -1,0 +1,323 @@
+/* Insights index and article pages */
+
+.insights {
+  position: relative;
+  isolation: isolate;
+}
+
+/* The builders hero's estate map, drawn dark on white and faded out below the page heading */
+.insights-bg {
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: -1;
+  height: clamp(560px, 80vh, 820px);
+  pointer-events: none;
+  mask-image: linear-gradient(#000 55%, transparent);
+}
+
+.insights-map {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: var(--ink);
+
+  .b-map-lots {
+    stroke-width: 78;
+    stroke-dasharray: 1.5 26;
+    stroke-linecap: butt;
+    opacity: .14;
+  }
+
+  .b-map-edges {
+    stroke-width: 18;
+    opacity: .05;
+  }
+
+  .b-ping {
+    fill: var(--orange);
+    stroke: var(--orange);
+    stroke-opacity: .5;
+    stroke-width: 0;
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: insights-ping 2.8s ease-out infinite;
+
+    &:nth-of-type(2) {
+      animation-delay: .9s;
+    }
+
+    &:nth-of-type(3) {
+      animation-delay: 1.8s;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      animation: none;
+    }
+  }
+}
+
+@keyframes insights-ping {
+  0% { stroke-width: 0; stroke-opacity: .5; }
+  70%, 100% { stroke-width: 22; stroke-opacity: 0; }
+}
+
+.insights-head {
+  padding: clamp(40px, 6vw, 72px) 0 0;
+
+  span {
+    font-size: 10px;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: var(--blue);
+    font-weight: 600;
+  }
+
+  h1 {
+    font-size: clamp(34px, 4.4vw, 56px);
+    letter-spacing: -.05em;
+    line-height: 1.05;
+    font-weight: 500;
+    margin: 20px 0 0;
+    max-width: 760px;
+  }
+}
+
+.insights-list {
+  padding: clamp(40px, 6vw, 64px) 0 clamp(64px, 8vw, 96px);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(28px, 3vw, 40px) clamp(18px, 2.4vw, 28px);
+
+  @media (max-width: 960px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.insights-empty {
+  color: var(--muted);
+}
+
+.insights-card a {
+  display: block;
+
+  img {
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-radius: 18px;
+    margin-bottom: 18px;
+    background: var(--cream);
+  }
+
+  time {
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  h2 {
+    font-size: 22px;
+    letter-spacing: -.03em;
+    line-height: 1.2;
+    font-weight: 500;
+    margin: 8px 0 0;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #545650;
+    margin: 10px 0 0;
+    text-wrap: pretty;
+    /* Keep cards in a row level when one summary runs long */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    h2 {
+      transition: color .2s;
+    }
+
+    &:hover h2 {
+      color: var(--blue);
+    }
+  }
+}
+
+.insights-post {
+  max-width: 720px;
+  padding: clamp(32px, 5vw, 56px) 0 clamp(64px, 8vw, 96px);
+
+  header {
+    margin-top: 28px;
+
+    .insights-meta {
+      font-size: 13px;
+      line-height: 1.5;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    h1 {
+      font-size: clamp(32px, 4.4vw, 52px);
+      letter-spacing: -.05em;
+      line-height: 1.08;
+      font-weight: 500;
+      margin: 12px 0 0;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #545650;
+      margin: 20px 0 0;
+      text-wrap: pretty;
+    }
+  }
+}
+
+.insights-post-cover {
+  margin-top: 36px;
+  border-radius: 22px;
+  /* Same crop as the card on the list page, and no jump while it loads */
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  background: var(--cream);
+}
+
+/* Markdown output from the CMS */
+.insights-body {
+  margin-top: 40px;
+  font-size: 17px;
+  line-height: 1.75;
+  /* Long pasted links would otherwise push past the screen edge on phones */
+  overflow-wrap: break-word;
+
+  > :first-child {
+    margin-top: 0;
+  }
+
+  p,
+  li {
+    text-wrap: pretty;
+  }
+
+  h2,
+  h3,
+  h4 {
+    letter-spacing: -.03em;
+    line-height: 1.25;
+    font-weight: 600;
+    margin: 2em 0 0;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 17px;
+  }
+
+  /* A subheading straight under a heading belongs to it */
+  :is(h2, h3, h4) + :is(h2, h3, h4) {
+    margin-top: .5em;
+  }
+
+  p,
+  ul,
+  ol,
+  blockquote,
+  pre {
+    margin: 1.1em 0 0;
+  }
+
+  ul,
+  ol {
+    padding-left: 1.3em;
+  }
+
+  li + li {
+    margin-top: .4em;
+  }
+
+  /* Loose lists wrap each item in a paragraph; keep items as tight as a normal list */
+  li > p:first-child {
+    margin-top: 0;
+  }
+
+  a {
+    color: var(--blue);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  img {
+    border-radius: 16px;
+  }
+
+  /* The editor wraps each image in a paragraph, so the paragraph carries the space */
+  p:has(> img) {
+    margin-top: 1.6em;
+  }
+
+  blockquote {
+    padding-left: 20px;
+    border-left: 3px solid var(--orange);
+    color: #545650;
+  }
+
+  code {
+    font-size: .9em;
+    padding: .1em .35em;
+    border-radius: 6px;
+    background: var(--cream);
+  }
+
+  pre {
+    padding: 16px 20px;
+    border-radius: 12px;
+    background: var(--cream);
+    overflow-x: auto;
+    line-height: 1.6;
+
+    code {
+      padding: 0;
+      background: none;
+    }
+  }
+
+  hr {
+    margin: 2.4em 0 0;
+    border: 0;
+    border-top: 1px solid #e3e1d9;
+  }
+}
+
+/* Optional button after the article body, set per post in the CMS */
+.insights-cta {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+
+  /* A long label wraps, so the pill grows instead of keeping its fixed height */
+  .pill {
+    height: auto;
+    min-height: 52px;
+    padding-block: 14px;
+    white-space: normal;
+    text-align: center;
+  }
+}

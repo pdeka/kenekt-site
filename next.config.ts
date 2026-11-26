@@ -1,12 +1,20 @@
 import type { NextConfig } from 'next'
+import { PHASE_DEVELOPMENT_SERVER } from 'next/constants'
 import path from 'node:path'
 
-const nextConfig: NextConfig = {
-  output: 'export',
-  images: {
-    unoptimized: true,
-  },
-  outputFileTracingRoot: path.join(__dirname),
-}
+export default function nextConfig(phase: string): NextConfig {
+  const dev = phase === PHASE_DEVELOPMENT_SERVER
 
-export default nextConfig
+  return {
+    // The Keystatic editor needs a server, so it only exists under `next dev`; production stays a static export
+    ...(dev ? {} : { output: 'export' }),
+    pageExtensions: dev ? ['tsx', 'ts', 'keystatic.tsx', 'keystatic.ts'] : ['tsx', 'ts'],
+    experimental: {
+      globalNotFound: true,
+    },
+    images: {
+      unoptimized: true,
+    },
+    outputFileTracingRoot: path.join(__dirname),
+  }
+}

@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import Script from 'next/script'
 import LordIcon from '@/components/LordIcon'
 import SiteScripts from '@/components/SiteScripts'
-import { SHARE_IMAGE, SITE_URL } from './site'
+import { SHARE_IMAGE, SITE_URL } from '../site'
 import './globals.css'
 
 // Google Analytics 4 measurement ID

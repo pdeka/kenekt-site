@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { SHARE_IMAGE } from '../site'
+import { SHARE_IMAGE } from '../../site'
 import './builders.css'
 
 // Builders search/share text, reused for og: and twitter:

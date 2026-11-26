@@ -1656,6 +1656,37 @@ button {
   }
 }
 
+/* 404 */
+.not-found {
+  display: grid;
+  grid-template-rows: 104px 1fr;
+  min-height: 100vh;
+
+  .brand {
+    align-self: center;
+  }
+
+  > div {
+    align-self: center;
+    padding-bottom: 104px;
+  }
+
+  span {
+    font-size: 10px;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: var(--blue);
+    font-weight: 600;
+  }
+
+  h1 {
+    margin: 20px 0 32px;
+    font-size: clamp(30px, 3.4vw, 40px);
+    letter-spacing: -.05em;
+    font-weight: 500;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
 
   *,
