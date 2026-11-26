@@ -65,7 +65,7 @@ const packages = [
   },
 ]
 
-function EstateMap({ id, className, fit }: { id: string; className: string; fit: string }) {
+function EstateMap({ id, className, fit }) {
   const roads = [1, 2, 3, 4].map((n) => `${id}-${n}`)
   return (
     <svg className={className} viewBox="0 0 1400 700" preserveAspectRatio={fit} aria-hidden="true">

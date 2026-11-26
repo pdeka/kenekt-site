@@ -1,4 +1,3 @@
-import type { Metadata } from 'next'
 import { SHARE_IMAGE } from '../site'
 import './builders.css'
 
@@ -7,7 +6,8 @@ const title = 'Kenekt for builders | Grow wholesale, not headcount'
 const description =
   'Put your house & land stock in front of 617+ property advisers. List free on the Kenekt Marketplace, outsource your wholesale channel or run a branded portal.'
 
-export const metadata: Metadata = {
+/** @type {import('next').Metadata} */
+export const metadata = {
   title,
   description,
   alternates: { canonical: '/builders' },
@@ -29,6 +29,6 @@ export const metadata: Metadata = {
   },
 }
 
-export default function BuildersLayout({ children }: { children: React.ReactNode }) {
+export default function BuildersLayout({ children }) {
   return children
 }

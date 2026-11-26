@@ -1,12 +1,12 @@
-import type { NextConfig } from 'next'
 import path from 'node:path'
 
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
   },
-  outputFileTracingRoot: path.join(__dirname),
+  outputFileTracingRoot: path.join(import.meta.dirname),
 }
 
 export default nextConfig

@@ -1,4 +1,3 @@
-import type { Metadata, Viewport } from 'next'
 import Script from 'next/script'
 import LordIcon from '@/components/LordIcon'
 import SiteScripts from '@/components/SiteScripts'
@@ -73,7 +72,8 @@ const structuredData = {
   ],
 }
 
-export const metadata: Metadata = {
+/** @type {import('next').Metadata} */
+export const metadata = {
   metadataBase: new URL(SITE_URL),
   title,
   description,
@@ -102,15 +102,12 @@ export const metadata: Metadata = {
 }
 
 // Tints the mobile browser bar in the brand gold (--orange)
-export const viewport: Viewport = {
+/** @type {import('next').Viewport} */
+export const viewport = {
   themeColor: '#fdc140',
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en-AU">
       <body>
