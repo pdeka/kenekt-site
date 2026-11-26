@@ -132,6 +132,13 @@
     line-height: 1.6;
     color: #545650;
     margin: 10px 0 0;
+    text-wrap: pretty;
+    /* Keep cards in a row level when one summary runs long */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
   }
 
   @media (hover: hover) and (pointer: fine) {
@@ -152,9 +159,11 @@
   header {
     margin-top: 28px;
 
-    time {
+    .insights-meta {
       font-size: 13px;
+      line-height: 1.5;
       color: var(--muted);
+      margin: 0;
     }
 
     h1 {
@@ -170,6 +179,7 @@
       line-height: 1.6;
       color: #545650;
       margin: 20px 0 0;
+      text-wrap: pretty;
     }
   }
 }
@@ -177,6 +187,10 @@
 .insights-post-cover {
   margin-top: 36px;
   border-radius: 22px;
+  /* Same crop as the card on the list page, and no jump while it loads */
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  background: var(--cream);
 }
 
 /* Markdown output from the CMS */
@@ -184,13 +198,21 @@
   margin-top: 40px;
   font-size: 17px;
   line-height: 1.75;
+  /* Long pasted links would otherwise push past the screen edge on phones */
+  overflow-wrap: break-word;
 
   > :first-child {
     margin-top: 0;
   }
 
+  p,
+  li {
+    text-wrap: pretty;
+  }
+
   h2,
-  h3 {
+  h3,
+  h4 {
     letter-spacing: -.03em;
     line-height: 1.25;
     font-weight: 600;
@@ -205,10 +227,20 @@
     font-size: 20px;
   }
 
+  h4 {
+    font-size: 17px;
+  }
+
+  /* A subheading straight under a heading belongs to it */
+  :is(h2, h3, h4) + :is(h2, h3, h4) {
+    margin-top: .5em;
+  }
+
   p,
   ul,
   ol,
-  blockquote {
+  blockquote,
+  pre {
     margin: 1.1em 0 0;
   }
 
@@ -221,6 +253,11 @@
     margin-top: .4em;
   }
 
+  /* Loose lists wrap each item in a paragraph; keep items as tight as a normal list */
+  li > p:first-child {
+    margin-top: 0;
+  }
+
   a {
     color: var(--blue);
     text-decoration: underline;
@@ -228,8 +265,12 @@
   }
 
   img {
-    margin: 1.6em 0 0;
     border-radius: 16px;
+  }
+
+  /* The editor wraps each image in a paragraph, so the paragraph carries the space */
+  p:has(> img) {
+    margin-top: 1.6em;
   }
 
   blockquote {
@@ -245,6 +286,19 @@
     background: var(--cream);
   }
 
+  pre {
+    padding: 16px 20px;
+    border-radius: 12px;
+    background: var(--cream);
+    overflow-x: auto;
+    line-height: 1.6;
+
+    code {
+      padding: 0;
+      background: none;
+    }
+  }
+
   hr {
     margin: 2.4em 0 0;
     border: 0;
@@ -258,7 +312,11 @@
   display: flex;
   justify-content: center;
 
+  /* A long label wraps, so the pill grows instead of keeping its fixed height */
   .pill {
+    height: auto;
+    min-height: 52px;
+    padding-block: 14px;
     white-space: normal;
     text-align: center;
   }

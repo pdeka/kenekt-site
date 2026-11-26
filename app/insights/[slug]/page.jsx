@@ -58,13 +58,13 @@ export default async function InsightsPost({ params }) {
       <InsightsNav />
 
       <article className="insights-post shell">
-        <Link className="text-link" href="/insights">All posts</Link>
+        <Link className="text-link" href="/insights">All insights</Link>
         <header>
-          <time dateTime={post.date}>
-            {formatDate(post.date)}
+          <p className="insights-meta">
+            <time dateTime={post.date}>{formatDate(post.date)}</time>
             {post.author && ` · ${post.author}`}
             {post.draft && <em> · Draft</em>}
-          </time>
+          </p>
           <h1>{post.title}</h1>
           {post.summary && <p>{post.summary}</p>}
         </header>

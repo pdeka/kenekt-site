@@ -31,7 +31,7 @@ export default function InsightsIndex() {
       </section>
 
       <section className="insights-list shell">
-        {posts.length === 0 && <p className="insights-empty">No posts yet. Check back soon.</p>}
+        {posts.length === 0 && <p className="insights-empty">No articles yet. Check back soon.</p>}
         {posts.map((post) => (
           <article className="insights-card" key={post.slug}>
             <Link href={`/insights/${post.slug}`}>
