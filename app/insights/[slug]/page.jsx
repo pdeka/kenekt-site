@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import InsightsNav from '@/components/InsightsNav'
 import Footer from '@/components/Footer'
+import EstateMap from '@/components/EstateMap'
 import { getPosts, getPost, formatDate } from '@/lib/insights'
 import { SHARE_IMAGE } from '../../site'
 import '../insights.css'
@@ -51,6 +52,9 @@ export default async function InsightsPost({ params }) {
 
   return (
     <main className="concept insights">
+      <div className="insights-bg" aria-hidden="true">
+        <EstateMap id="insights-road" className="insights-map" fit="xMaxYMin slice" />
+      </div>
       <InsightsNav />
 
       <article className="insights-post shell">

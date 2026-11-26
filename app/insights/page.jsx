@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import InsightsNav from '@/components/InsightsNav'
 import Footer from '@/components/Footer'
+import EstateMap from '@/components/EstateMap'
 import { getPosts, formatDate } from '@/lib/insights'
 import './insights.css'
 
@@ -19,11 +20,14 @@ export default function InsightsIndex() {
 
   return (
     <main className="concept insights">
+      <div className="insights-bg" aria-hidden="true">
+        <EstateMap id="insights-road" className="insights-map" fit="xMaxYMin slice" />
+      </div>
       <InsightsNav />
 
       <section className="insights-head shell">
-        <span>Kenekt Insights</span>
-        <h1>News and insights for property advisers &amp; builders.</h1>
+        <span>Market Research & Insights</span>
+        <h1>Explore insights covering markets, suburbs and growth</h1>
       </section>
 
       <section className="insights-list shell">
