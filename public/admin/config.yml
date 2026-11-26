@@ -7,39 +7,25 @@ backend:
 # Lets you try the editor locally without signing in: run `npx decap-server` alongside `npm run dev`
 local_backend: true
 
-media_folder: public/assets/uploads
-public_folder: /assets/uploads
+media_folder: public/assets/blog
+public_folder: /assets/blog
 
 collections:
-  - name: home
-    label: Home page
-    files:
-      - name: adviser-plans
-        label: Plans for agencies & advisers
-        file: content/adviser-plans.json
-        fields:
-          - { name: eyebrow, label: Small label above heading, widget: string }
-          - { name: heading, label: Heading, widget: string }
-          - { name: intro, label: Intro, widget: text }
-          - name: brochure
-            label: Brochure link
-            widget: object
-            fields:
-              - { name: label, label: Link text, widget: string }
-              - { name: href, label: Link address, widget: string }
-          - name: plans
-            label: Plans
-            label_singular: Plan
-            widget: list
-            summary: '{{fields.name}}'
-            fields:
-              - { name: name, label: Plan name, widget: string }
-              - { name: price, label: Price line, widget: string }
-              - { name: features, label: Features, label_singular: Feature, widget: list, field: { name: feature, label: Feature, widget: string } }
-              - { name: ctaLabel, label: Button text, widget: string }
-              - { name: ctaHref, label: Button link, widget: string }
-              - { name: ctaStyle, label: Button colour, widget: select, options: [{ label: Blue, value: blue }, { label: Dark, value: dark }], default: dark }
-              # Animated icons: kept out of the editor's way, set by a developer
-              - { name: icon, widget: hidden }
-              - { name: iconStroke, widget: hidden, default: bold }
-              - { name: ctaIcon, widget: hidden, default: 'https://cdn.lordicon.com/fimgbbfr.json' }
+  - name: blog
+    label: Blog posts
+    label_singular: Blog post
+    folder: content/blog
+    create: true
+    # The file name becomes the post's web address: /blog/<slug>
+    slug: '{{slug}}'
+    summary: '{{title}} ({{date}})'
+    sortable_fields: [date, title]
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Publish date, widget: datetime, format: 'YYYY-MM-DD', date_format: 'D MMMM YYYY', time_format: false }
+      - { name: summary, label: Summary (shown in the post list and when shared), widget: text }
+      - { name: author, label: Author, widget: string, required: false }
+      - { name: image, label: Cover image, widget: image, required: false }
+      - { name: imageAlt, label: Cover image description (for screen readers), widget: string, required: false }
+      - { name: draft, label: Draft (untick to publish), widget: boolean, default: true }
+      - { name: body, label: Post, widget: markdown }
