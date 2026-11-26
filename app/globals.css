@@ -1656,6 +1656,30 @@ button {
   }
 }
 
+/* Adviser home page: the competitive-edge section sits on a full-bleed band of the adviser purple,
+   with its text switched to white */
+.concept-signal .concept-note {
+  position: relative;
+  isolation: isolate;
+  color: #fff;
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0 calc(50% - 50vw);
+    background: var(--blue);
+  }
+
+  span {
+    color: rgba(255, 255, 255, .78);
+  }
+
+  > p {
+    color: rgba(255, 255, 255, .88);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
 
   *,
