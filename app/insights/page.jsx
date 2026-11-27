@@ -45,6 +45,22 @@ export default function InsightsIndex() {
       <section className="insights-head shell">
         <span>Market Research & Insights</span>
         <h1>Explore insights covering markets, suburbs and growth</h1>
+        <p>
+          Create your Kenekt account to access all our suburb, region and industry reports and share them with buyers under your own brand.
+        </p>
+        <div className="hero-actions">
+          <a className="pill pill-blue" href="https://portal.kenekt.com.au/sign_up">
+            Create your free account
+            <lord-icon
+              src="https://cdn.lordicon.com/cyvvyiob.json"
+              trigger="hover"
+              state="hover-pinch"
+              colors="primary:#4be1ec,secondary:#cb5eee"
+              stroke="bold"
+              style={{ width: 24, height: 24 }}
+            ></lord-icon>
+          </a>
+        </div>
       </section>
 
       <section className="insights-list shell">
