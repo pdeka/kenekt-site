@@ -3,7 +3,8 @@ export default function SignupPanel() {
   return (
     <aside className="insights-signup" aria-label="Create a Kenekt account">
       <p>
-        Create your Kenekt account to access all our suburb, region and industry reports and share them with buyers under your own brand.
+        Help your buyers compare suburbs and understand the property market. Create your Kenekt adviser account to access all our suburb,
+        regional and industry reports and share them under your own brand.
       </p>
       <a className="pill pill-blue" href="https://portal.kenekt.com.au/sign_up">
         Create your free account
