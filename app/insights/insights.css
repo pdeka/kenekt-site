@@ -124,7 +124,8 @@
   padding: clamp(40px, 6vw, 64px) 0 clamp(64px, 8vw, 96px);
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(28px, 3vw, 40px) clamp(18px, 2.4vw, 28px);
+  /* Rows sit clearly further apart than the parts inside a card, so each card reads as one unit */
+  gap: clamp(44px, 6vw, 56px) clamp(18px, 2.4vw, 28px);
 
   @media (max-width: 960px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -190,7 +191,9 @@
 
 .insights-post {
   max-width: 720px;
-  padding: clamp(32px, 5vw, 56px) 0 clamp(64px, 8vw, 96px);
+  /* Starts level with the /insights label above the heading: the back link brings 10px of its own
+     top padding, and the label sits 6px lower in its line */
+  padding: clamp(36px, calc(6vw - 4px), 68px) 0 clamp(64px, 8vw, 96px);
 
   header {
     margin-top: 28px;
@@ -267,17 +270,18 @@
     font-size: 17px;
   }
 
-  /* A subheading straight under a heading belongs to it */
-  :is(h2, h3, h4) + :is(h2, h3, h4) {
-    margin-top: .5em;
-  }
-
   p,
   ul,
   ol,
   blockquote,
   pre {
     margin: 1.1em 0 0;
+  }
+
+  /* Whatever follows a heading (text or a subheading) belongs to it, so it sits closer
+     than paragraphs sit to each other (after the rule above so it wins) */
+  :is(h2, h3, h4) + * {
+    margin-top: .5em;
   }
 
   ul,
@@ -353,6 +357,11 @@
   p {
     text-wrap: balance;
   }
+}
+
+/* Straight after the article's own button, the panel joins it as one closing block */
+.insights-cta + .insights-signup {
+  margin-top: 32px;
 }
 
 /* Optional button after the article body, set per post in the CMS */
