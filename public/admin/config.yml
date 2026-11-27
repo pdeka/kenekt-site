@@ -1,0 +1,45 @@
+# Decap CMS settings. Editors sign in at /admin; each save commits to the repo and Netlify redeploys.
+backend:
+  name: github
+  repo: pdeka/kenekt-site
+  branch: main
+
+# Lets you try the editor locally without signing in: run `npx decap-server` alongside `npm run dev`
+local_backend: true
+
+media_folder: public/assets/insights
+public_folder: /assets/insights
+
+collections:
+  - name: insights
+    label: Insights
+    label_singular: Insights article
+    folder: content/insights
+    create: true
+    # The file name becomes the post's web address: /insights/<slug>
+    slug: '{{slug}}'
+    summary: '{{title}} ({{date}})'
+    sortable_fields: [date, title]
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Publish date, widget: datetime, format: 'YYYY-MM-DD', date_format: 'D MMMM YYYY', time_format: false }
+      - { name: summary, label: Summary (shown in the post list and when shared), widget: text }
+      - { name: author, label: Author, widget: string, required: false }
+      - { name: image, label: Cover image, widget: image, required: false }
+      - { name: imageAlt, label: Cover image description (for screen readers), widget: string, required: false }
+      - name: button
+        label: Button at the end of the article
+        hint: Optional. Leave both empty for no button.
+        widget: object
+        required: false
+        collapsed: true
+        fields:
+          - { name: label, label: Button text, widget: string, required: false, hint: 'e.g. Book a call' }
+          - name: link
+            label: Link
+            widget: string
+            required: false
+            hint: 'A full web address (https://...), a page on this site (/builders), or a mailto: or tel: link'
+            pattern: ['^(https?://|/|mailto:|tel:)', 'Start with https://, /, mailto: or tel:']
+      - { name: draft, label: Draft (untick to publish), widget: boolean, default: true }
+      - { name: body, label: Post, widget: markdown }

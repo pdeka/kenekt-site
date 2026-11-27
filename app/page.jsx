@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import SenjaWidget from '@/components/SenjaWidget'
-import type { Metadata } from 'next'
 import Footer from '@/components/Footer'
 
 // The old site's /home 301s here, so / is the canonical home page
-export const metadata: Metadata = {
+/** @type {import('next').Metadata} */
+export const metadata = {
   alternates: { canonical: '/' },
 }
 
@@ -469,7 +469,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <figure className="photo-divider" style={{ '--photo-y': '68%' } as React.CSSProperties}>
+      <figure className="photo-divider" style={{ '--photo-y': '68%' }}>
         <img
           src="/assets/photos/estate-aerial-1280.webp"
           srcSet="/assets/photos/estate-aerial-1280.webp 1280w, /assets/photos/estate-aerial-2400.webp 2400w"

@@ -13,13 +13,13 @@ export default function SiteScripts() {
   const pathname = usePathname()
 
   useEffect(() => {
-    const clamp = (value: number) => Math.min(1, Math.max(0, value))
+    const clamp = (value) => Math.min(1, Math.max(0, value))
     let frame = 0
 
     function update() {
       frame = 0
       const viewport = window.innerHeight
-      document.querySelectorAll<HTMLElement>('[data-connect]').forEach((element) => {
+      document.querySelectorAll('[data-connect]').forEach((element) => {
         const rect = element.getBoundingClientRect()
         const start = viewport * Number(element.dataset.connectStart || 0.9)
         const end = viewport * Number(element.dataset.connectEnd || 0.45)
@@ -27,7 +27,7 @@ export default function SiteScripts() {
         const progress = clamp((start - rect.top) / (start - end + rect.height * span))
         element.style.setProperty('--progress', progress.toFixed(3))
         element.classList.toggle('is-connected', progress >= 0.999)
-        element.querySelectorAll<HTMLElement>('[data-at]').forEach((point) => {
+        element.querySelectorAll('[data-at]').forEach((point) => {
           point.classList.toggle('is-on', progress >= Number(point.dataset.at) - 0.001)
         })
       })
@@ -43,8 +43,8 @@ export default function SiteScripts() {
     window.addEventListener('load', requestUpdate)
     update()
 
-    const switches = Array.from(document.querySelectorAll<HTMLButtonElement>('.switch[role="switch"]'))
-    const onSwitchClick = (control: HTMLButtonElement) => () => {
+    const switches = Array.from(document.querySelectorAll('.switch[role="switch"]'))
+    const onSwitchClick = (control) => () => {
       const on = control.getAttribute('aria-checked') !== 'true'
       control.setAttribute('aria-checked', String(on))
       const label = control.querySelector('span')

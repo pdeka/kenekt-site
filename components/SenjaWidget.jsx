@@ -2,12 +2,6 @@
 
 import { useEffect } from 'react'
 
-declare global {
-  interface Window {
-    iFrameResize?: (options: Record<string, unknown>, selector: string) => void
-  }
-}
-
 const SCRIPT_SRC = 'https://widget.senja.io/js/iframeResizer.min.js'
 
 /**
@@ -21,7 +15,7 @@ export default function SenjaWidget() {
       window.iFrameResize?.({ log: false, checkOrigin: false }, '#wall-of-love-video-testimonials')
     }
 
-    const existing = document.querySelector<HTMLScriptElement>(`script[src="${SCRIPT_SRC}"]`)
+    const existing = document.querySelector(`script[src="${SCRIPT_SRC}"]`)
     if (existing) {
       if (window.iFrameResize) {
         init()

@@ -1,0 +1,64 @@
+import Link from 'next/link'
+
+/** The home page header, pointed back at the main site, for the Insights pages. */
+export default function InsightsNav() {
+  return (
+    <header className="site-nav shell">
+      <Link className="brand" href="/">
+        <img src="/assets/logo/kenekt-mark.svg" alt="Kenekt home" width={48} height={48} />
+      </Link>
+      <nav aria-label="Main">
+        <div className="audience-switch">
+          <Link href="/" data-audience="advisers">For advisers</Link>
+          <Link href="/builders" data-audience="builders">For builders</Link>
+        </div>
+        <Link href="/insights" aria-current="page">
+          Insights
+          <lord-icon
+            src="https://cdn.lordicon.com/ibfxqfzr.json"
+            trigger="hover"
+            state="hover-pinch"
+            colors="primary:#4be1ec,secondary:#cb5eee"
+            stroke="bold"
+            style={{ width: 24, height: 24 }}
+          ></lord-icon>
+        </Link>
+        <a href="https://help.kenekt.app/">
+          Guides
+          <lord-icon
+            src="https://cdn.lordicon.com/blfocsew.json"
+            trigger="hover"
+            state="hover-pinch"
+            colors="primary:#4be1ec,secondary:#cb5eee"
+            stroke="bold"
+            style={{ width: 24, height: 24 }}
+          ></lord-icon>
+        </a>
+      </nav>
+      <div className="nav-actions">
+        <a href="https://portal.kenekt.com.au">
+          Log in
+          <lord-icon
+            src="https://cdn.lordicon.com/covqnqfn.json"
+            trigger="hover"
+            state="hover-pinch"
+            colors="primary:#4be1ec,secondary:#cb5eee"
+            stroke="bold"
+            style={{ width: 24, height: 24 }}
+          ></lord-icon>
+        </a>
+        <a className="pill pill-dark" href="https://portal.kenekt.com.au/sign_up">
+          Start sourcing
+          <lord-icon
+            src="https://cdn.lordicon.com/qkcnmrzg.json"
+            trigger="hover"
+            state="hover-pinch"
+            colors="primary:#4be1ec,secondary:#cb5eee"
+            stroke="bold"
+            style={{ width: 24, height: 24 }}
+          ></lord-icon>
+        </a>
+      </div>
+    </header>
+  )
+}
