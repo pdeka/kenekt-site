@@ -20,7 +20,7 @@ export default function HomePage() {
             <a href="#signal-story" data-audience="advisers" aria-current="page">For advisers</a>
             <Link href="/builders" data-audience="builders">For builders</Link>
           </div>
-          <a href="https://insights.kenekt.app/">
+          <Link href="/insights">
             Insights
             <lord-icon
               src="https://cdn.lordicon.com/ibfxqfzr.json"
@@ -30,7 +30,7 @@ export default function HomePage() {
               stroke="bold"
               style={{ width: 24, height: 24 }}
             ></lord-icon>
-          </a>
+          </Link>
           <a href="https://help.kenekt.app/">
             Guides
             <lord-icon
