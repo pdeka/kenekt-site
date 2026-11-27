@@ -1,4 +1,5 @@
 ---
+draft: false
 title: "Murray Bridge: South Australia Is Building Its Second City​"
 date: 2026-09-01
 summary: Murray Bridge's residential property market in 2026 continues to show
@@ -6,12 +7,11 @@ summary: Murray Bridge's residential property market in 2026 continues to show
   realestate.com.au's "Hot 100" suburbs to watch in 2026, reinforcing its
   profile as a standout regional market.
 author: Kenekt
-image: /assets/insights/murray-bridge-sa-kenekt-house-and-land.png
+image: /assets/insights/murray-bridge-house-and-land.webp
 imageAlt: Murray Bridge House & Land
 button:
   label: Download Full Report
   link: https://portal.kenekt.com.au/d/BAh7BjoGZEkiD0FELTU1MTQ3NjYGOgZFVA%3D%3D--920073c58e01caaf2805d46a1232aa76788e8ab9
-draft: false
 ---
 ## Why Murray Bridge is one of the most deliberately backed growth stories in regional Australia
 
