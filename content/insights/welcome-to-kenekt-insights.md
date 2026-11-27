@@ -8,7 +8,7 @@ summary: Kenekt is now presenting apartment opportunities in Canberra City.
   presents a compelling opportunity for investors.
 author: Kenekt
 image: /assets/insights/canberra-act-kenekt.png
-imageAlt: This is the Description
+imageAlt: Canberra ACT
 draft: false
 ---
 If you are buying in Canberra City to chase capital growth, you are buying the wrong product in the right city. I want to make that case plainly because sometimes the numbers can flatter the suburb in a way that sets investors up for the wrong expectations.
