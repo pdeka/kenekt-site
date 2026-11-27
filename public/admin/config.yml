@@ -7,6 +7,12 @@ backend:
 # Lets you try the editor locally without signing in: run `npx decap-server` alongside `npm run dev`
 local_backend: true
 
+# Keep web addresses to plain letters, numbers and dashes, so characters pasted in with a title
+# (invisible zero-width spaces, curly quotes, accents) can't produce a page address that 404s
+slug:
+  encoding: ascii
+  clean_accents: true
+
 media_folder: public/assets/insights
 public_folder: /assets/insights
 
