@@ -1,4 +1,5 @@
 ---
+draft: false
 title: "Canberra City: a rent and yield play, not a capital growth bet"
 date: 2026-10-01
 summary: Kenekt is now presenting apartment opportunities in Canberra City.
@@ -7,12 +8,11 @@ summary: Kenekt is now presenting apartment opportunities in Canberra City.
   investors. Here are our findings on the Canberra market and why we believe it
   presents a compelling opportunity for investors.
 author: Kenekt
-image: /assets/insights/canberra-act-kenekt.png
+image: /assets/insights/canberra-kenekt-apartments.webp
 imageAlt: Canberra ACT
 button:
   label: Download the full report
   link: https://portal.kenekt.com.au/d/BAh7BjoGZEkiD0FELTY0Mjc1NTkGOgZFVA%3D%3D--a6a10aaef466c952ab096b2ca5f838e53d8aeb5f
-draft: false
 ---
 If you are buying in Canberra City to chase capital growth, you are buying the wrong product in the right city. I want to make that case plainly because sometimes the numbers can flatter the suburb in a way that sets investors up for the wrong expectations.
 
