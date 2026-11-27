@@ -8,3 +8,7 @@ export const SHARE_IMAGE = {
   height: 630,
   alt: 'Kenekt: wholesale house & land, built for property advisers',
 }
+
+// Meta (Facebook) Pixel ID: the browser Pixel in the root layout and the server-side Conversions API
+// event from the lead form both report to it
+export const META_PIXEL_ID = '1841460535946656'

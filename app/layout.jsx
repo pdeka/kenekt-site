@@ -1,7 +1,7 @@
 import Script from 'next/script'
 import LordIcon from '@/components/LordIcon'
 import SiteScripts from '@/components/SiteScripts'
-import { SHARE_IMAGE, SITE_URL } from './site'
+import { META_PIXEL_ID, SHARE_IMAGE, SITE_URL } from './site'
 import './globals.css'
 
 // Google Analytics 4 measurement ID
@@ -9,9 +9,6 @@ const GA_ID = 'G-Z1PXYWX18Y'
 
 // LinkedIn Insight Tag partner ID
 const LINKEDIN_PARTNER_ID = '3455692'
-
-// Meta (Facebook) Pixel ID
-const META_PIXEL_ID = '1841460535946656'
 
 // Home page search/share text, reused for og: and twitter:
 const title = 'Kenekt | Off-market house & land for property advisers'
