@@ -45,10 +45,10 @@ export default function InsightsIndex() {
       <section className="insights-head shell">
         <span>Market Research & Insights</span>
         <h1>Explore insights covering markets, suburbs and growth</h1>
-        <p>
-          Create your Kenekt account to access all our suburb, region and industry reports and share them with buyers under your own brand.
-        </p>
-        <div className="hero-actions">
+        <aside className="insights-signup" aria-label="Create a Kenekt account">
+          <p>
+            Create your Kenekt account to access all our suburb, region and industry reports and share them with buyers under your own brand.
+          </p>
           <a className="pill pill-blue" href="https://portal.kenekt.com.au/sign_up">
             Create your free account
             <lord-icon
@@ -60,7 +60,7 @@ export default function InsightsIndex() {
               style={{ width: 24, height: 24 }}
             ></lord-icon>
           </a>
-        </div>
+        </aside>
       </section>
 
       <section className="insights-list shell">
