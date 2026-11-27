@@ -6,7 +6,7 @@ summary: A sample post showing how Insights articles look. Delete it or replace
 author: Kenekt
 image: /assets/insights/artiphoria-modern-australian-su-4-.png
 imageAlt: This is the Description
-draft: true
+draft: false
 ---
 
 This is a sample post. It's marked as a **draft**, so it only shows when the site runs locally and never on the live site.
