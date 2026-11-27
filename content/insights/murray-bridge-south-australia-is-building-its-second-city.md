@@ -1,6 +1,6 @@
 ---
 title: "Murray Bridge: South Australia Is Building Its Second City​"
-date: 2026-11-27
+date: 2026-09-01
 summary: Murray Bridge's residential property market in 2026 continues to show
   compelling investment fundamentals. The city was named among
   realestate.com.au's "Hot 100" suburbs to watch in 2026, reinforcing its
