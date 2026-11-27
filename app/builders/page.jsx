@@ -2,6 +2,7 @@ import Link from 'next/link'
 import IconSprite from '@/components/IconSprite'
 import Footer from '@/components/Footer'
 import EstateMap from '@/components/EstateMap'
+import MobileMenu from '@/components/MobileMenu'
 
 const packages = [
   {
@@ -146,6 +147,7 @@ export default function BuildersPage() {
               ></lord-icon>
             </a>
           </nav>
+          <MobileMenu />
           <div className="nav-actions">
             <a href="https://app.kenekt.com.au">Stock Mgmt Log in
             <lord-icon

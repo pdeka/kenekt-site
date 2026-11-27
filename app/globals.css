@@ -94,7 +94,7 @@ button {
   position: relative;
   z-index: 10;
 
-  nav {
+  > nav {
     display: flex;
     gap: 36px;
     align-items: center;
@@ -119,13 +119,13 @@ button {
     }
   }
 
-  /* Mobile and tablet: the audience switch is the whole navigation, logo left, switch right */
+  /* Mobile and tablet: logo left, then the audience switch and the menu button on the right */
   @media (max-width: 960px) {
     height: 84px;
-    grid-template-columns: auto 1fr;
-    gap: 14px;
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
 
-    nav {
+    > nav {
       justify-self: end;
     }
   }
@@ -135,7 +135,7 @@ button {
     grid-template-columns: auto minmax(0, 1fr) auto;
     column-gap: 24px;
 
-    nav {
+    > nav {
       justify-self: center;
       gap: 24px;
     }
@@ -146,7 +146,7 @@ button {
   }
 }
 
-.site-nav nav a,
+.site-nav > nav a,
 .nav-actions>a:first-child {
   font-size: 13px;
   font-weight: 500;
@@ -203,7 +203,7 @@ button {
 
 /* Insights and Guides sit beside the switch, so they read at full ink rather than the dimmed nav style.
    Their icons are centred on the text the same way as "Log in". */
-.site-nav nav > a {
+.site-nav > nav > a {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -1690,5 +1690,116 @@ button {
     animation: none !important;
     transition: none !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* Phone and tablet menu: a round button beside the audience switch that drops a panel below the header */
+.mobile-menu {
+  display: none;
+
+  @media (max-width: 960px) {
+    display: block;
+  }
+}
+
+.mobile-menu-button {
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 999px;
+  background: #f4f2ec;
+  display: grid;
+  place-content: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: transform 160ms ease-out;
+
+  &:active {
+    transform: scale(.95);
+  }
+
+  /* Two lines that turn into a cross when open */
+  span {
+    display: block;
+    width: 18px;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--ink);
+    transition: transform 200ms cubic-bezier(.23, 1, .32, 1);
+  }
+
+  [data-open] & span:first-child {
+    transform: translateY(3.5px) rotate(45deg);
+  }
+
+  [data-open] & span:last-child {
+    transform: translateY(-3.5px) rotate(-45deg);
+  }
+}
+
+.mobile-menu-panel {
+  position: absolute;
+  top: calc(100% - 6px);
+  left: 0;
+  right: 0;
+  padding: 8px;
+  border: 1px solid #e3e1d9;
+  border-radius: 22px;
+  background: var(--paper);
+  box-shadow: 0 18px 40px rgba(13, 16, 47, .12);
+  display: grid;
+  /* Grows from the menu button's corner */
+  transform-origin: top right;
+  opacity: 0;
+  transform: scale(.97) translateY(-4px);
+  visibility: hidden;
+  transition: opacity 180ms ease-out, transform 180ms cubic-bezier(.23, 1, .32, 1), visibility 0s 180ms;
+
+  [data-open] & {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+    transition: opacity 200ms ease-out, transform 200ms cubic-bezier(.23, 1, .32, 1), visibility 0s;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &,
+    [data-open] & {
+      transform: none;
+    }
+  }
+
+  > a {
+    min-height: 52px;
+    padding: 0 16px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 500;
+
+    &:active {
+      background: #f4f2ec;
+    }
+
+    &[aria-current='page'] {
+      font-weight: 600;
+      text-decoration: underline 2px var(--orange);
+      text-underline-offset: 6px;
+    }
+  }
+}
+
+.mobile-menu-actions {
+  margin-top: 8px;
+  padding-top: 16px;
+  border-top: 1px solid #e3e1d9;
+  display: grid;
+  gap: 8px;
+
+  .pill {
+    justify-content: space-between;
+    font-size: 14px;
   }
 }

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import MobileMenu from '@/components/MobileMenu'
 
 /** The home page header, pointed back at the main site, for the Insights pages. */
 export default function InsightsNav() {
@@ -35,6 +36,7 @@ export default function InsightsNav() {
           ></lord-icon>
         </a>
       </nav>
+      <MobileMenu />
       <div className="nav-actions">
         <a href="https://portal.kenekt.com.au">
           Log in

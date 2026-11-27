@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import SenjaWidget from '@/components/SenjaWidget'
 import Footer from '@/components/Footer'
+import MobileMenu from '@/components/MobileMenu'
 
 // The old site's /home 301s here, so / is the canonical home page
 /** @type {import('next').Metadata} */
@@ -43,6 +44,7 @@ export default function HomePage() {
             ></lord-icon>
           </a>
         </nav>
+        <MobileMenu />
         <div className="nav-actions">
           <a href="https://portal.kenekt.com.au">Log in
           <lord-icon
