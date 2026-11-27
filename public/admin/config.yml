@@ -27,13 +27,13 @@ collections:
     summary: '{{title}} ({{date}})'
     sortable_fields: [date, title]
     fields:
+      - { name: draft, label: Draft (untick to publish), widget: boolean, default: true }
       - { name: title, label: Title, widget: string }
       - { name: date, label: Publish date, widget: datetime, format: 'YYYY-MM-DD', date_format: 'D MMMM YYYY', time_format: false }
       - { name: summary, label: Summary (shown in the post list and when shared), widget: text }
       - { name: author, label: Author, widget: string, required: false }
       - { name: image, label: Cover image, widget: image, required: false }
       - { name: imageAlt, label: Cover image description (for screen readers), widget: string, required: false }
-      - { name: draft, label: Draft (untick to publish), widget: boolean, default: true }
       - { name: body, label: Post, widget: markdown }
       - name: button
         label: Button at the end of the article
