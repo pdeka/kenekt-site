@@ -1,6 +1,6 @@
 ---
 title: "Canberra City: a rent and yield play, not a capital growth bet"
-date: 2026-11-26
+date: 2026-10-01
 summary: Kenekt is now presenting apartment opportunities in Canberra City.
   Before we partner with a builder or developer in any location, we conduct due
   diligence to ensure the properties we present offer genuine value to
