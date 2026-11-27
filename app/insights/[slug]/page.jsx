@@ -4,7 +4,7 @@ import InsightsNav from '@/components/InsightsNav'
 import Footer from '@/components/Footer'
 import EstateMap from '@/components/EstateMap'
 import { getPosts, getPost, formatDate } from '@/lib/insights'
-import { SHARE_IMAGE } from '../../site'
+import { SHARE_IMAGE, SITE_URL } from '../../site'
 import '../insights.css'
 
 // Static export: only the posts that exist at build time get a page
@@ -46,12 +46,39 @@ export async function generateMetadata({ params }) {
   }
 }
 
+// Schema.org BlogPosting, so search engines can read the headline, dates, author and image.
+// Posts by "Kenekt" (or with no author) are credited to the organisation from the root layout.
+function blogPosting(post) {
+  const url = `${SITE_URL}/insights/${post.slug}`
+  const organization = { '@id': `${SITE_URL}/#organization` }
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    '@id': `${url}#article`,
+    mainEntityOfPage: url,
+    url,
+    headline: post.title,
+    description: post.summary,
+    image: new URL(post.image || SHARE_IMAGE.url, SITE_URL).href,
+    datePublished: post.date,
+    dateModified: post.date,
+    inLanguage: 'en-AU',
+    author: !post.author || post.author === 'Kenekt' ? organization : { '@type': 'Person', name: post.author },
+    publisher: organization,
+    isPartOf: { '@id': `${SITE_URL}/#website` },
+  }
+}
+
 export default async function InsightsPost({ params }) {
   const post = getPost((await params).slug)
   if (!post) notFound()
 
+  // Escape "<" so text from the CMS can never close the script tag early
+  const structuredData = JSON.stringify(blogPosting(post)).replace(/</g, '\\u003c')
+
   return (
     <main className="concept insights">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: structuredData }} />
       <div className="insights-bg" aria-hidden="true">
         <EstateMap id="insights-road" className="insights-map" fit="xMaxYMin slice" />
       </div>

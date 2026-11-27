@@ -3,16 +3,33 @@ import InsightsNav from '@/components/InsightsNav'
 import Footer from '@/components/Footer'
 import EstateMap from '@/components/EstateMap'
 import { getPosts, formatDate } from '@/lib/insights'
+import { SHARE_IMAGE } from '../site'
 import './insights.css'
 
 const title = 'Insights | Kenekt'
 const description = 'News, market insights and how-tos for property advisers and builders working with Kenekt.'
 
+// Its own share tags, or links to /insights would preview as the home page
 /** @type {import('next').Metadata} */
 export const metadata = {
   title,
   description,
   alternates: { canonical: '/insights' },
+  openGraph: {
+    type: 'website',
+    siteName: 'Kenekt',
+    locale: 'en_AU',
+    url: '/insights',
+    title,
+    description,
+    images: [SHARE_IMAGE],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title,
+    description,
+    images: [SHARE_IMAGE],
+  },
 }
 
 export default function InsightsIndex() {

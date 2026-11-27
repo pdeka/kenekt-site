@@ -1,6 +1,6 @@
 ---
 draft: false
-title: "Murray Bridge: South Australia Is Building Its Second City​"
+title: "Murray Bridge: South Australia Is Building Its Second City"
 date: 2026-09-01
 summary: Murray Bridge's residential property market in 2026 continues to show
   compelling investment fundamentals. The city was named among
