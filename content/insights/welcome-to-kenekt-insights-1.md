@@ -19,11 +19,7 @@ Most property conversations about Murray Bridge start with the numbers. A median
 
 The real story is this: the South Australian Government has made a deliberate decision to grow a second city beyond Adelaide, and Murray Bridge is where it is happening. For investors, that distinction matters. A hot market can cool. A city built on statutory plans, committed funding, and a 15-year population target behaves very differently.
 
-
-## 
-A city by design, not by accident
-
-
+## A city by design, not by accident
 
 Two state planning instruments now point in the same direction. The Greater Adelaide Regional Plan, finalised in 2025, identifies land for around 315,000 new homes over 30 years and designates Murray Bridge as a satellite city. The Murray Mallee Regional Plan, released in January 2026, then set the target explicitly: growth to around 35,000 residents over the next fifteen years.
 
@@ -34,11 +30,7 @@ The anchor of the strategy is Gifford Hill, a masterplanned precinct delivered b
 
 The precinct is planned with its own town centre, a mixed-use high street, multiple schools, and more than 20% dedicated to green space, staged over 30 to 40 years. It is referenced in state planning documents under explicit objectives for Murray Bridge as a satellite city, and the developers openly describe it as Adelaide's second city.
 
-
-## 
-When the money follows the plan
-
-
+## When the money follows the plan
 
 Plans matter only when funding follows. In Murray Bridge, it has. A $100 million state package for the city and surrounding townships, committed ahead of the March 2026 state election, was confirmed in the 2026 to 2027 budget. The components read like the operating system of a growing city: A new technical college, the single largest item at $50 million, is co-located with Murray Bridge High School. Unlike existing training options, its courses are being designed alongside employers such as ASC, SA Power Networks and SA Health, with graduates guaranteed a job, apprenticeship, traineeship or further study. House construction and engineering are expected pathways, supplying the very workforce needed to build the region out.
 
@@ -48,21 +40,13 @@ A $15 million hospital upgrade adding a maternity ward and renal unit, and an $8
 
 Alongside the package, a 900-home rezoning in the city's west was approved in February 2026, carrying a 15 per cent affordable housing requirement.
 
-
-## 
-What it means for the market
-
-
+## What it means for the market
 
 Here is where the planning story and the property numbers connect. You have a market already running tight: vacancy between 0.5% and 1.9%, well below the 3% balanced threshold, with median values up 138% over the decade and stock on market down more than 40% year on year. Now layer on engineered demand. The state is steering population, jobs, and transport to a town about 80 kilometres from Adelaide, roughly an hour from the CBD, with a median house price well below the metropolitan figure.
 
 The demographic base today supports it. Demand is led by young families and professionals aged 25 to 34, drawn by affordability and the Adelaide commute, with renters making up close to 30% of residents. That is precisely the cohort a cheaper, better-connected commuter city captures.
 
-
-## 
-The investor takeaway
-
-
+## The investor takeaway
 
 Most regional growth stories ask you to bet on momentum. Murray Bridge asks you to read a plan. The demand drivers here are being underwritten by coordinated government policy with a fifteen-year runway: statutory plans, a confirmed funding package, a privately led second city, and rezonings unlocking supply. That changes the risk profile compared with a pure market play.
 
