@@ -6,7 +6,7 @@ image: /assets/insights/depositphotos_291530090_l-1-.jpg
 button:
   label: Download
   link: http://localhost:3000/admin/index.html#/
-draft: true
+draft: false
 ---
 asdfa ssadf sd
 
