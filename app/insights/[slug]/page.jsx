@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import InsightsNav from '@/components/InsightsNav'
 import Footer from '@/components/Footer'
 import EstateMap from '@/components/EstateMap'
+import SignupPanel from '@/components/SignupPanel'
 import { getPosts, getPost, formatDate } from '@/lib/insights'
 import { SHARE_IMAGE, SITE_URL } from '../../site'
 import '../insights.css'
@@ -116,6 +117,7 @@ export default async function InsightsPost({ params }) {
             </a>
           </div>
         )}
+        <SignupPanel />
       </article>
 
       <Footer />

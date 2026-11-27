@@ -342,6 +342,19 @@
   }
 }
 
+/* The article column is too narrow for copy and button side by side, so the panel stacks there,
+   centred like the article's own button above it */
+.insights-post .insights-signup {
+  margin-top: clamp(48px, 6vw, 64px);
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  p {
+    text-wrap: balance;
+  }
+}
+
 /* Optional button after the article body, set per post in the CMS */
 .insights-cta {
   margin-top: 48px;
